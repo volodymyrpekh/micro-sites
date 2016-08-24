@@ -1,0 +1,27 @@
+/* FORM -------------*/
+.contact-form {
+	max-width: 400px;
+}
+.form-control {
+  height: 60px; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  //padding: $padding-base-vertical $padding-base-horizontal;
+  font-size: 1em;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+  @include placeholder(lighten($text,20%));
+}
+.btn-lg {
+	min-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include button-size(17px, 10px, 1em, 1, 4px);
+}
+.btn-primary {
+  @include button-variant(white, $brand, $brand);
+}
+.form-group.form-group--last {
+	@media (min-width: 768px) {
+		margin-bottom: 80px;
+	}
+}
+/* FORM END -------------*/

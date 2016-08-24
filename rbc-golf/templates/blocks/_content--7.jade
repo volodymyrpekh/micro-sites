@@ -1,0 +1,25 @@
+// Content 
+.container-fluid
+	+b('section').content
+		+e('h1').heading.text-center Contact
+		+b().entry
+			p For any questions or comments pertaining to WAMS, including annual WAMS Gala Luncheon, please contact:
+
+			p <strong>Megan McDonald</strong><br>
+				| Senior Coordinator, Events of Distinction<br>
+				| MS Society of Canada
+
+			table.table
+				tbody
+					tr
+						td <strong>Phone:</strong>
+						td #{mainPhone}
+					tr.tr--last
+						td <strong>E-mail:</strong>
+						td: a(href="mailto:#{mainMail}") #{mainMail}
+					tr
+						td <strong>Address:</strong>
+						td 
+							address #{mainAddress[0]}<br>#{mainAddress[1]}<br>#{mainAddress[2]}<br>#{mainAddress[3]}
+// Content End 
+	

@@ -1,0 +1,60 @@
+/* FOOTER -------------*/
+.footer {
+	padding: em(40,$baseFS) 0;
+	background: url(../img/bg--footer.jpg);
+	&__logo {
+		display: block;
+		@include size(130px 60px);
+		margin: 0 auto;
+		float: left;
+		background: url(../img/logo--footer.svg) no-repeat;
+		@media (min-width: 768px) {
+			margin: 0;
+		}
+	}
+	&__social {
+		padding-top: em(40,$baseFS);
+		@media (min-width: 768px) { 
+			padding: 0;
+		}
+	}
+}
+.social {
+	margin: 0 0 10px;
+	padding: 0;
+	display: inline-block;
+	&__item {
+		display: inline-block;
+		margin: 0 5px;
+	}
+	&__link {
+		&:hover {
+			.social__icon {
+				opacity: 0.8;
+			}
+		}
+	}
+	&__icon {
+		display: inline-block;
+		@include size(48px);
+		background: url(../img/social.png) no-repeat;
+		transition: opacity 0.25s ease;
+		@include hide-text;
+		@each $icon, $position in (fb:0 0, tw:0 -48px, li:0 -96px) {
+			&--#{$icon} {
+				background-position: $position;
+			}
+		}
+	}
+}
+.copy {
+	line-height: 1.5em;
+	p {
+		margin-bottom: 0;
+	}
+	@media (min-width: 768px) {
+		font-size: em(18,$baseFS);
+		line-height: em(22,18);
+	}
+}
+/* FOOTER END -------------*/

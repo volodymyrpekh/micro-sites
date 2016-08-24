@@ -1,0 +1,18 @@
+/* HEADLINE -------------*/
+.headline {
+	position: relative;
+	height: 350px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	@media (min-width: 768px) {
+		height: 550px;
+	}
+	&::after {
+		content: '';
+		@include position(absolute, 0);
+		background: rgba(black, .44);
+		z-index: 2;
+	}
+}
+/* HEADLINE END -------------*/

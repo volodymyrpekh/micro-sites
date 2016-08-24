@@ -1,0 +1,98 @@
+/* HEADER -------------*/
+.header {
+	background: #fff;
+	&__nav {
+		min-height: 127px;
+		padding: 25px 0 0;
+		.navbar {
+			&-toggle {
+				padding: 0;
+				margin: 26px 0 0;
+				border-color: transparent;
+				&:hover, &:focus {
+					background: transparent;
+				}
+				.icon-bar {
+					@include size(42px 7px);
+					background-color: $brand;
+					border-radius: 2px;
+				}
+				@media (min-width: 768px) and (max-width: 991px) {
+					display: block;
+				}
+			}
+			&-collapse {
+				margin: 25px -20px 0;
+				border-top: 2px solid $brand;
+				border-bottom: 2px solid $brand;
+				@media (min-width: 768px){
+					padding: 0;
+				}
+				@media (min-width: 992px){
+					position: absolute;
+					width: 300px;
+					top: 865px;
+					left: 0;
+					padding-bottom: 3em;
+					margin: 25px 0 0;
+					border-color: transparent;
+				}
+			}
+		}
+		@media (min-width: 768px) and (max-width: 991px) {
+			.navbar-collapse.collapse {
+				display: none!important;
+				&.in {
+					display: block!important;
+				}
+			}
+		}
+	}
+}
+.logo {
+	display: inline-block;
+	@include size(200px 78px);
+	margin-left: -20px;
+	background: url(../img/logo.svg) no-repeat;
+}
+.navbar {
+	margin-bottom: 0;
+	border: none;
+	&-default {
+		background-color: #fff;
+		border-color: #fff;
+		.navbar-nav {
+			float: none;
+			li {
+				float: none;
+				a {
+					padding: 10px 20px;
+					line-height: inherit;
+					color: $brand;
+					&:hover, &:focus, {
+						color: $brand;
+						background-color: #eee;
+					}
+					@media (min-width: 992px){
+						padding: 0 0 $baseLH;
+						&:hover, &:focus {
+							color: lighten($brand, 10%);
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+			.nav {
+				li a {
+					padding-left: 40px;
+				}
+			}
+		}
+	}
+	&-header {
+		@media (min-width: 768px) and (max-width: 991px) {
+			float: none;
+		}
+	}
+}
+/* HEADER END -------------*/

@@ -1,0 +1,37 @@
+- var social = [['Мы Вконтакте', 'vk', 'http://vk.com/shootnjoy'], ['Мы в Facebook', 'fb', 'https://www.facebook.com/pages/Shootnjoy/625363767592712'], ['YouTube канал', 'yt', 'https://www.youtube.com/channel/UC2zXv6o6YJi43pfEzVXr1lg'], ['Наш Instagram', 'ig', 'http://instagram.com/shoot_n_joy/']];
+
+// Footer
++b('footer').footer
+	.container-fluid
+		.row
+			.col-xs-12.col-sm-6.col-md-4
+				.footer__logo.text-hide Multiple Sclerosis Socienty of Canada
+			.col-xs-12.col-sm-6.col-md-4.text-center
+				.footer__social
+					ul.social
+						li.social__item
+							a.social__link(href="#", target="_blank", title="Facebook")
+								i.social__icon.social__icon--fb Facebook
+						li.social__item
+							a.social__link(href="#", target="_blank", title="Tweeter")
+								i.social__icon.social__icon--tw Tweeter
+						li.social__item
+							a.social__link(href="#", target="_blank", title="Linkedin")
+								i.social__icon.social__icon--li Linkedin
+				.copy.text-black 
+					p &copy; #{mainCopy}
+					a.text-primary(data-toggle='modal', href='#policy', title="Privacy Policy") Privacy Policy
+// Footer End
+
+// Privacy Policy Modal
+#policy.modal.fade
+	.modal-dialog
+		.modal-content
+			.modal-header
+				button.close(type='button', data-dismiss='modal')
+					span(aria-hidden='true') &times;
+					span.sr-only Close
+				h2.modal-title Privacy Policy
+			.modal-body
+				p Content
+// Privacy Policy Modal End 

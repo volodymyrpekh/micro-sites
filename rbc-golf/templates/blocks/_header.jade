@@ -1,0 +1,25 @@
+- var nav = [['Home', ''], [['WAMS Gala Luncheon'], ['+']], ['Get Involved', ''], ['Contact', '']];
+- var subnav = ['Honouree', 'Speaker', 'Sponsorship Opporunities', 'Tickets and Tables', 'Sponsors'];
+
+// Header 
++b('header').header
+	.container-fluid
+		+e.nav
+			nav(role="navigation").navbar.navbar-default
+				.navbar-header
+					button(type="button", data-toggle="collapse", data-target=".navbar-header-collapse").navbar-toggle.collapsed
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a(href="/" title="#{mainTitle} - #{metaDescription}").navbar-brand.logo.text-hide #{mainTitle} - #{metaDescription}
+				.collapse.navbar-collapse.navbar-header-collapse
+					ul.nav.navbar-nav
+						for item in nav
+							li
+								a(href="#", title="#{item[0]}") #{item[0]}
+								if item[1]
+									ul.nav
+										for subitem in subnav
+											li: a(href="#", title="#{subitem}") #{subitem}
+// Header End 

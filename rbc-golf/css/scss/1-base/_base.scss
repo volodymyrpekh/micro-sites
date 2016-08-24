@@ -1,0 +1,103 @@
+/* BASE STYLES -------------*/
+body {
+	width: 100%;
+	min-width: 320px;
+	font-family: $baseFF;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: $baseLH;
+	color: $text;
+	background: $bg;
+	@media (min-width: 768px) {
+		font-size: $baseFS;
+	}
+}
+a {
+	color: $link;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+	&:hover, &:focus, &.text-primary:hover, &.text-primary:focus {
+		color: darken($link, 5%);
+	}
+	&:focus, &:active, &:active:focus {
+		outline: none;
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+}
+.text-primary {
+	color: $brand;
+}
+.text-black {
+	color: #000;
+}
+p {
+	margin-bottom: $baseLH;
+}
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+	font-family: $titleFS;
+	font-weight: 400;
+	color: $brand;
+}
+/* BASE STYLES END -------------*/
+/* CONTENT -------------*/
+.content {
+	min-height: 700px;
+	padding-bottom: 3em;
+	&__heading {
+		font-size: em(36,$baseFS);
+		margin: 3em 0 2.5em;
+		font-weight: 700;
+	}
+	@media (min-width: 992px) {
+		padding-left: 320px;
+	}
+}
+.entry {
+	hr {
+		max-width: 368px;
+		height: 2px;
+		background: $brand;
+		margin: em(60,24) auto;
+	}
+	h2 {
+		font-size: em(36,$baseFS);
+		border-bottom: 2px solid $brand;
+		margin-top: 0;
+		margin-bottom: 0.75em;
+	}
+	h3 {
+		font-size: em(24,$baseFS);
+		font-weight: 700;
+		margin-top: 0;
+		margin-bottom: 0em;
+	}
+	ul {
+		margin-bottom: $baseLH;
+	}
+	img {
+		margin-bottom: 1.5em;
+		&.pull-left {
+			margin-right: 20px;
+		}
+		&.pull-right {
+			margin-left: 20px;
+		}
+	}
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	padding: 0 0 0.3em;
+	line-height: $baseLH;
+	border-color: transparent;
+}
+.table>tbody>tr.tr--last>td {
+	padding-bottom: $baseLH;
+}
+.panel--tickets {
+	max-width: 550px;
+}
+/* CONTENT END -------------*/
