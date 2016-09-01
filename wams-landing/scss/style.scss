@@ -1,0 +1,437 @@
+@import "../css/normalize";
+@import "../fonts/Calibri/stylesheet";
+
+$cherry-color: #b01229;
+$red-color: #e20000;
+
+* {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-family: 'Calibri', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #000;
+
+    @extend html;
+}
+
+button,
+button:focus,
+button:not(:focus),
+a,
+a:focus,
+a:not(:focus) {
+    transition: .25s linear;
+}
+
+a {
+    color: $red-color;
+}
+
+a:hover {
+    color: $cherry-color;
+}
+
+.row {
+    max-width: 30em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.clearfix:before {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+
+    @extend .clearfix:before;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+button {
+    min-width: 220px;
+    padding: 10px;
+    cursor: pointer;
+    color: $cherry-color;
+    border: 1px solid $cherry-color;
+    border-radius: 4px;
+    background: none;
+    font-size: 22px;
+}
+
+button:hover {
+    color: #fff;
+    background-color: $cherry-color;
+}
+
+button.red {
+    min-width: 280px;
+    color: #fff;
+    border: 1px solid $red-color;
+    background-color: $red-color;
+    font-size: 26px;
+}
+
+button.red:hover {
+    color: $red-color;
+    background: none;
+}
+
+button.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: inherit;
+    cursor: pointer;
+    color: #8a8a8a;
+    border: none;
+    font-size: 2em;
+    line-height: 1;
+}
+
+button.close:hover {
+    color: #000;
+    background: none;
+}
+
+button.register {
+    min-width: inherit;
+    padding: 4px 10px;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 0;
+    background-color: #000;
+    font-size: 16px;
+}
+
+button.register:hover {
+    color: #000;
+    background: #fff;
+}
+
+header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+}
+
+header .logo {
+    float: left;
+    width: 151px;
+    height: 60px;
+    background-image: url(/img/logo_small.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+header button {
+    float: right;
+    margin-top: 6px;
+}
+
+section {
+    position: relative;
+    height: 0;
+    padding-bottom: 400px;
+    background-image: url(/img/background_sm.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+section .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -68px;
+    text-align: center;
+}
+
+section .wrapper h1 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 52px;
+    line-height: 1;
+}
+
+footer {
+    text-align: center;
+    background-color: #282828;
+}
+
+footer > div.row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer dl {
+    color: #9d9c9a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer dl > dt {
+    text-transform: uppercase;
+}
+
+footer dl > dd {
+    margin: 0;
+    padding: 5px 0;
+}
+
+footer dl.contact dd:last-child a {
+    color: #fff;
+}
+
+footer dl.contact dd:last-child a:hover {
+    color: #9d9c9a;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    padding-right: 12px;
+}
+
+footer ul li:first-child {
+    padding-right: 5px;
+}
+
+footer a svg path {
+    fill: #fff;
+}
+
+footer a:hover svg path {
+    fill: #9d9c9a;
+}
+
+footer .copyright {
+    padding: 20px;
+    color: #fff;
+    background-color: #000;
+    font-size: 14px;
+}
+
+#modal {
+    position: fixed;
+    z-index: 1005;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    background-color: rgba(10, 10, 10, 0.45);
+}
+
+#modal div.close {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#modal .wrapper {
+    max-width: 650px;
+    margin: 20px;
+    padding-bottom: 40px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#modal .head {
+    position: relative;
+    padding: 10px;
+}
+
+#modal .head h2 {
+    margin: 0;
+}
+
+#modal table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: 1px solid rgba(138, 138, 138, 0.5);
+}
+
+#modal table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+#modal table tr td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#modal table tr td:nth-child(2) {
+    text-align: center;
+    color: #8a8a8a;
+    font-weight: 700;
+}
+
+#modal table tr td:nth-child(3) a {
+    text-decoration: none;
+    color: $cherry-color;
+}
+
+#modal table tr td:nth-child(3) a:hover {
+    text-decoration: underline;
+}
+
+#modal table tr td:first-child {
+    padding-left: 10px;
+}
+
+#modal table tr td:last-child {
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 48em) {
+    .row {
+        max-width: 48em;
+    }
+
+    header .logo {
+        width: 224px;
+        height: 89px;
+        background-image: url(/img/logo.png);
+    }
+
+    header button {
+        margin-top: 30px;
+    }
+
+    section {
+        padding-bottom: 42.5%;
+        background-image: url(/img/background_md.jpg);
+    }
+
+    section .wrapper {
+        margin-top: -73px;
+    }
+
+    section .wrapper h1 {
+        font-size: 62px;
+    }
+
+    footer > div.row {
+        width: 500px;
+        text-align: left;
+    }
+
+    footer dl.society {
+        margin-right: 135px;
+    }
+
+    footer dl.society,
+    footer dl.contact {
+        display: inline-block;
+        width: 180px;
+    }
+
+    #modal .wrapper {
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #modal .head {
+        padding: 20px;
+    }
+
+    #modal table tr td:first-child {
+        padding-left: 20px;
+    }
+
+    #modal table tr td:last-child {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    button.register {
+        padding: 6px 20px;
+        font-size: 18px;
+    }
+
+    .row {
+        max-width: 64em;
+    }
+
+    section {
+        background-image: url(/img/background_xl.jpg);
+    }
+
+    section .wrapper {
+        margin-top: -83px;
+    }
+
+    section .wrapper h1 {
+        font-size: 70px;
+    }
+
+    #modal .wrapper {
+        max-width: 850px;
+        margin-top: 100px;
+    }
+
+    #modal table {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .row {
+        max-width: 75em;
+    }
+
+    section {
+        background-image: url(/img/background_xxl.jpg);
+    }
+}
+
+@media screen and (max-width: 29.9375em) {
+    button {
+        min-width: 160px;
+        font-size: 16px;
+    }
+
+    header .logo {
+        width: 100px;
+        height: 40px;
+    }
+
+    header button {
+        float: right;
+        margin-top: 0;
+    }
+
+    section .wrapper {
+        margin-top: -54px;
+    }
+
+    section .wrapper h1 {
+        font-size: 40px;
+    }
+}
