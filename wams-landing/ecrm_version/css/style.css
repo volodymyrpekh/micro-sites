@@ -1,0 +1,655 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+html,
+body {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+progress {
+    vertical-align: baseline
+}
+
+template,
+[hidden] {
+    display: none
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: inherit
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: bold
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html [type="button"],
+body [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url("/fonts/Calibri/cal.eot?k9uxko");
+    src: url("/fonts/Calibri/cal.eot?k9uxko#iefix") format("embedded-opentype"), url("/fonts/Calibri/cal.woff?k9uxko2") format("woff2"), url("/fonts/Calibri/cal.woff?k9uxko") format("woff"), url("/fonts/Calibri/cal.ttf?k9uxko#Calibri") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url("/fonts/Calibri/calbold.eot?k9uxko");
+    src: url("/fonts/Calibri/calbold.eot?k9uxko#iefix") format("embedded-opentype"), url("/fonts/Calibri/calbold.woff?k9uxko2") format("woff2"), url("/fonts/Calibri/calbold.woff?k9uxko") format("woff"), url("/fonts/Calibri/calbold.ttf?k9uxko#Calibri") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+* {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent
+}
+
+html,
+body {
+    font-family: 'Calibri', Helvetica, Arial, sans-serif;
+    font-size: 16px
+}
+
+body {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #000
+}
+
+button,
+button:focus,
+button:not(:focus),
+a,
+a:focus,
+a:not(:focus) {
+    transition: .25s linear
+}
+
+a {
+    color: #e20000
+}
+
+a:hover {
+    color: #b01229
+}
+
+.row {
+    max-width: 30em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: ''
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.clearfix {
+    zoom: 1
+}
+
+button {
+    min-width: 220px;
+    padding: 10px;
+    cursor: pointer;
+    color: #b01229;
+    border: 1px solid #b01229;
+    border-radius: 4px;
+    background: none;
+    font-size: 22px
+}
+
+button:hover {
+    color: #fff;
+    background-color: #b01229
+}
+
+button.red {
+    min-width: 280px;
+    color: #fff;
+    border: 1px solid #e20000;
+    background-color: #e20000;
+    font-size: 26px
+}
+
+button.red:hover {
+    color: #e20000;
+    background: #fff
+}
+
+button.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: inherit;
+    cursor: pointer;
+    color: #8a8a8a;
+    border: none;
+    font-size: 2em;
+    line-height: 1
+}
+
+button.close:hover {
+    color: #000;
+    background: none
+}
+
+button.register {
+    min-width: inherit;
+    padding: 4px 10px;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 0;
+    background-color: #000;
+    font-size: 16px
+}
+
+button.register:hover {
+    color: #000;
+    background: #fff
+}
+
+header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff
+}
+
+header .logo {
+    float: left;
+    width: 151px;
+    height: 60px;
+    background-image: url(../img/logo_small.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover
+}
+
+header button {
+    float: right;
+    margin-top: 6px
+}
+
+section {
+    position: relative;
+    height: 0;
+    padding-bottom: 400px;
+    background-image: url(../img/background_sm.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover
+}
+
+section .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -68px;
+    text-align: center
+}
+
+section .wrapper h1 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 52px;
+    line-height: 1
+}
+
+footer {
+    text-align: center;
+    background-color: #282828
+}
+
+footer>div.row {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+footer dl {
+    color: #9d9c9a;
+    font-size: 20px;
+    font-weight: 700
+}
+
+footer dl>dt {
+    text-transform: uppercase
+}
+
+footer dl>dd {
+    margin: 0;
+    padding: 5px 0
+}
+
+footer dl.contact dd:last-child a {
+    color: #fff
+}
+
+footer dl.contact dd:last-child a:hover {
+    color: #9d9c9a
+}
+
+footer ul {
+    padding: 0
+}
+
+footer ul li {
+    display: inline-block;
+    padding-right: 12px
+}
+
+footer ul li:first-child {
+    padding-right: 5px
+}
+
+footer a svg path {
+    fill: #fff
+}
+
+footer a:hover svg path {
+    fill: #9d9c9a
+}
+
+footer .copyright {
+    padding: 20px;
+    color: #fff;
+    background-color: #000;
+    font-size: 14px
+}
+
+#modal {
+    position: fixed;
+    z-index: 1005;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    background-color: rgba(10, 10, 10, 0.45)
+}
+
+#modal div.close {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+#modal .wrapper {
+    max-width: 650px;
+    margin: 20px;
+    padding-bottom: 40px;
+    border-radius: 6px;
+    background-color: #fff
+}
+
+#modal .head {
+    position: relative;
+    padding: 10px
+}
+
+#modal .head h2 {
+    margin: 0
+}
+
+#modal table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: 1px solid rgba(138, 138, 138, 0.5)
+}
+
+#modal table tr:nth-child(odd) {
+    background-color: #f1f1f1
+}
+
+#modal table tr td {
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+#modal table tr td:nth-child(2) {
+    text-align: center;
+    color: #8a8a8a;
+    font-weight: 700
+}
+
+#modal table tr td:nth-child(3) a {
+    text-decoration: none;
+    color: #b01229
+}
+
+#modal table tr td:nth-child(3) a:hover {
+    text-decoration: underline
+}
+
+#modal table tr td:first-child {
+    padding-left: 10px
+}
+
+#modal table tr td:last-child {
+    padding-right: 10px
+}
+
+@media screen and (min-width: 48em) {
+    .row {
+        max-width: 48em
+    }
+    header .logo {
+        width: 224px;
+        height: 89px;
+        background-image: url(../img/logo.png)
+    }
+    header button {
+        margin-top: 30px
+    }
+    section {
+        padding-bottom: 42.5%;
+        background-image: url(../img/background_md.jpg)
+    }
+    section .wrapper {
+        margin-top: -73px
+    }
+    section .wrapper h1 {
+        font-size: 62px
+    }
+    footer>div.row {
+        width: 500px;
+        text-align: left
+    }
+    footer dl.society {
+        margin-right: 135px
+    }
+    footer dl.society,
+    footer dl.contact {
+        display: inline-block;
+        width: 180px
+    }
+    #modal .wrapper {
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto
+    }
+    #modal .head {
+        padding: 20px
+    }
+    #modal table tr td:first-child {
+        padding-left: 20px
+    }
+    #modal table tr td:last-child {
+        padding-right: 20px
+    }
+}
+
+@media screen and (min-width: 64em) {
+    button.register {
+        padding: 6px 20px;
+        font-size: 18px
+    }
+    .row {
+        max-width: 64em
+    }
+    section {
+        background-image: url(../img/background_xl.jpg)
+    }
+    section .wrapper {
+        margin-top: -83px
+    }
+    section .wrapper h1 {
+        font-size: 70px
+    }
+    #modal .wrapper {
+        max-width: 850px;
+        margin-top: 100px
+    }
+    #modal table {
+        font-size: 18px
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .row {
+        max-width: 75em
+    }
+    section {
+        background-image: url(../img/background_xxl.jpg)
+    }
+}
+
+@media screen and (max-width: 29.9375em) {
+    button {
+        min-width: 160px;
+        font-size: 16px
+    }
+    header .logo {
+        width: 100px;
+        height: 40px
+    }
+    header button {
+        float: right;
+        margin-top: 0
+    }
+    section .wrapper {
+        margin-top: -54px
+    }
+    section .wrapper h1 {
+        font-size: 40px
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */

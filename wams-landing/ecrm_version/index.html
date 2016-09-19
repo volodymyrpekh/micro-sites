@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />    
+	<title>Women Against Multiple Sclerosis</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="shortcut icon" href="https://mssociety.ca/favicon.en_CA.ico" />
+	<link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+		<div class="row clearfix">
+			<div class="logo"></div>
+			<button  onclick="toggle();">Find an event</button>
+		</div>
+	</header>
+	<section>
+		<div class="row clearfix">
+			<div class="wrapper">
+				<h1>Women Agains MS</h1>
+				<button class="red"  onclick="toggle();">Find an event</button>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="row clearfix">
+			<dl class="society">
+				<dt>MS Society</dt>
+					<dd><a href="http://mssociety.ca">mssociety.ca</a></dd>
+					<dd><a href="https://mssociety.ca/privacy-statement">Privacy</a></dd>
+			</dl>
+			<dl class="contact">
+				<dt>Contact</dt>
+					<dd><a href="mailto:info@msscoiety.ca">info@msscoiety.ca</a></dd>
+					<dd><a href="tel:18002687582">1-800-268-7582</a></dd>
+			</dl>
+			<ul>
+				<li>
+					<a href="">
+						<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 430.113 430.114">
+							<path d="M158.081 83.3v59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805s5.601-34.721 8.316-72.685H247.54V92.74c0-7.4 9.717-17.354 19.321-17.354h48.557V.001h-66.021C155.878-.004 158.081 72.48 158.081 83.3z"/>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 430.117 430.117">
+						    <path d="M381.384 198.639c24.157-1.993 40.543-12.975 46.849-27.876-8.714 5.353-35.764 11.189-50.703 5.631-.732-3.51-1.55-6.844-2.353-9.854-11.383-41.798-50.357-75.472-91.194-71.404a173.448 173.448 0 0 1 9.996-3.691c4.495-1.61 30.868-5.901 26.715-15.21-3.5-8.188-35.722 6.188-41.789 8.067 8.009-3.012 21.254-8.193 22.673-17.396-12.27 1.683-24.315 7.484-33.622 15.919 3.36-3.617 5.909-8.025 6.45-12.769C241.68 90.963 222.563 133.113 207.092 174c-12.148-11.773-22.915-21.044-32.574-26.192-27.097-14.531-59.496-29.692-110.355-48.572-1.561 16.827 8.322 39.201 36.8 54.08-6.17-.826-17.453 1.017-26.477 3.178 3.675 19.277 15.677 35.159 48.169 42.839-14.849.98-22.523 4.359-29.478 11.642 6.763 13.407 23.266 29.186 52.953 25.947-33.006 14.226-13.458 40.571 13.399 36.642C113.713 320.887 41.479 317.409 0 277.828c108.299 147.572 343.716 87.274 378.799-54.866 26.285.224 41.737-9.105 51.318-19.39-15.144 2.57-37.094-.086-48.733-4.933z"/>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 90 90">
+						    <path d="M90 26.958C90 19.525 83.979 13.5 76.55 13.5h-63.1C6.021 13.5 0 19.525 0 26.958v36.084C0 70.475 6.021 76.5 13.45 76.5h63.1C83.979 76.5 90 70.475 90 63.042V26.958zM36 60.225V26.33l25.702 16.947L36 60.225z"/>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<div class="row clearfix">
+				<p>© Multiple Sclerosis Society of Canada. | All rights reserved.</p>
+				<p>The <a href="https://mssociety.ca/about-us/financial-information">Multiple Sclerosis Society of Canada</a> is a member of Imagine Canada. As a participant or volunteer in one of our events, we ask that you adhere to Imagine Canada's ethical code as outlined by the MS Society’s statement,  <a href="https://mssociety.ca/about-us/financial-information">“The Ethical Code: Partnering with Fundraisers and Volunteers.”</a>.</p>
+			</div>
+		</div>
+	</footer>
+	<div id="modal" style="display: none;">
+		<div class="close" onclick="toggle();"></div>
+		<div class="wrapper clearfix">
+			<div class="head">
+				<h2>Select an event</h2>
+				<button class="close"  onclick="toggle();">×</button>
+			</div>
+			<table>
+				<tbody>
+					<tr>
+						<td width="200">Toronto</td>
+						<td width="350">May 1, 2017</td>
+						<td width="200">
+							<a href="">Read more</a>
+						</td>
+						<td>
+							<a href=""><button class="register">Register</button></a>
+						</td>
+					</tr>
+					<tr>
+						<td>Vancouver</td>
+						<td>May 1, 2017</td>
+						<td>
+							<a href="">Read more</a>
+						</td>
+						<td>
+							<a href=""><button class="register">Register</button></a>
+						</td>
+					</tr>
+					<tr>
+						<td>Calgary</td>
+						<td>May 1, 2017</td>
+						<td>
+							<a href="">Read more</a>
+						</td>
+						<td>
+							<a href=""><button class="register">Register</button></a>
+						</td>
+					</tr>
+					<tr>
+						<td>Burlington</td>
+						<td>May 15, 2017</td>
+						<td>
+							<a href="">Read more</a>
+						</td>
+						<td>
+							<a href=""><button class="register">Register</button></a>
+						</td>
+					</tr>
+					<tr>
+						<td>Caledon</td>
+						<td>May 1, 2017</td>
+						<td>
+							<a href="">Read more</a>
+						</td>
+						<td>
+							<a href=""><button class="register">Register</button></a>
+						</td>
+					</tr>
+					<tr>
+						<td>Etobicoke</td>
+						<td>May 1, 2017</td>
+						<td>
+							<a href="">Read more</a>
+						</td>
+						<td>
+							<a href=""><button class="register">Register</button></a>
+						</td>
+					</tr>
+					<tr>
+						<td>Hamilton-Stoney Creek</td>
+						<td>May 1, 2017</td>
+						<td>
+							<a href="">Read more</a>
+						</td>
+						<td>
+							<a href=""><button class="register">Register</button></a>
+						</td>
+					</tr>
+					<tr>
+						<td>Markham-Stouffville</td>
+						<td>May 1, 2017</td>
+						<td>
+							<a href="">Read more</a>
+						</td>
+						<td>
+							<a href=""><button class="register">Register</button></a>
+						</td>
+					</tr>
+					<tr>
+						<td>Milton-Halton Hills</td>
+						<td>May 1, 2017</td>
+						<td>
+							<a href="">Read more</a>
+						</td>
+						<td>
+							<a href=""><button class="register">Register</button></a>
+						</td>
+					</tr>
+					<tr>
+						<td>Mississauga</td>
+						<td>May 1, 2017</td>
+						<td>
+							<a href="">Read more</a>
+						</td>
+						<td>
+							<a href=""><button class="register">Register</button></a>
+						</td>
+					</tr>
+					<tr>
+						<td>Newmarket</td>
+						<td>May 15, 2017</td>
+						<td>
+							<a href="">Read more</a>
+						</td>
+						<td>
+							<a href=""><button class="register">Register</button></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script>
+		function toggle() {
+		    var mydiv = document.getElementById('modal');
+		    if (mydiv.style.display === 'block' || mydiv.style.display === '')
+		        mydiv.style.display = 'none';
+		    else
+		        mydiv.style.display = 'block'
+		}		
+	</script>	
+</body>
+</html>
