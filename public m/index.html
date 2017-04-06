@@ -732,79 +732,6 @@
     <!-- End Facebook Pixel Code -->
 
 
-    <!-- uiView:  --><div ui-view="" class="wrapper ng-scope">
-<section class="beta-banner ng-scope ng-hide" ng-show="isBetaVisible">
-    <div class="container container-relative">
-        <div class="beta-notification ng-binding">
-            We want your <a class="inline-link ng-binding" href="http://productioncommunity.publicmobile.ca/t5/Public-Lab/idb-p/Public_Lab">feedback</a><span class="beta-desktop-copy ng-binding">. Tell us what works, what doesn’t, and what you’d like to see</span>.
-            <div class="beta-collapse" ng-click="closeBetaNotification()">
-                <span class="icon-x"></span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="wrong-region-banner ng-scope ng-hide" ng-show="isWrongRegionVisible">
-    <div class="container container-relative">
-        <div class="wrong-region-notification ng-binding">
-            Your region is currently different than on your last visit. Would you like to <a ng-click="changeToOldRegion()" class="ng-binding">change your region</a>?
-            <div class="wrong-region-collapse" ng-click="wrongRegionCollapse()">
-                <span class="icon-x"></span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="lang-banner hidden">
-    <div class="container container-relative">
-        <div class="lang-notification">
-            <div class="lang-content">
-                <div class="lang-block-wrap">
-                    <div class="lang-block">
-                        <div class="lang-label-wrap">
-                            <div class="lang-label ng-binding">
-                                Language
-                            </div>
-                        </div>
-                        <ul class="lang-item-wrap">
-                            <!-- ngRepeat: language in languages --><li class="lang-item lang-item-selected" ng-repeat="language in languages"><a ng-click="changeLang(language.id)" class="ng-binding">English</a></li><!-- end ngRepeat: language in languages --><li class="lang-item" ng-repeat="language in languages"><a ng-click="changeLang(language.id)" class="ng-binding">Français</a></li><!-- end ngRepeat: language in languages -->
-                        </ul>
-                        <div class="lang-select-wrap">
-                            <div class="lang-select-ctrl container-relative">
-                                <select name="lang-select-disable" class="select-nostyle lang-select ng-pristine ng-valid" ng-model="curLanguage" ng-change="changeLang()" ng-options="language.name for language in languages"><option value="0" selected="selected">English</option><option value="1">Français</option></select>
-                                <div class="lang-chevron"></div>
-                                <div class="lang-select ng-binding">English</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lang-block">
-                        <div class="lang-label-wrap">
-                            <div class="lang-label ng-binding">
-                                Region
-                            </div>
-                        </div>
-                        <ul class="lang-item-wrap">
-                            <!-- ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length <= regionThreshold --><!-- end ngRepeat: region in regions -->
-                            <!-- ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal lang-item-selected" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">Ontario</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">Quebec</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">British Columbia</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">Newfoundland and Labrador</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">Alberta</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">Manitoba</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">New Brunswick</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">Nova Scotia</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">Saskatchewan</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">Prince Edward Island</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">Yukon</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">Nunavut</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions --><!-- ngIf: regions.length > regionThreshold --><li ng-if="regions.length &gt; regionThreshold" class="lang-item-horizontal" ng-repeat="region in regions"><a ng-click="changeRegion(region.id)" class="ng-binding">Northwest Territories</a></li><!-- end ngIf: regions.length > regionThreshold --><!-- end ngRepeat: region in regions -->
-                        </ul>
-                        <div class="lang-select-wrap">
-                            <div class="lang-select-ctrl container-relative">
-                                <select class="select-nostyle lang-select region-select ng-pristine ng-valid" ng-model="curRegion" ng-change="changeRegion()" ng-options="region.name for region in regions"><option value="0" selected="selected">Ontario</option><option value="1">Quebec</option><option value="2">British Columbia</option><option value="3">Newfoundland and Labrador</option><option value="4">Alberta</option><option value="5">Manitoba</option><option value="6">New Brunswick</option><option value="7">Nova Scotia</option><option value="8">Saskatchewan</option><option value="9">Prince Edward Island</option><option value="10">Yukon</option><option value="11">Nunavut</option><option value="12">Northwest Territories</option></select>
-                                <div class="lang-chevron"></div>
-                                <div class="lang-select ng-binding">Ontario</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div ng-show="regions.length &lt;= regionThreshold" class="lang-message ng-binding ng-hide">
-                    Right now Public Mobile only offers select Ontario and Quebec area codes. See our <a class="inline-link ng-binding" ui-sref="site.coverage" ng-click="langBannerToggle()" href="https://publicmobile.ca/en/on/coverage">Coverage Map</a> for more details
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <header ng-class="{referralPage: referralState == true}" class="ng-scope">
 
     <div class="container container-relative">
@@ -838,14 +765,14 @@
             <div col-container="" class="col-container promo-banner" ng-click="goToPopularPlan()">
               <div class="col col-60">
                     <a class="hero-image">
-                        <img src="./assets/PM-HomePageBannerNewEN.svg">
+                        <img src="https://publicmobile.ca/images/PM-HomePageBannerNewEN.svg">
                     </a>
                 </div>
                 <div class="col col-40">
                     <div class="hero-content">
                         <!-- ngIf: isMobile -->
-                        <!-- ngIf: !isMobile --><h1 ng-if="!isMobile" class="home-title title ng-scope ng-binding" ng-bind-html="trustAsHtml(heroTitle)">Everyone loves unlimited texts</h1><!-- end ngIf: !isMobile -->
-                        <h3 class="subtitle subtitle-1 ng-binding">On a 90 day plan with a $2 auto-pay reward activated.</h3>
+                        <!-- ngIf: !isMobile --><h1 ng-if="!isMobile" class="home-title title ng-scope ng-binding" ng-bind-html="trustAsHtml(heroTitle)">Unlimited talk, and text for $25/month</h1><!-- end ngIf: !isMobile -->
+                        <h3 class="subtitle subtitle-1 ng-binding">On a 90 day plan with $2 auto-pay reward activated.</h3>
                         <h3 class="subtitle subtitle-2 ng-binding">Limited time offer. Conditions apply.</h3>
                     </div>
                 </div>
