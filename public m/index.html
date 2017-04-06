@@ -258,11 +258,6 @@
     color: #aaa !important;
 }
 
-
-
-
-
-
 #lleo_dialog .ll-translation-counter {
 	float: right !important;
     font-size: 11px !important;
@@ -684,11 +679,56 @@
 	color: #f37c2b;
 	font-size: 2em;
 }
+.content-white-gradient {
+    background: #fff;
+    color: #464342;
+}
+h1.product-title {
+	font-size: 2em;
+}
+.product-btn {
+	margin-top: 5%;
+	text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+a.btn-orange {
+	background: #f37c2b;
+	border-color: #fff;
+	font-weight: bold;
+}
+a.btn-orange:hover {
+	background-color: #0093a6;
+    border-color: #fff;
+}
 @media only screen and (max-width: 590px) {
 	.header-title {
 		font-size: 1.2em;
 		max-width: 60%;
 		float: right;
+	}
+	.product-btn {
+		margin-top: 5%!important;
+	}
+	h1.product-title {
+    	font-size: 1.5em;
+	}
+	.content-block, .plans-section-heading, .plans-section-heading-one-line, .plans-section-heading-two-line, .plans-section-content {
+	    padding-bottom: 0px;
+	    margin-bottom: -26px;
+	}
+	.hero .hero-content {
+    	padding-top: 35px;
+    }
+}
+@media only screen and (max-width: 920px) and (min-width: 581px) {
+	.hero .col-60 {
+	    padding-bottom: 0;
+	    text-align: center;
+	}
+	.product-btn {
+		margin-top: 5%;
+		text-align: center;
 	}
 }
 </style><!-- ngRepeat: (k, css) in routeStyles track by k --><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
@@ -755,9 +795,6 @@
     </div>
 </header>
 
-
-
-
 <!-- uiView:  --><div id="content" ui-view="" class="ng-scope"><div id="home" class="ng-scope">
 
     <section id="hero" class="content-blue-gradient content-block content-primary hero-block ">
@@ -774,6 +811,27 @@
                         <!-- ngIf: !isMobile --><h1 ng-if="!isMobile" class="home-title title ng-scope ng-binding" ng-bind-html="trustAsHtml(heroTitle)">Unlimited talk, and text for $25/month</h1><!-- end ngIf: !isMobile -->
                         <h3 class="subtitle subtitle-1 ng-binding">On a 90 day plan with $2 auto-pay reward activated.</h3>
                         <h3 class="subtitle subtitle-2 ng-binding">Limited time offer. Conditions apply.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product" class="content-blue-gradient content-white-gradient content-block content-primary hero-block ">
+        <div class="container hero ">
+            <div col-container="" class="col-container promo-banner" ng-click="goToPopularPlan()">
+              <div class="col col-60">
+                    <a class="hero-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0405/4333/products/TriPunchSIM_1024x1024.png?v=1440457411">
+                    </a>
+                </div>
+                <div class="col col-40">
+                    <div class="hero-content">
+                    	<!-- ngIf: isMobile -->
+                        <!-- ngIf: !isMobile --><h1 itemprop="name" class="product-title">Get started: Order SIM for $5<br>and activate your plan online</h1><!-- end ngIf: !isMobile -->
+                        <div class="btn-stick product-btn">
+	                        <a ui-sref="site.why-public" class="btn btn-primary ng-binding btn-orange" href="https://store.publicmobile.ca/products/triple-punch-sim-card">Go to checkout</a>
+	                    </div>
                     </div>
                 </div>
             </div>
