@@ -606,6 +606,7 @@ a.ng-scope.ng-binding {
 a.ng-scope.ng-binding:hover {
     text-decoration: underline;
 }
+
 @media only screen and (max-width: 590px) {
 	.header-title {
 		font-size: 1.2em;
@@ -626,12 +627,69 @@ a.ng-scope.ng-binding:hover {
     	padding-top: 35px;
     }
     section#bottom-content, .hero-footer {
-    	margin-bottom: 20px;
+    	margin-bottom: 0px;
 	}
 	section#bottom-content {
+    	padding-top: 20px;
+	}
+
+	.content-block {
+		padding: 20px 0;
+		padding-top: 10px;
+	}
+	p.hero-image {
+    	max-width: 80%;
+	}
+	#hero p.hero-image {
+	    margin-bottom: 5px;
+	}
+	#hero .hero {
+	    height: 190px;
+	}
+	.hero .hero-content {
     	padding-top: 0px;
+    	height: 85px;
+    }
+    #product .hero-content {
+	    padding-top: 0px;
+	    height: 85px;
+	}
+    .hero .hero-content .title {
+	    font-size: 1em;
+	}
+	h3.subtitle.subtitle-1.ng-binding, h3.subtitle.subtitle-2.ng-binding {
+    	font-size: 0.8em;
+    	padding-top: 5px;
+	}
+	#product p.hero-image {
+	    margin-bottom: 0px;
+	    margin-top: 5px;
+	}
+	h1.product-title {
+	    font-size: 1.1em;
+	}
+
+	#product .col.col-60, #product .col.col-40 {
+	    width: 48%;
+	}
+	#product .hero {
+	    height: auto;
 	}
 }
+
+@media only screen and (max-width: 522px) {
+		.col-40 .product-btn {
+	    display: none;
+	}
+}
+
+@media only screen and (min-width: 521px) {
+	.col.col-100 {
+	    min-height: 100%;
+	    display: none;
+	}
+}
+
 @media only screen and (max-width: 920px) and (min-width: 581px) {
 	.hero .col-60 {
 	    padding-bottom: 0;
@@ -640,6 +698,11 @@ a.ng-scope.ng-binding:hover {
 	.product-btn {
 		margin-top: 5%;
 		text-align: center;
+	}
+
+
+	#product .col.col-60, #product .col.col-40 {
+	    width: 49%;
 	}
 }
 section#footer {
@@ -737,6 +800,11 @@ section#footer {
 	                        <a ui-sref="site.why-public" class="btn btn-primary ng-binding btn-orange" href="https://store.publicmobile.ca/products/triple-punch-sim-card">Go to checkout</a>
 	                    </div>
                     </div>
+                </div>
+            </div>
+            <div class="col col-100">
+                <div class="hero-content product-mob-btn">
+                    <a ui-sref="site.why-public" class="btn btn-primary ng-binding btn-orange" href="https://store.publicmobile.ca/products/triple-punch-sim-card">Go to checkout</a>
                 </div>
             </div>
         </div>
