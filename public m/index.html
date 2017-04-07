@@ -838,89 +838,16 @@ a.btn-orange:hover {
         </div>
     </section>
 
-    <section id="content-main" class="content-block content-orange home-update-orange">
-        <!-- Color Stops fallback for IE9 -->
-        <div class="color-stop color-stop-orange-1"></div>
-        <div class="color-stop color-stop-orange-2"></div>
-        <!-- Color Stops fallback for IE9 End -->
+    <section id="bottom-content" class="content-blue-gradient content-white-gradient content-block content-primary hero-block ">
         <div class="container">
-            <div col-container="" class="col-container">
-
-                <div class="col col-50 col-centered content-primary" style="height: 175px;">
-                    <div class="btn-push">
-                        <h2 class="title ng-scope" translate="home.orange-1-title" translate-compile=""><span class="ng-scope">Why Public Mobile?</span></h2>
-                        <p class="subtitle ng-binding">Learn why choosing Public Mobile means more choice and more savings on Canada’s largest 4G LTE network.</p>
-                    </div>
-                    <div class="btn-stick">
-                        <a ui-sref="site.why-public" class="btn btn-primary ng-binding" href="https://publicmobile.ca/en/on/why-public">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="col col-50 col-centered content-primary" style="height: 175px;">
-                    <div class="btn-push">
-                        <h2 class="title ng-binding">Order a SIM Card</h2>
-                        <p class="subtitle ng-scope" translate="home.orange-2-subtitle" translate-compile=""><span class="ng-scope">Ready to sign up with Public Mobile? Get a SIM card and get started today.</span></p>
-                    </div>
-                    <div class="btn-stick">
-                        <a class="btn btn-primary ng-binding" ng-click="toShopify()">Order Now</a>
-                    </div>
+             <div class="col">
+                <div class="hero-content">
+                	<p>The Triple Punch SIM card is a Standard, Micro and Nano SIM card all rolled into one. Carefully remove the SIM card in the size that is required for your phone and insert it in your phone’s SIM card slot. Next step is to head on over to Activate.PublicMobile.ca to set up your account.</p>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section id="content-secondary" class="content-block content-blue home-update-blue">
-        <div class="container">
-            <div col-container="" class="col-container">
-
-                <div class="col col-25 col-centered content-primary" style="height: 333px;">
-                    <div class="btn-push">
-                        <span class="icon-bring-your-phone"></span>
-                        <h3 class="title ng-binding">Phones</h3>
-                        <p class="subtitle ng-scope" translate="home.blue-2-subtitle" translate-compile=""><span class="ng-scope">Bring your own or buy a refreshed phone from Orchard.</span></p>
-                    </div>
-                    <div class="btn-stick">
-                        <a ui-sref="site.bring-your-own-phone" class="btn btn-primary-alt ng-binding" href="https://publicmobile.ca/en/on/phones">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="col col-25 col-centered content-primary" style="height: 333px;">
-                    <div class="btn-push">
-                        <span class="icon-our-plans"></span>
-                        <h3 class="title ng-binding">Our Plans</h3>
-                        <p class="subtitle ng-scope" translate="home.blue-1-subtitle" translate-compile=""><span class="ng-scope">Your plan, your way. No hidden fees or surprises.</span></p>
-                    </div>
-                    <div class="btn-stick">
-                        <a ui-sref="site.plans" class="btn btn-primary-alt ng-binding" href="https://publicmobile.ca/en/on/plans">See Plans</a>
-                    </div>
-                </div>
-
-                <div class="col col-25 col-centered content-primary" style="height: 333px;">
-                    <div class="btn-push">
-                        <span class="icon-how-to-pay"></span>
-                        <h3 class="title ng-binding">How to Pay</h3>
-                        <p class="subtitle ng-scope" translate="home.blue-3-subtitle" translate-compile=""><span class="ng-scope">Create an account and pay online.</span></p>
-                    </div>
-                    <div class="btn-stick">
-                        <a ui-sref="site.how-to-pay" class="btn btn-primary-alt ng-binding" href="https://publicmobile.ca/en/on/how-to-pay">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="col col-25 col-centered content-primary" style="height: 333px;">
-                    <div class="btn-push">
-                        <span class="icon-activate"></span>
-                        <h3 class="title ng-binding">Activate SIM</h3>
-                        <p class="subtitle ng-scope" translate="home.blue-4-subtitle" translate-compile=""><span class="ng-scope">Got your SIM card? Let’s get connected.</span></p>
-                    </div>
-                    <div class="btn-stick">
-                        <a href="https://activate.publicmobile.ca/" class="btn btn-primary-alt ng-binding" ng-click="googleAnalyticsService.sendEvent(gaEventArgs.ACTIVATE_SIM)">Activate Now</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 </div>
 </div>
 
@@ -929,142 +856,6 @@ a.btn-orange:hover {
     <div class="container">
         <ul col-container="" class="footer-columns">
             <!-- ngRepeat: column in footerContent --><li class="footer-column ng-scope" ng-repeat="column in footerContent" style="height: 155px;">
-                <ul class="footer-items">
-                    <!-- ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.get-started" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/get-started">Get Started</a><!-- end ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.get-started" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/get-started">Check Your Phone</a><!-- end ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify --><a ng-if="item.isShopify" ng-click="toShopify()" class="ng-scope ng-binding">Order a SIM Card</a><!-- end ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://activate.publicmobile.ca/" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">Activate a SIM Card</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://selfserve.publicmobile.ca/" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">Set Up Account</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.why-public" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/why-public">Why Public Mobile?</a><!-- end ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column -->
-                </ul>
-            </li><!-- end ngRepeat: column in footerContent --><li class="footer-column ng-scope" ng-repeat="column in footerContent" style="height: 155px;">
-                <ul class="footer-items">
-                    <!-- ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.plans" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/plans">Our Plans</a><!-- end ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.plans" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/plans">Create Your Own</a><!-- end ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.how-to-pay" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/how-to-pay">How to Pay</a><!-- end ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.coverage" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/coverage">Coverage Maps</a><!-- end ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column -->
-                </ul>
-            </li><!-- end ngRepeat: column in footerContent --><li class="footer-column ng-scope" ng-repeat="column in footerContent" style="height: 155px;">
-                <ul class="footer-items">
-                    <!-- ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.rewards" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/rewards">Rewards</a><!-- end ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="http://productioncommunity.publicmobile.ca/t5/Rewards/Loyalty-Pays/m-p/398#M2" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">Loyalty</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="http://productioncommunity.publicmobile.ca/t5/Rewards/AutoPay-Reward/m-p/404#M3" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">Autopay</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="http://productioncommunity.publicmobile.ca/t5/Rewards/Refer-a-Friend-Reward/m-p/411" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">Refer a Friend</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="http://productioncommunity.publicmobile.ca/t5/Rewards/Community-Reward/m-p/415#M5" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">Help The Community</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column -->
-                </ul>
-            </li><!-- end ngRepeat: column in footerContent --><li class="footer-column ng-scope" ng-repeat="column in footerContent" style="height: 155px;">
-                <ul class="footer-items">
-                    <!-- ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://productioncommunity.publicmobile.ca/t5/Public-Mobile-Community/ct-p/Public_Mobile_Community" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">Community</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://www.facebook.com/PublicMobile" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_blank" class="ng-scope ng-binding">Facebook</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://twitter.com/PublicMobile" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_blank" class="ng-scope ng-binding">Twitter</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://www.instagram.com/publicmobile/" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_blank" class="ng-scope ng-binding">Instagram</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://www.youtube.com/c/publicmobile" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_blank" class="ng-scope ng-binding">YouTube</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column -->
-                </ul>
-            </li><!-- end ngRepeat: column in footerContent --><li class="footer-column ng-scope" ng-repeat="column in footerContent" style="height: 155px;">
-                <ul class="footer-items">
-                    <!-- ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.get-help" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/get-help">Get Help</a><!-- end ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://productioncommunity.publicmobile.ca/t5/Public-Mobile-Community/ct-p/Public_Mobile_Community" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">Ask a Question</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.get-help" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/get-help">Contact Us</a><!-- end ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column -->
-                </ul>
-            </li><!-- end ngRepeat: column in footerContent --><li class="footer-column ng-scope" ng-repeat="column in footerContent" style="height: 155px;">
-                <ul class="footer-items">
-                    <!-- ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://selfserve.publicmobile.ca/" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">My Account</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://selfserve.publicmobile.ca/" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">Create Account</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://selfserve.publicmobile.ca/" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">Visit Account</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link -->
-                        <!-- ngIf: item.href --><a ng-if="item.href" href="https://activate.publicmobile.ca/" ng-click="googleAnalyticsService.sendEvent(item.gaeventargs)" target="_self" class="ng-scope ng-binding">Activate a SIM Card</a><!-- end ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
-                        <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.how-to-pay" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/how-to-pay">How to Pay</a><!-- end ngIf: item.link -->
-                        <!-- ngIf: item.href -->
-                        <!-- ngIf: item.isShopify -->
-                    </li><!-- end ngRepeat: item in column -->
-                </ul>
-            </li><!-- end ngRepeat: column in footerContent --><li class="footer-column ng-scope" ng-repeat="column in footerContent" style="height: 155px;">
                 <ul class="footer-items">
                     <!-- ngRepeat: item in column --><li class="footer-item ng-scope" ng-repeat="item in column">
                         <!-- ngIf: item.link --><a ng-if="item.link" ui-sref="site.privacy-legal({section : &#39;&#39;})" class="ng-scope ng-binding" href="https://publicmobile.ca/en/on/privacy-legal">Privacy &amp; Legal</a><!-- end ngIf: item.link -->
