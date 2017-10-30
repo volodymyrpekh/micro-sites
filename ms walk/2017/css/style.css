@@ -900,7 +900,7 @@ section h2 {
   opacity: 1;
 }
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
-  background-color: #efefef;
+  background-color: #fff;
 }
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
@@ -909,7 +909,7 @@ section h2 {
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: #d88683;
+  background-color: #dd060b;
   -webkit-transition: background-color 0.5s, -webkit-transform 0.2s;
   transition: background-color 0.5s, -webkit-transform 0.2s;
   -o-transition: background-color 0.5s, -o-transform 0.2s;
@@ -919,14 +919,14 @@ section h2 {
       -ms-transform-origin: 50% 50%;
        -o-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  -webkit-box-shadow: 0 0 1px #212121;
-          box-shadow: 0 0 1px #212121;
+  -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+          box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
   margin-right: 10px;
   padding: .2em .5em;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: opacity 0.2s, -webkit-transform 0.2s;
@@ -938,7 +938,7 @@ section h2 {
       -ms-transform-origin: 100% 50%;
        -o-transform-origin: 100% 50%;
           transform-origin: 100% 50%;
-  text-shadow: -0.5px -0.5px 0 #212121,-0.5px 0.5px 0 #212121,0.5px -0.5px 0 #212121,0.5px 0.5px 0 #212121;
+  text-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)
 }
 /* Touch devices */
 .touch .cd-nav-trigger {
@@ -1483,6 +1483,9 @@ a.btn.btn-oval.btn-opacity:hover {
         position: relative;
         padding-top: 92px;
 }
+section.city .container h1, section.city .container p {
+    text-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
 @media screen and (max-width: 767px) {
     .city {
         padding-top: 71px;
@@ -1565,8 +1568,8 @@ a.btn.btn-oval.btn-opacity:hover {
         border-radius: 50%;
     }
 .detail__icon svg {
-            width: 16px;
-            height: 16px;
+            width: 25px;
+            height: 25px;
         }
 .detail .col-lg-7 p {
         margin-top: 1.5em
@@ -1681,7 +1684,7 @@ a.btn.btn-oval.btn-opacity:hover {
 
             -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 
-                    box-shadow: 0 6px 14px rgba(0, 0, 0, .4)
+            box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
         }
 .e-progress__bottom .btn-event:last-child {
     margin-bottom: 0;
@@ -1701,7 +1704,7 @@ a.btn.btn-oval.btn-opacity:hover {
         padding: 15px 30px 30px;
 
         border-radius: 6px;
-        background-color: #f2f2f2;
+        background-color: #fff;
         -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
                 box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     }
@@ -1792,4 +1795,7 @@ a.btn.btn-oval.btn-opacity:hover {
 
 .glyphicon {
     top: 3px!important;
+}
+hr {
+    border-top: 1px solid #c7c7c7;
 }
