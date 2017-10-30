@@ -24,6 +24,9 @@ body {
     margin-right: auto;
     overflow-x: hidden;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+}
 @media screen and (min-width: 1920px) {
     body {
         max-width: 1920px;
@@ -82,8 +85,8 @@ section>.container-fluid {
     display: block;
 }
 .box-shadow {
-    -webkit-box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
-            box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+            box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 .background {
     position: absolute;
@@ -113,6 +116,7 @@ section>.container-fluid {
 }
 .button-block .btn {
     margin-top: 1em;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 .button-block .btn:nth-child(1n + 2) {
     margin-left: 30px;
@@ -418,6 +422,7 @@ section h2 {
     padding: .6em 1.3em;
     color: #fff;
     background-color: #dd060b;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 .header__menu ul li a.active:hover, .header__menu ul li a.active:focus {
     color: #fff;
@@ -446,8 +451,8 @@ section h2 {
     }
 }
 .header.fixed {
-    -webkit-box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
-            box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 .header.fixed .header__account {
             max-height: 0;
@@ -481,7 +486,7 @@ section h2 {
 .whowalk .container h1 {
     margin: 0 0 .4em;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 900;
     line-height: 1.3;
 }
 @media screen and (min-width: 768px) {
@@ -629,8 +634,8 @@ section h2 {
     .impact>.container {
         padding: 60px 25px;
         border-radius: 6px;
-        -webkit-box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
-                box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     }
 }
 @media screen and (min-width: 992px) {
@@ -1197,7 +1202,7 @@ overflow: hidden;
 }
 @media screen and (max-width: 767px) {
     .card {
-        width: 80%;
+        width: 90%;
         min-width: 280px;
     }
 }
@@ -1358,6 +1363,7 @@ overflow: hidden;
 
         font-size: 26px;
         line-height: 1.2;
+        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     }
 .r-menu .bg_red .btn {
             display: block;
@@ -1382,6 +1388,7 @@ overflow: hidden;
 
         font-size: 16px;
         line-height: 1.2;
+        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     }
 .r-menu .bg_grey a {
             display: block;
@@ -1409,6 +1416,11 @@ overflow: hidden;
 .r-menu .bg_grey .btn:hover, .r-menu .bg_grey .btn:focus {
     color: #dd060b;
     border-color: #fff;
+}
+a.btn.btn-oval.btn-opacity:hover {
+    background: #dd060b;
+    color: #fff;
+    border: 2px solid #dd060b;
 }
 .r-menu__menu h3 {
     		text-transform: uppercase;
@@ -1595,8 +1607,8 @@ overflow: hidden;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
         background-color: #efefef;
-        -webkit-box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
-                box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     }
 @media screen and (max-width: 767px) {
     .e-progress__header {
@@ -1615,8 +1627,8 @@ overflow: hidden;
         border-bottom-right-radius: 6px;
         border-bottom-left-radius: 6px;
         background-color: #efefef;
-        -webkit-box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
-                box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 .e-progress__top {
         padding: 20px;
@@ -1667,7 +1679,7 @@ overflow: hidden;
 
             margin-bottom: 1.2em;
 
-            -webkit-box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+            -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 
                     box-shadow: 0 6px 14px rgba(0, 0, 0, .4)
         }
@@ -1690,8 +1702,8 @@ overflow: hidden;
 
         border-radius: 6px;
         background-color: #f2f2f2;
-        -webkit-box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
-                box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     }
 .fundraisers__list {
         list-style: none;
@@ -1723,8 +1735,8 @@ overflow: hidden;
 .resources .btn-event {
 		background-color: #efefef;
 		border-color: #efefef;
-        -webkit-box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
-                box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
         width: 100%;
         margin-bottom: 2em
 	}
@@ -1777,3 +1789,7 @@ overflow: hidden;
 }
 /*  Top Provincial Sponsor  */
 /*# sourceMappingURL=style.css.map */
+
+.glyphicon {
+    top: 3px!important;
+}
