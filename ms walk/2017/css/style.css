@@ -1497,7 +1497,7 @@ section.city .container h1, section.city .container p {
 .city .container h1 {
     margin: 0 0 .4em;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 900;
     line-height: 1.3;
     text-transform: uppercase;
 }
