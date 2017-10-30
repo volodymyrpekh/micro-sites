@@ -1,0 +1,35 @@
+.fundraisers {
+    h2 {
+        margin-bottom: 0;
+        &+hr {
+            margin-top: 2px;
+        }
+    }
+    &__content {
+        padding: 15px 30px 30px;
+
+        border-radius: 6px;
+        background-color: $color__ghostwhite;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+    }
+    &__list {
+        list-style: none;
+        line-height: 1.7;
+
+        counter-reset: heading;
+        .fundraisers__item:before {
+            content: counter(heading) ' - ';
+            counter-increment: heading;
+        }
+        &_blue {
+        	a {
+        		color: $color__blue;
+        		&:hover,
+        		&:focus {
+        			color: $color__blue_darknet;
+        		}
+        	}
+        }
+    }
+        padding-top: 0;
+}

@@ -1,0 +1,32 @@
+section.whowalk
+	.container-fluid
+		picture.background
+			source(
+			media="(min-width:992px)"
+			srcset="img/whatis_large.webp 1920w"
+			type="image/webp")
+			source(
+			media="(min-width:992px)"
+			srcset="img/whatis_large.jpg 1920w")
+			source(
+			srcset="img/whatis_medium.webp 1200w"
+			type="image/webp")
+			source(
+			srcset="img/whatis_medium.jpg 1200w")
+			img(
+				src="img/whatis_large.jpg"
+				alt="Who fo you walk for?"
+				width="100%")
+
+		.container
+			h1
+				|Who fo you walk for?
+				br
+				|Register today.
+			.button-block
+				button.btn.btn-oval.btn-white(type="button" href="#"  data-toggle="modal" data-target="#RegModal")
+					|Choose a province
+				a.btn.btn-oval.btn-opacity(type="button" href="#")
+					|See all location
+			p
+				|You helped raise more than $8.5 million from coast to coast this MS Walk season

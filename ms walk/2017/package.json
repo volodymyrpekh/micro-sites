@@ -1,0 +1,35 @@
+{
+  "name": "I_MS_CH",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "author": "Pan Som",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "browser-sync": "*",
+    "cssnano": "*",
+    "gulp": "*",
+    "gulp-clean": "*",
+    "gulp-imagemin": "*",
+    "gulp-plumber": "*",
+    "gulp-postcss": "*",
+    "gulp-pug": "*",
+    "gulp-rename": "*",
+    "gulp-smushit": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-webp": "*",
+    "postcss-assets": "*",
+    "postcss-easysprites": "*",
+    "postcss-get-color": "*",
+    "postcss-placehold": "*",
+    "precss": "*"
+  },
+  "dependencies": {
+    "postcss-text-stroke": "*"
+  }
+}

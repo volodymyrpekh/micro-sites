@@ -1,0 +1,88 @@
+<!-- Meta -->
+|
+|
+include assets/meta.pug
+|
+|<!-- End Meta -->
+|
+body.event
+	.sprite-svg
+		include ../img/sprite_event.svg
+	|
+	|
+	|<!-- Header -->
+	include assets/header.pug
+	|
+	|<!-- End Header -->
+	|
+	|
+	#city.cd-section
+		div(style="width: 100%; position: absolute; overflow: hidden; height:1020px; top: 75%")
+			.background(style="width: 1920px;")
+				svg.svg-icon(width="1920px" height="1020px" style="fill: rgba(224, 7, 10, .05)")
+					use(xlink:href="#svg__background")
+		|<!-- City -->
+		|
+		include assets/city.pug
+		|
+		|<!-- End City -->
+		|<!-- Event Detail -->
+		|
+		include assets/detail.pug
+		|
+		|<!-- End Event Detail -->
+	|
+	|
+	#fundraisers.cd-section
+		|<!-- Top Fundraisers -->
+		|
+		include assets/fundraisers.pug
+		|
+		|<!-- End Top Fundraisers -->
+	|
+	|
+	#resources.cd-section
+		|<!-- Top Resources -->
+		|
+		include assets/resources.pug
+		|
+		|<!-- End Resources -->
+	|
+	|
+	#sponsor.cd-section
+		|<!-- Title Sponsor -->
+		|
+		include assets/sponsor.pug
+		|
+		|<!-- End Title Sponsor -->
+	|
+	|
+	#provincial.cd-section
+		|<!-- Top Provincial Sponsor -->
+		|
+		include assets/provincial.pug
+		|
+		|<!-- End Provincial Sponsor -->
+	|
+	|<!-- Footer -->
+	include assets/footer.pug
+	|
+	|<!-- End Footer -->
+	|
+	|<!-- Scroll -->
+	include assets/scroll_event.pug
+	|
+	|<!-- End Scroll -->
+	|
+	|<!-- Reval -->
+	include assets/reval_event.pug
+	|
+	|<!-- End Reval -->
+	|
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
+	|
+	script(type="text/javascript")
+		|
+		include assets/script_event.js

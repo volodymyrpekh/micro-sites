@@ -1,0 +1,11 @@
+.registrated {
+	background-color: $color__red;
+	color: $color__white;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	@media screen and (min-width: 992px) {
+		padding-top: 90px;
+		padding-bottom: 90px;	
+		
+	}
+}

@@ -1,0 +1,116 @@
+.r-menu {
+    .bg_red {
+        overflow: hidden;
+
+        padding: 40px 30px;
+
+        color: $color__white;
+        border-radius: 6px;
+        background-color: $color__red;
+
+        font-size: 26px;
+        line-height: 1.2;
+        .btn {
+            display: block;
+
+            width: 220px;
+            min-width: 220px;
+            margin-top: 2em;
+            margin-bottom: 0;
+
+            text-transform: uppercase;
+
+            font-size: 16px;
+        }
+    }
+    .bg_grey {
+    	margin-top: 45px;
+        overflow: hidden;
+
+        padding: 40px 30px;
+
+        border-radius: 6px;
+        background-color: $color__grey;
+
+        font-size: 16px;
+        line-height: 1.2;
+        a {
+            display: block;
+
+            margin-bottom: 1em;
+
+            text-transform: uppercase;
+
+            color: $color__black;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:hover,
+            &:focus {
+                color: $color__grey_darknet;
+            }
+        }
+        .btn {
+        	min-width: 100%;
+            text-transform: uppercase;
+
+            font-size: 16px;
+            color: $color__red;
+            border-color: $color__red;
+            &:hover,
+            &:focus {
+            	color: $color__red;
+            	border-color: $color__white;
+            }
+        }
+    }
+    &__menu {
+    	h3 {
+    		text-transform: uppercase;
+    		margin-top: 2.3em;
+    		margin-bottom: 1em;
+    		&:first-child {
+    			margin-top: 0;
+    		}
+    	}
+    	ul {
+    		list-style: none;
+    		margin: 0;
+    		padding: 0;
+    		a {
+    			color: $color__grey_darknet;
+    			font-size: 18px;
+    			font-weight: 500;
+        line-height: 1.5;
+    			&:hover,
+    			&:focus {
+    				color: $color__black;
+    			}
+    		}
+    	}
+    	@media screen and (max-width: 767px) {
+    		padding-top: 55px;
+    	}
+    }
+    &__desc {
+    	h3 {
+    		text-transform: uppercase;
+    			margin-top: 0;
+    			margin-bottom: 1em;
+    	}
+    	p {
+    		font-size: 16.2px;
+    		font-weight: 300;
+    		margin-bottom: 1em;
+    	}
+    	@media screen and (max-width: 991px) {
+    		padding-top: 55px;
+    	}
+    }
+    .col-lg-3 {
+    	padding-left: 30px;
+    	@media screen and (max-width: 767px) {
+    		padding-left: 15px;
+    	}
+    }
+}

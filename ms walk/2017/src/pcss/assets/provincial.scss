@@ -1,0 +1,20 @@
+.provincial {
+    h2 {
+        margin-bottom: 0;
+        &+hr {
+            margin-top: 2px;
+        }
+    }
+    &__content {
+    	img {
+    		display: inline-block;
+    		margin: 15px;
+    		height: 72px;
+    		width: auto;
+    	}
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+        padding-top: 0;
+}

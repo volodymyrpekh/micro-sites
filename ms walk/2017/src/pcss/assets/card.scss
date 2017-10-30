@@ -1,0 +1,155 @@
+.card {
+    display: inline-block;
+
+    width: 33%;
+    margin: 0 0 30px 0;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    vertical-align: top;
+    @media screen and (max-width: 767px) {
+        width: 80%;
+        min-width: 280px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        width: 60%;
+    }
+    &__content {
+        overflow: hidden;
+
+        transition: all .25s linear;
+
+        opacity: .5;
+        border: 1px solid $color__grey;
+        border-radius: 6px;
+        background-color: $color__white;
+        &.choose {
+            transition: all .25s linear;
+
+            opacity: 1;
+        }
+    }
+    &__headline {
+        color: $color__white;
+        background-color: $color__red;
+
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 3.8;
+        @media screen and (max-width: 991px) {
+            font-size: 21px;
+        }
+    }
+    &__list {
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        max-height: 300px;
+        max-height: 60vh;
+        margin: 0;
+        padding: 25px;
+
+        list-style: none;
+
+        font-size: 21px;
+        @media screen and (max-width: 991px) {
+            font-size: 18px;
+        }
+    }
+    &__item {
+        cursor: pointer;
+        &:hover,
+        &:focus {
+            color: $color__grey_darknet;
+        }
+        &.choose {
+            font-weight: 700;
+            &:after {
+                margin-left: 10px;
+
+                content: '→';
+            }
+        }
+    }
+    &_province,    
+    &_province.not-choose + &_chapter {
+        .card__content {
+            &.choose:hover {
+                transition: all .25s linear;
+
+                opacity: 1;
+            }
+            &:hover {
+                transition: all .25s linear;
+
+                opacity: .8;
+            }
+        }
+    }
+    &_chapter,
+    &_event {
+        .card__list {
+            overflow: hidden;
+
+            max-height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            transition: all 0s linear;
+            &.choose {
+                overflow-x: hidden;
+                overflow-y: auto;
+
+                max-height: 300px;
+                max-height: 60vh;
+                padding-top: 25px;
+                padding-bottom: 25px;
+
+                transition: all .25s linear;
+            }
+        }
+    }
+    &_event {
+        padding-top: 0;
+        padding-bottom: 0;
+        .card__item {
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            cursor: inherit;
+
+            border-bottom: 1px solid $color__grey;
+            &:last-child {
+                border: inherit;
+            }
+            &:hover {
+                color: inherit;
+            }
+            a {
+                display: block;
+
+                margin: 10px auto;
+
+                text-decoration: underline;
+                &.card__button {
+                    display: inline-block;
+
+                    padding: 6px 21px;
+
+                    text-decoration: none;
+
+                    color: $color__white;
+                    border: 1px solid $color__black;
+                    background-color: $color__black;
+                    &:hover,
+                    &:focus {
+                        background-color: $color__grey_darknet;
+                    }
+                }
+            }
+        }
+    }
+    &:last-child {
+        margin: 0 0 15px;
+    }
+}

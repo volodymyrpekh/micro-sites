@@ -1,0 +1,25 @@
+.resources {
+    h2 {
+        margin-bottom: 0;
+        &+hr {
+            margin-top: 2px;
+        }
+    }
+	.btn-event {
+		background-color: $color__grey;
+		border-color: $color__grey;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+        width: 100%;
+        margin-bottom: 2em;
+        &:hover,
+        &:focus {
+		background-color: $color__grey_darknet;
+		border-color: $color__grey_darknet;
+
+        }
+	}
+    .col-sm-6.col-md-4:last-child .btn {
+        margin-bottom: 0;
+    }
+        padding-top: 0;
+}
