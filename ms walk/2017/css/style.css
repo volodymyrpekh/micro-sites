@@ -454,8 +454,8 @@ section h2 {
     }
 }
 .header.fixed {
-    -webkit-box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
-            box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 .header.fixed .header__account {
             overflow: hidden;
@@ -961,7 +961,7 @@ section h2 {
   height: 44px;
   width: 44px;
   border-radius: 0.25em;
-  background-color: #efefef;
+  background-color: #000000;
   overflow: inherit;
   text-indent: inherit;
   white-space: inherit;
@@ -970,7 +970,7 @@ section h2 {
 .touch .cd-nav-trigger:before {
     content: "\e235";
     font-size: 24px;
-    color: #212121;
+    color: #ffffff;
     position: relative;
     top: 1px;
     display: inline-block;
@@ -1036,18 +1036,19 @@ section h2 {
        -o-transition-duration: 0.2s;
           transition-duration: 0.2s;
   border-radius: 0.25em;
-  background-color: #efefef;
+  background-color: #000000;
 }
 .touch #cd-vertical-nav a {
   display: block;
   padding: 1em;
-  border-bottom: 1px solid rgba(62, 57, 71, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
 .touch #cd-vertical-nav a span:first-child {
   display: none;
 }
 .touch #cd-vertical-nav a.is-selected span:last-child {
-  color: #d88683;
+  color: #ffffff;
 }
 .touch #cd-vertical-nav.open {
   -webkit-transform: scale(1);
@@ -1485,7 +1486,7 @@ overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,.45);
+    background: rgba(0,0,0,.25);
 }
 .city .container {
     padding: 70px 15px;
@@ -1748,7 +1749,7 @@ overflow: hidden;
         padding: 15px 30px 30px;
 
         border-radius: 6px;
-        background-color: #f2f2f2;
+        background-color: #ffffff;
         -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
                 box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     }
@@ -1834,5 +1835,18 @@ overflow: hidden;
 .provincial__content:last-child {
     margin-bottom: 0;
 }
+
+.bg_red, .bg_grey, .btn-red, .header__menu ul li a.active {
+        -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+img.ms-bike{
+    max-width: 150px;
+    margin-bottom: 5%;
+}
+img.icms {
+    max-width: 100px;
+}
+
 /*  Top Provincial Sponsor  */
 /*# sourceMappingURL=style.css.map */
