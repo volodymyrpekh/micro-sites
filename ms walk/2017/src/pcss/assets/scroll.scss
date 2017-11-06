@@ -50,8 +50,16 @@
 .no-touch #cd-vertical-nav a:hover .cd-label {
   opacity: 1;
 }
+
+.no-touch #cd-vertical-nav a.scroll .cd-label {
+  opacity: 1;
+  transform: scale(1);
+  color: $color__white;
+}
+
+
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
-  background-color: $color__grey;
+  background-color: $color__white;
 }
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
@@ -60,7 +68,7 @@
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: #d88683;
+  background-color: $color__red;
   transition: transform 0.2s, background-color 0.5s;
   transform-origin: 50% 50%;
   box-shadow: 0 0 1px $color__black;
@@ -69,12 +77,12 @@
   position: relative;
   margin-right: 10px;
   padding: .2em .5em;
-  color: $color__white;
+  color: $color__black;
   font-size: 16px;
   transition: transform 0.2s, opacity 0.2s;
   opacity: 0;
   transform-origin: 100% 50%;
-  text-stroke: 0.5 $color__black;
+  font-weight: 500;
 }
 
 /* Touch devices */

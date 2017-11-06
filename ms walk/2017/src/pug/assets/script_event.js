@@ -1,3 +1,54 @@
+$('.card_chapter .card__item').click(function() {
+    $('.modal-content').animate({
+        scrollTop: $('#card_event').offset().top
+    }, 700);
+    $('.card_chapter .card__item').removeClass('choose');
+    $(this).addClass('choose');
+    $(this).parent().parent().removeClass('choose');
+    $('.card_province').addClass('not-choose');
+
+
+
+    $('.card_event .card__list').removeClass('choose');
+    $('.card_event .card__item').removeClass('choose');
+    $('.card_event .card__content').addClass('choose');
+    my_event = $(this).attr('data-item');
+    $('[data-list=' + my_event + ']').addClass('choose'); 
+});
+
+$('.card_province .card__item').click(function() {
+    $('.modal-content').animate({
+        scrollTop: $('#card_chapter').offset().top
+    }, 700);
+
+    $('.card_event .card__list').removeClass('choose');
+    $('.card_event .card__content').removeClass('choose');
+
+    $('.card_chapter .card__list').removeClass('choose');
+    $('.card_chapter .card__item').removeClass('choose');
+    $('.card_chapter .card__content').addClass('choose');
+    choose = $(this).attr('data-item');
+    $('[data-list=' + choose + ']').addClass('choose'); 
+    
+    $('.card_province .card__item').removeClass('choose');
+    $(this).parent().parent().removeClass('choose');
+    $(this).addClass('choose');
+
+    choose_event = $(this).attr('data-event');
+    if (choose_event) {
+        $('[data-list=' + choose_event + ']').addClass('choose');
+        $('.card_event .card__content').addClass('choose');
+        $('.card_chapter .card__content').removeClass('choose');
+        $('[data-list=' + choose + '] [data-item=' + choose_event + ']').addClass('choose');
+
+        $('.modal-content').animate({
+            scrollTop: $('#card_event').offset().top + 100
+        }, 700);
+    }
+
+});
+
+
 $(window).bind('scroll', function() {
     var my_menu = $('.header');
     var my_body = $('body');
@@ -58,5 +109,19 @@ jQuery(document).ready(function($) {
         $('body,html').animate({ 'scrollTop': target.offset().top - 70 },
             600
         );
+    }
+});
+jQuery(document).ready(function() {
+    body_scroll = ( $(".city").height() - $('.no-touch #cd-vertical-nav').offset().top );
+    $('.no-touch #cd-vertical-nav a').addClass('scroll');
+});
+
+$(window).bind('scroll', function() {
+    var my_scroll = $('.no-touch #cd-vertical-nav a');
+
+    if ($(window).scrollTop() > body_scroll + 50) {
+        my_scroll.removeClass('scroll');
+    } else {
+        my_scroll.addClass('scroll');
     }
 });

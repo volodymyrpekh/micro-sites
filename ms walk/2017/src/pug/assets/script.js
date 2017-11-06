@@ -113,3 +113,17 @@ jQuery(document).ready(function($) {
         );
     }
 });
+jQuery(document).ready(function() {
+    body_scroll = ( $(".whowalk").height() - $('.no-touch #cd-vertical-nav').offset().top );
+    $('.no-touch #cd-vertical-nav a').addClass('scroll');
+});
+
+$(window).bind('scroll', function() {
+    var my_scroll = $('.no-touch #cd-vertical-nav a');
+
+    if ($(window).scrollTop() > body_scroll + 50) {
+        my_scroll.removeClass('scroll');
+    } else {
+        my_scroll.addClass('scroll');
+    }
+});

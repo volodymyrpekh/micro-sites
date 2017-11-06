@@ -45,27 +45,16 @@ section.detail
 			.col-sm-6.col-lg-5
 				.e-progress
 					.e-progress__header
-						.row
-							.col-xs-6
-								.e-progress__icon
-									svg.svg-icon(viewBox="0 0 10.583333 10.583334")
-										use(xlink:href="#svg__teams")
-								strong
-									|Teams: 9
-							.col-xs-6.text-right
-								.e-progress__icon
-									svg.svg-icon(viewBox="0 0 10.583333 10.583334")
-										use(xlink:href="#svg__walkers")
-								strong
-									|Walkers: 9
+						h3
+							|Progress
+						.e-progress__bar
+							.epogress__progress(style="width:98%;")
+							.epogress__procent
+								|98%
+						
 					.e-progress__content
 						.e-progress__top
-							h3
-								|Progress
-							.e-progress__bar
-								.epogress__progress(style="width:98%;")
-								.epogress__procent
-									|98%
+							
 							p
 								strong
 									|Raised:&nbsp;
@@ -74,6 +63,22 @@ section.detail
 								strong
 									|Goal:&nbsp;
 								| $600,000.00
+						.e-progress__top.e-progress__top_last
+							.e-progress__col.row
+								.col-xs-6
+									.e-progress__icon
+										svg.svg-icon(viewBox="0 0 10.583333 10.583334")
+											use(xlink:href="#svg__teams")
+									strong
+										|Teams: 9
+								.col-xs-6.text-right
+									.e-progress__icon
+										svg.svg-icon(viewBox="0 0 10.583333 10.583334")
+											use(xlink:href="#svg__walkers")
+									strong
+										|Walkers: 999
+							
+							
 						.e-progress__bottom
 							a(href="#" class="btn btn-event")
 								|2017 Mission First Club

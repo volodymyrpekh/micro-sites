@@ -89,7 +89,7 @@ section>.container-fluid {
 }
 
 .box-shadow {
-    box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
 
 .background {
@@ -125,6 +125,24 @@ section>.container-fluid {
     }
 }
 
+
+.btn-event {
+    transition: .25s linear;
+    text-decoration: none;
+
+    color: $color__black;
+    border: 2px solid $color__white;
+    background-color: $color__white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1em;
+    &:hover,
+    &:focus {
+        color: $color__white;
+        border: 2px solid $color__grey_darknet;
+        background-color: $color__grey_darknet;
+    }
+}
 .btn-oval {
     min-width: 260px;
     margin: 0;
@@ -219,24 +237,6 @@ section>.container-fluid {
     }
 }
 
-.btn-event {
-    transition: .25s linear;
-    text-decoration: none;
-
-    color: $color__black;
-    border: 2px solid $color__white;
-    background-color: $color__white;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 1em;
-    &:hover,
-    &:focus {
-        color: $color__white;
-        border: 2px solid $color__grey_darknet;
-        background-color: $color__grey_darknet;
-    }
-}
-
 section {
     position: relative;
 
@@ -249,11 +249,15 @@ section {
     .row {
         position: relative;
     }
-    & h2 {
+    h1 {
+        font-weight: 900;
+    }
+    h2 {
         margin-top: 0;
         margin-bottom: .6em;
 
         font-size: 27px;
+        font-weight: 900;
         @media screen and (min-width: 768px) {
             font-size: 36px;
         }

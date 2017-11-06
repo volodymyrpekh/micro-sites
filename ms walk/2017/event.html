@@ -90,6 +90,7 @@
 				<div class="pull-right">
 					<button class="btn btn-link visible-xs-block" type="button" data-toggle="modal" data-target="#MenuModal"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
 					<ul class="list-inline">
+						<li><a href="#" data-toggle="modal" data-target="#RegModal">Register</a></li>
 						<li><a class="active" href="#">Donate</a></li>
 						<li><a href="#">About MS Walk</a></li>
 						<li><a href="#">Locations</a></li>
@@ -112,7 +113,7 @@
 		</div><!-- City -->
 		
 		<section class="city">
-			<div class="container-fluid"">
+			<div class="container-fluid">
 				<picture class="background">
 					<source media="(min-width:992px)" srcset="img/toronto_large.webp 1920w" type="image/webp">
 					<source media="(min-width:992px)" srcset="img/toronto_large.jpg 1920w">
@@ -135,7 +136,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 col-lg-7">
-						<h2>Event Details</h2>
+						<h2>Event Detail</h2>
 						<hr>
 						<div class="detail__info">
 							<div class="detail__item">
@@ -172,32 +173,34 @@
 					<div class="col-sm-6 col-lg-5">
 						<div class="e-progress">
 							<div class="e-progress__header">
-								<div class="row">
-									<div class="col-xs-6">
-										<div class="e-progress__icon">
-											<svg class="svg-icon" viewBox="0 0 10.583333 10.583334">
-												<use xlink:href="#svg__teams"></use>
-											</svg>
-										</div><strong>Teams: 9</strong>
-									</div>
-									<div class="col-xs-6 text-right">
-										<div class="e-progress__icon">
-											<svg class="svg-icon" viewBox="0 0 10.583333 10.583334">
-												<use xlink:href="#svg__walkers"></use>
-											</svg>
-										</div><strong>Walkers: 9</strong>
-									</div>
+								<h3>Progress</h3>
+								<div class="e-progress__bar">
+									<div class="epogress__progress" style="width:98%;"></div>
+									<div class="epogress__procent">98%</div>
 								</div>
 							</div>
 							<div class="e-progress__content">
 								<div class="e-progress__top">
-									<h3>Progress</h3>
-									<div class="e-progress__bar">
-										<div class="epogress__progress" style="width:98%;"></div>
-										<div class="epogress__procent">98%</div>
-									</div>
 									<p><strong>Raised:&nbsp;</strong>$590,000.00</p>
 									<p><strong>Goal:&nbsp;</strong>$600,000.00</p>
+								</div>
+								<div class="e-progress__top e-progress__top_last">
+									<div class="e-progress__col row">
+										<div class="col-xs-6">
+											<div class="e-progress__icon">
+												<svg class="svg-icon" viewBox="0 0 10.583333 10.583334">
+													<use xlink:href="#svg__teams"></use>
+												</svg>
+											</div><strong>Teams: 9</strong>
+										</div>
+										<div class="col-xs-6 text-right">
+											<div class="e-progress__icon">
+												<svg class="svg-icon" viewBox="0 0 10.583333 10.583334">
+													<use xlink:href="#svg__walkers"></use>
+												</svg>
+											</div><strong>Walkers: 999</strong>
+										</div>
+									</div>
 								</div>
 								<div class="e-progress__bottom"><a class="btn btn-event" href="#">2017 Mission First Club</a><a class="btn btn-event" href="#">Photos</a></div>
 							</div>
@@ -365,7 +368,7 @@
 					<div class="r-menu">
 						<div class="clearfix">
 							<div class="col-sm-6 col-md-4 col-lg-4 text-left">
-								<div class="bg_red">Join thousands of Canadians at your local walk<a class="btn btn-oval btn-white" href="#">Register today</a></div>
+								<div class="bg_red"><a class="btn btn-event btn-red" href="#" data-dismiss="modal" data-toggle="modal" data-target="#RegModal">Register today</a></div>
 								<div class="bg_grey">
 									<div class="row">
 										<div class="col-xs-5"><a href="#">Login</a><a href="#">Français</a></div>
@@ -405,13 +408,152 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal fade" id="RegModal" tabindex="-1" role="dialog" aria-labelledby="Register">
+		<div class="modal-dialog" role="document">
+			<div class="background" style="width: 1920px; height: 1020px;">
+				<svg class="svg-icon" width="1920px" height="1020px">
+					<use xlink:href="#svg__background"></use>
+				</svg>
+			</div>
+			<div class="modal-content">
+				<div class="modal-header"><span class="modal-logo">
+						<svg class="svg-icon" viewBox="0 0 134 26.5">
+							<use xlink:href="#svg__logo"></use>
+						</svg></span>
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></button>
+				</div>
+				<div class="modal-body">
+					<div class="card card_province">
+						<div class="card__content choose box-shadow">
+							<div class="card__headline">Choose a province</div>
+							<ul class="card__list">
+								<li class="card__item" data-item="choose_alberta-nwt">Alberta and NWT</li>
+								<li class="card__item" data-item="choose_atlantic">Atlantic</li>
+								<li class="card__item" data-item="choose_bc-yukon">BC and Yukon</li>
+								<li class="card__item" data-item="choose_manitoba">Manitoba</li>
+								<li class="card__item" data-item="choose_ontario">Ontario</li>
+								<li class="card__item" data-item="choose_quebec">Quebec</li>
+								<li class="card__item" data-item="choose_saskatchewan" data-event="event_saskatchewan">Saskatchewan</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card card_chapter">
+						<div class="card__content box-shadow">
+							<div class="card__headline">Choose a chapter</div>
+							<div id="card_chapter"></div>
+							<ul class="card__list" data-list="choose_alberta-nwt">
+								<li class="card__item" data-item="event_alberta">Alberta</li>
+								<li class="card__item" data-item="event_nwt">NWT</li>
+							</ul>
+							<ul class="card__list" data-list="choose_atlantic">
+								<li class="card__item" data-item="event_new-brunswick">New Brunswick</li>
+								<li class="card__item" data-item="event_newfoundland-labrador">Newfoundland and Labrador</li>
+								<li class="card__item" data-item="event_nova-scotia">Nova Scotia</li>
+								<li class="card__item" data-item="event_pei">PEI</li>
+							</ul>
+							<ul class="card__list" data-list="choose_bc-yukon">
+								<li class="card__item" data-item="event_vancouver-island">Vancouver Island</li>
+								<li class="card__item" data-item="event_interior-bc">Interior BC</li>
+								<li class="card__item" data-item="event_lover-mainland">Lower Mainland</li>
+								<li class="card__item" data-item="event_nbc-yukon">Northern BC & Yukon</li>
+								<li class="card__item" data-item="event_fraser-valley">Fraser Valley</li>
+								<li class="card__item" data-item="event_yukon">Yukon</li>
+								<li class="card__item" data-item="event_bc-communities">BC Communities</li>
+							</ul>
+							<ul class="card__list" data-list="choose_manitoba">
+								<li class="card__item" data-item="event_manitoba">Manitoba</li>
+							</ul>
+							<ul class="card__list" data-list="choose_ontario">
+								<li class="card__item" data-item="event_c_ontario">Central Ontario</li>
+								<li class="card__item" data-item="event_s_ontario">Southwestern Ontario</li>
+								<li class="card__item" data-item="event_n_ontario">Northern Ontario</li>
+								<li class="card__item" data-item="event_e_ontario">Eastern Ontario</li>
+							</ul>
+							<ul class="card__list" data-list="choose_quebec">
+								<li class="card__item" data-item="event_quebec">Quebec</li>
+							</ul>
+							<ul class="card__list" data-list="choose_saskatchewan">
+								<li class="card__item" data-item="event_saskatchewan">Saskatchewan</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card card_event">
+						<div class="card__content box-shadow" id="card_event">
+							<div class="card__headline">Choose an event</div>
+							<div id="card_event"></div>
+							<ul class="card__list" data-list="event_alberta">
+								<li class="card__item"><a href="#"><strong>Brooks</strong><br>Sunday, May 27, 2018</a></li>
+								<li class="card__item"><a href="#"><strong>Calgary</strong><br>Sunday, June 10, 2018</a></li>
+								<li class="card__item"><a href="#"><strong>Drumheller</strong><br>Sunday, May 6, 2018</a></li>
+								<li class="card__item"><a href="#"><strong>Edmonton</strong><br>Sunday, May 27, 2018</a></li>
+							</ul>
+							<ul class="card__list" data-list="event_saskatchewan">
+								<li class="card__item"><a href="#"><strong>Saskatchewan</strong><br>Sunday, May 27, 2018</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- End Reval -->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script type="text/javascript">
-		$(window).bind('scroll', function() {
+		$('.card_chapter .card__item').click(function() {
+    $('.modal-content').animate({
+        scrollTop: $('#card_event').offset().top
+    }, 700);
+    $('.card_chapter .card__item').removeClass('choose');
+    $(this).addClass('choose');
+    $(this).parent().parent().removeClass('choose');
+    $('.card_province').addClass('not-choose');
+
+
+
+    $('.card_event .card__list').removeClass('choose');
+    $('.card_event .card__item').removeClass('choose');
+    $('.card_event .card__content').addClass('choose');
+    my_event = $(this).attr('data-item');
+    $('[data-list=' + my_event + ']').addClass('choose'); 
+});
+
+$('.card_province .card__item').click(function() {
+    $('.modal-content').animate({
+        scrollTop: $('#card_chapter').offset().top
+    }, 700);
+
+    $('.card_event .card__list').removeClass('choose');
+    $('.card_event .card__content').removeClass('choose');
+
+    $('.card_chapter .card__list').removeClass('choose');
+    $('.card_chapter .card__item').removeClass('choose');
+    $('.card_chapter .card__content').addClass('choose');
+    choose = $(this).attr('data-item');
+    $('[data-list=' + choose + ']').addClass('choose'); 
+    
+    $('.card_province .card__item').removeClass('choose');
+    $(this).parent().parent().removeClass('choose');
+    $(this).addClass('choose');
+
+    choose_event = $(this).attr('data-event');
+    if (choose_event) {
+        $('[data-list=' + choose_event + ']').addClass('choose');
+        $('.card_event .card__content').addClass('choose');
+        $('.card_chapter .card__content').removeClass('choose');
+        $('[data-list=' + choose + '] [data-item=' + choose_event + ']').addClass('choose');
+
+        $('.modal-content').animate({
+            scrollTop: $('#card_event').offset().top + 100
+        }, 700);
+    }
+
+});
+
+
+$(window).bind('scroll', function() {
     var my_menu = $('.header');
     var my_body = $('body');
     var my_scroll = $('.no-touch #cd-vertical-nav a');
@@ -471,6 +613,20 @@ jQuery(document).ready(function($) {
         $('body,html').animate({ 'scrollTop': target.offset().top - 70 },
             600
         );
+    }
+});
+jQuery(document).ready(function() {
+    body_scroll = ( $(".city").height() - $('.no-touch #cd-vertical-nav').offset().top );
+    $('.no-touch #cd-vertical-nav a').addClass('scroll');
+});
+
+$(window).bind('scroll', function() {
+    var my_scroll = $('.no-touch #cd-vertical-nav a');
+
+    if ($(window).scrollTop() > body_scroll + 50) {
+        my_scroll.removeClass('scroll');
+    } else {
+        my_scroll.addClass('scroll');
     }
 });
 	</script>

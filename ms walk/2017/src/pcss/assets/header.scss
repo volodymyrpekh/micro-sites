@@ -92,8 +92,7 @@
             background-color: $color__white;
 
             @media (max-width: 767px) {
-                display: none
-                
+                display: none;
             }
 
             li {
@@ -106,6 +105,10 @@
                     display: block;
 
                     padding: 2px 15px;
+                }
+
+                .glyphicon {
+                    top: 3px;
                 }
                 a {
                     display: block;
@@ -156,8 +159,9 @@
         box-shadow: 0 6px 14px rgba(0, 0, 0, .4);
 
         .header__account {
-            max-height: 0;
             overflow: hidden;
+
+            max-height: 0;
 
             transition: all .25s linear;
         }

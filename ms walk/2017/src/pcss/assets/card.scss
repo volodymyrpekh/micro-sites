@@ -20,9 +20,7 @@
         transition: all .25s linear;
 
         opacity: .5;
-        border: 1px solid $color__grey;
         border-radius: 6px;
-        background-color: $color__white;
         &.choose {
             transition: all .25s linear;
 
@@ -41,6 +39,7 @@
         }
     }
     &__list {
+        background-color: $color__white;
         overflow-x: hidden;
         overflow-y: auto;
 
@@ -71,8 +70,8 @@
             }
         }
     }
-    &_province,    
-    &_province.not-choose + &_chapter {
+    &_province,
+    &_province.not-choose+&_chapter {
         .card__content {
             &.choose:hover {
                 transition: all .25s linear;
@@ -130,21 +129,12 @@
 
                 margin: 10px auto;
 
-                text-decoration: underline;
-                &.card__button {
-                    display: inline-block;
+                text-decoration: none;
 
-                    padding: 6px 21px;
-
-                    text-decoration: none;
-
-                    color: $color__white;
-                    border: 1px solid $color__black;
-                    background-color: $color__black;
-                    &:hover,
-                    &:focus {
-                        background-color: $color__grey_darknet;
-                    }
+                color: $color__black;
+                &:hover,
+                &:focus {
+                    color: $color__red;
                 }
             }
         }
