@@ -431,76 +431,146 @@
 					<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></button>
 				</div>
 				<div class="modal-body">
-					<div class="card card_province">
-						<div class="card__content choose box-shadow">
-							<div class="card__headline">Choose a province</div>
-							<ul class="card__list">
-								<li class="card__item" data-item="choose_alberta-nwt">Alberta and NWT</li>
-								<li class="card__item" data-item="choose_atlantic">Atlantic</li>
-								<li class="card__item" data-item="choose_bc-yukon">BC and Yukon</li>
-								<li class="card__item" data-item="choose_manitoba">Manitoba</li>
-								<li class="card__item" data-item="choose_ontario">Ontario</li>
-								<li class="card__item" data-item="choose_quebec">Quebec</li>
-								<li class="card__item" data-item="choose_saskatchewan" data-event="event_saskatchewan">Saskatchewan</li>
-							</ul>
-						</div>
-					</div>
-					<div class="card card_chapter">
-						<div class="card__content box-shadow">
-							<div class="card__headline">Choose a region</div>
-							<div id="card_chapter"></div>
-							<ul class="card__list" data-list="choose_alberta-nwt">
-								<li class="card__item" data-item="event_alberta">Alberta</li>
-								<li class="card__item" data-item="event_nwt">NWT</li>
-							</ul>
-							<ul class="card__list" data-list="choose_atlantic">
-								<li class="card__item" data-item="event_new-brunswick">New Brunswick</li>
-								<li class="card__item" data-item="event_newfoundland-labrador">Newfoundland and Labrador</li>
-								<li class="card__item" data-item="event_nova-scotia">Nova Scotia</li>
-								<li class="card__item" data-item="event_pei">PEI</li>
-							</ul>
-							<ul class="card__list" data-list="choose_bc-yukon">
-								<li class="card__item" data-item="event_vancouver-island">Vancouver Island</li>
-								<li class="card__item" data-item="event_interior-bc">Interior BC</li>
-								<li class="card__item" data-item="event_lover-mainland">Lower Mainland</li>
-								<li class="card__item" data-item="event_nbc-yukon">Northern BC & Yukon</li>
-								<li class="card__item" data-item="event_fraser-valley">Fraser Valley</li>
-								<li class="card__item" data-item="event_yukon">Yukon</li>
-								<li class="card__item" data-item="event_bc-communities">BC Communities</li>
-							</ul>
-							<ul class="card__list" data-list="choose_manitoba">
-								<li class="card__item" data-item="event_manitoba">Manitoba</li>
-							</ul>
-							<ul class="card__list" data-list="choose_ontario">
-								<li class="card__item" data-item="event_c_ontario">Central Ontario</li>
-								<li class="card__item" data-item="event_s_ontario">Southwestern Ontario</li>
-								<li class="card__item" data-item="event_n_ontario">Northern Ontario</li>
-								<li class="card__item" data-item="event_e_ontario">Eastern Ontario</li>
-							</ul>
-							<ul class="card__list" data-list="choose_quebec">
-								<li class="card__item" data-item="event_quebec">Quebec</li>
-							</ul>
-							<ul class="card__list" data-list="choose_saskatchewan">
-								<li class="card__item" data-item="event_saskatchewan">Saskatchewan</li>
-							</ul>
-						</div>
-					</div>
-					<div class="card card_event">
-						<div class="card__content box-shadow" id="card_event">
-							<div class="card__headline">Choose an event</div>
-							<div id="card_event"></div>
-							<ul class="card__list" data-list="event_alberta">
-								<li class="card__item"><a href="#"><strong>Brooks</strong><br>Sunday, May 27, 2018</a></li>
-								<li class="card__item"><a href="#"><strong>Calgary</strong><br>Sunday, June 10, 2018</a></li>
-								<li class="card__item"><a href="#"><strong>Drumheller</strong><br>Sunday, May 6, 2018</a></li>
-								<li class="card__item"><a href="#"><strong>Edmonton</strong><br>Sunday, May 27, 2018</a></li>
-							</ul>
-							<ul class="card__list" data-list="event_saskatchewan">
-								<li class="card__item"><a href="#"><strong>Saskatchewan</strong><br>Sunday, May 27, 2018</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+                    <div class="card card_province">
+                        <div class="card__content choose box-shadow">
+                            <div class="card__headline">Choose a province</div>
+                            <ul class="card__list">
+                                <li class="card__item" data-item="choose_ab" data-event="event_ab">Alberta</li>
+                                <li class="card__item" data-item="choose_bc">British Columbia</li>
+                                <li class="card__item" data-item="choose_mb" data-event="event_mb">Manitoba</li>
+                                <li class="card__item" data-item="choose_nb" data-event="event_nb">New Brunswick</li>
+                                <li class="card__item" data-item="choose_nl" data-event="event_nl">Newfoundland and Labrador</li>
+                                <li class="card__item" data-item="choose_nt" data-event="event_nt">Northwest Territories</li>
+                                <li class="card__item" data-item="choose_ns" data-event="event_ns">Nova Scotia</li>
+                                <li class="card__item" data-item="choose_on">Ontario</li>
+                                <li class="card__item" data-item="choose_pe" data-event="event_pe">Prince Edward Island</li>
+                                <li class="card__item" data-item="choose_qc" data-event="event_qc">Quebec</li>
+                                <li class="card__item" data-item="choose_sk" data-event="event_sk">Saskatchewan</li>
+                                <li class="card__item" data-item="choose_yt" data-event="event_yt">Yukon</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card card_chapter">
+                        <div class="card__content box-shadow">
+                            <div class="card__headline">Choose a region</div>
+                            <div id="card_chapter"></div>
+                            <ul class="card__list" data-list="choose_ab">
+                                <li class="card__item" data-item="event_ab">Choose an event in Alberta</li>
+                            </ul>
+                            <ul class="card__list" data-list="choose_bc">
+                                <li class="card__item" data-item="event_bc-vi">Vancouver Island</li>
+                                <li class="card__item" data-item="event_bc-ib">Interior BC</li>
+                                <li class="card__item" data-item="event_bc-lm">Lower Mainland</li>
+                                <li class="card__item" data-item="event_bc-nb">Northern BC</li>
+                                <li class="card__item" data-item="event_bc-fv">Fraser Valley</li>
+                                <li class="card__item" data-item="event_bc-bc">BC Communities</li>
+                            </ul>
+                            <ul class="card__list" data-list="choose_mb">
+                                <li class="card__item" data-item="event_mb">Choose an event in Manitoba</li>
+                            </ul>
+                            <ul class="card__list" data-list="choose_nb">
+                                <li class="card__item" data-item="event_nb">Choose an event in New Brunswick</li>
+                            </ul>
+                            <ul class="card__list" data-list="choose_nl">
+                                <li class="card__item" data-item="event_nl">Choose an event in Newfoundland and Labrador</li>
+                            </ul>
+                            <ul class="card__list" data-list="choose_nt">
+                                <li class="card__item" data-item="event_nt">Choose an event in Northwest Territories</li>
+                            </ul>
+                            <ul class="card__list" data-list="choose_ns">
+                                <li class="card__item" data-item="event_ns">Choose an event in Nova Scotia</li>
+                            </ul>
+                            <ul class="card__list" data-list="choose_on">
+                                <li class="card__item" data-item="event_on-co">Central Ontario</li>
+                                <li class="card__item" data-item="event_on-so">Southwestern Ontario</li>
+                                <li class="card__item" data-item="event_on-no">Northern Ontario</li>
+                                <li class="card__item" data-item="event_on-eo">Eastern Ontario</li>
+                            </ul>
+                            <ul class="card__list" data-list="choose_pe">
+                                <li class="card__item" data-item="event_pe">Choose an event in Prince Edward Island</li>
+                            </ul>
+                            <ul class="card__list" data-list="choose_qc">
+                                <li class="card__item" data-item="event_qc">Choose an event in Quebec</li>
+                            </ul>
+                            <ul class="card__list" data-list="choose_sk">
+                                <li class="card__item" data-item="event_sk">Choose an event in Saskatchewan</li>
+                            </ul>
+                            <ul class="card__list" data-list="choose_yt">
+                                <li class="card__item" data-item="event_yt">Choose an event in Yukon</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card card_event">
+                        <div class="card__content box-shadow" id="card_event">
+                            <div class="card__headline">Choose an event</div>
+                            <div id="card_event"></div>
+                            <ul class="card__list" data-list="event_ab">
+                                <li class="card__item"><a href="#"><strong>Brooks</strong><br>Sunday, May 27, 2018</a></li>
+                                <li class="card__item"><a href="#"><strong>Calgary</strong><br>Sunday, June 10, 2018</a></li>
+                                <li class="card__item"><a href="#"><strong>Drumheller</strong><br>Sunday, May 6, 2018</a></li>
+                                <li class="card__item"><a href="#"><strong>Edmonton</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_bc-vi">
+                                <li class="card__item"><a href="#"><strong>VI</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_bc-ib">
+                                <li class="card__item"><a href="#"><strong>IB</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_bc-lm">
+                                <li class="card__item"><a href="#"><strong>LM</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_bc-nb">
+                                <li class="card__item"><a href="#"><strong>NB</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_bc-fv">
+                                <li class="card__item"><a href="#"><strong>FV</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_bc-bc">
+                                <li class="card__item"><a href="#"><strong>BC</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_mb">
+                                <li class="card__item"><a href="#"><strong>MB</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_nb">
+                                <li class="card__item"><a href="#"><strong>NB</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_nl">
+                                <li class="card__item"><a href="#"><strong>NL 1</strong><br>Sunday, May 27, 2018</a></li>
+                                <li class="card__item"><a href="#"><strong>NL 2</strong><br>Sunday, May 28, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_nt">
+                                <li class="card__item"><a href="#"><strong>Yellowknife</strong><br>Sunday, May 6, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_ns">
+                                <li class="card__item"><a href="#"><strong>NS</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_on-co">
+                                <li class="card__item"><a href="#"><strong>ON CO</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_on-so">
+                                <li class="card__item"><a href="#"><strong>ON SO</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_on-no">
+                                <li class="card__item"><a href="#"><strong>ON NO</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_on-eo">
+                                <li class="card__item"><a href="#"><strong>ON EO</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_pe">
+                                <li class="card__item"><a href="#"><strong>PE</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_qc">
+                                <li class="card__item"><a href="#"><strong>QC</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_sk">
+                                <li class="card__item"><a href="#"><strong>SK</strong><br>Sunday, May 27, 2018</a></li>
+                            </ul>
+                            <ul class="card__list" data-list="event_yt">
+                                <li class="card__item"><a href="#"><strong>Whitehorse</strong><br>Sunday, May 19, 2018</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>
