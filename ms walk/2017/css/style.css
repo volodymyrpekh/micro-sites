@@ -512,7 +512,7 @@ section h2 {
 }
 @media screen and (min-width: 992px) {
     .whowalk .container h1 {
-        max-width: 730px;
+        max-width: 760px;
         font-size: 66px;
     }
 }
@@ -738,10 +738,7 @@ section h2 {
 }
 .walkteam .walkteam__column h3 {
             margin-bottom: 2.5em;
-
-            font-weight: 600;
-
-            text-shadow: 0px 0px 0.3px #212121;
+            font-weight: 900;
 }
 @media screen and (min-width: 778px) and (max-width: 991px) {
     .walkteam .walkteam__column h3 {
