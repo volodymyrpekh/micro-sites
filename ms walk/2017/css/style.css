@@ -24,6 +24,9 @@ body {
     margin-right: auto;
     overflow-x: hidden;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+}
 @media screen and (min-width: 1920px) {
     body {
         max-width: 1920px;
@@ -388,11 +391,20 @@ section h2 {
 
             background-color: #fff;
 }
-@media (max-width: 767px) {
+
+/* MOBILE MENU - DESTOP MENU SWITCH */
+@media (max-width: 902px) {
     .header__menu ul {
         display: none;
     }
 }
+@media (max-width: 902px) {
+    .visible-xs-block {
+        display: block!important;
+    }
+}
+/* /END MOBILE MENU  */
+
 .header__menu ul li {
                 margin-left: -4px;
 
@@ -1341,13 +1353,10 @@ overflow: hidden;
     color: inherit;
 }
 .card_event .card__item a {
-                display: block;
-
-                margin: 10px auto;
-
-                text-decoration: none;
-
-                color: #212121;
+    display: block;
+    margin: 10px auto;
+    text-decoration: none;
+    color: #212121;
 }
 .card_event .card__item a:hover, .card_event .card__item a:focus {
     color: #dd060b;
@@ -1358,10 +1367,11 @@ overflow: hidden;
 /*  End Card  */
 /*  Menu  */
 .r-menu .bg_red .btn {
-            display: block;
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+    }
 
-            width: 100%
-        }
 .r-menu .bg_red .btn:hover, .r-menu .bg_red .btn:focus {
     border-color: #dd060b;
     background-color: #fff;
@@ -1494,7 +1504,7 @@ overflow: hidden;
 .city .container h1 {
     margin: 0 0 .4em;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 900;
     line-height: 1.3;
     text-transform: uppercase;
 }
