@@ -733,7 +733,7 @@ section h2 {
 }
 @media screen and (min-width: 768px) {
     .walkteam .walkteam__column .background {
-        width: 500px;
+        width: 650px;
     }
 }
 .walkteam .walkteam__column h3 {
@@ -1485,7 +1485,7 @@ overflow: hidden;
         padding-top: 71px;
     }
 }
-.city .background:after {
+.city .background:after, .walkteam__column .background:after {
     display: block;
     content: "";
     width: 100%;
