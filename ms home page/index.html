@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="https://mssociety.ca/favicon.en_CA.ico">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css?593">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="js/main_navigation.js?844"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+	</head>
+</html>
+<body class="body">
+	<div class="sprite-svg"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="752" height="752" viewBox="0 0 752 752">
+    <svg id="svg__background" height="1020" width="1920" viewBox="0 0 508 269.875">
+        <path opacity=".5" d="M.003 6.962s74.368 4.412 151.09 26.27c72.25 20.585 118.04 40.823 203.05 39.763C453.893 71.748 508.003 0 508.003 0v269.88s-67.941-10.792-149.33-18.094c-64.72-5.81-117.42-15.35-200.56-42.4-91.517-29.77-158.11-20.93-158.11-20.93z" />
+        <path opacity=".5" d="M.003 66.964s77.474-24.104 156.52-4.787c111.05 27.138 113.81 36.298 192.49 45.498 104.17 12.17 158.99-16.61 158.99-16.61v105.23s-52.328 49.725-129.12 47.942c-59.03-1.37-136.68-14.92-220.17-42.38-100.22-32.96-158.71-41.14-158.71-41.14z" />
+    </svg>
+    <svg id="svg__location" viewBox="0 0 17.88 17.88">
+	    <path d="M8.94 0A8.939 8.939 0 0 0 0 8.94c0 4.937 4.002 8.94 8.94 8.94a8.942 8.942 0 0 0 8.94-8.94C17.88 4.001 13.878 0 8.94 0zm0 1c4.378 0 7.94 3.561 7.94 7.94 0 4.378-3.562 7.94-7.94 7.94C4.56 16.88 1 13.319 1 8.94 1 4.56 4.561 1 8.94 1zm5.216 2.973L2.196 9.289v.664h5.98v5.98h.664l5.316-11.96z" />
+	</svg>
+    <svg id="svg__chewron_down" viewBox="0 0 48.988 26.993">
+	    <path d="M2.547 0L0 1.775l24.494 16.961 24.494-16.96L46.441 0 24.494 15.2zm0 8.256L0 10.03l24.494 16.961 24.494-16.96-2.547-1.776-21.947 15.2z"  />
+	</svg>
+    
+</svg>
+	</div>
+	<header class="header cd-morph-dropdown">
+		<div class="container-fluid">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-12 col-xl-auto">
+					<div class="row header__mobile-nav justify-content-between align-items-center">
+						<div class="col-auto"><a class="logo d-inline-block align-middle" href="/"><svg class="svg-icon svg-icon_small" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.517 14.287">
+<path d="M0 0v4.541l6.87 6.04 3.708-3.296.035.047-.111 6.72h3.221V0L6.888 6.016h-.035zm19.88 0c-2.297 0-4.788 1.462-4.788 4.047 0 2.55 2.321 3.52 3.303 3.925a2.3 2.311 0 0 0 .228.1l1.48-2.556c-1.304-.628-1.533-.863-1.533-1.51 0-.64.59-1.074 1.199-1.074 1.07 0 1.187.869 1.263 1.345h3.455c-.035-.788-.092-1.71-.905-2.72C22.687.499 21.232 0 19.88 0zm1.358 6.05l-1.433 2.521c1.012.464 1.322.764 1.322 1.433a1.324 1.33 0 0 1-1.334 1.328c-.45 0-1.432-.275-1.432-1.873h-3.474v.44c0 1.763.978 4.364 4.942 4.359 3.625 0 4.777-2.215 4.777-4.218 0-1.592-.649-2.785-3.198-3.936 0 0-.106-.036-.17-.053zM0 6.187v7.867h3.216l-.088-5.094L0 6.186zm26.271 5.599a1.247 1.252 0 0 0-1.245 1.25 1.245 1.251 0 1 0 1.245-1.25zm.034.187a1.06 1.064 0 1 1-.034 2.127 1.01 1.015 0 0 1-1.011-1.063 1.06 1.064 0 0 1 1.045-1.064zm-.513.33v1.462h.24v-.646h.198l.403.646h.252l-.415-.646a.37.372 0 0 0 .374-.405c0-.277-.164-.412-.497-.412zm.24.187h.28c.152 0 .298.047.298.212 0 .193-.117.229-.298.229h-.28z" />
+</svg>
+<svg class="svg-icon svg-icon_full" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 164.126 75.287">
+<path d="M.111 0v3.467h92.7L94.838 0H.11zm100.147 0l-2.022 3.467h65.446V0h-63.424zm36.431 10.64v10.864h1.223V10.64h-1.223zm18.862 0v10.864h1.22V10.64h-1.22zm-10.686.446v1.443h1.332v-1.443h-1.332zm-26.17.31v10.13h1.223v-8.73h.021l2.756 8.731h.934l2.865-8.73h.022v8.707h1.222V11.396h-1.912l-2.6 8.041h-.02l-2.534-8.04h-1.977zm23.215.868l-1.222.353v1.514h-1.176v.976h1.175v4.754c0 1.311.6 1.754 1.711 1.754a3.085 3.085 0 0 0 1.024-.177l.021.001v-1.021a1.656 1.656 0 0 1-.754.2c-.556 0-.779-.311-.779-1.155v-4.358h1.533v-.976h-1.533v-1.865zm9.059 1.777a2.071 2.071 0 0 0-1.819 1.178h-.021l-.043-1.09h-1.178c.023.444.067.911.067 1.355h-.024v9.178h1.223V20.53h.021a2.039 2.039 0 0 0 1.889 1.112c1.533 0 2.555-1.243 2.555-3.8 0-2.555-1.044-3.8-2.555-3.8a2.071 2.071 0 0 0-.115 0zm10.558.018c-1.844 0-2.867 1.488-2.867 3.8s1.024 3.8 2.979 3.8a5.124 5.124 0 0 0 2.064-.444l-.066-1.111a3.286 3.286 0 0 1-1.688.6c-1.35 0-2.014-.795-2.02-2.491h4.198v-.645c0-2.177-.934-3.51-2.6-3.51zm-16.595.068v7.398h1.222v-7.398h-1.222zm-15.68.002v5.135c0 1.622.865 2.353 2.154 2.353a1.9 1.9 0 0 0 1.865-1.199h.024l.043 1.111h1.178c-.023-.534-.069-1.066-.069-1.6h.026V14.15h-1.223v4.444c0 1.334-.6 2-1.555 2-.778 0-1.222-.513-1.222-1.69V14.13h-1.221zm32.185.822c.956 0 1.446.778 1.446 2.31h-2.955c.045-1.731.732-2.31 1.51-2.31zm-10.619.047c1.111 0 1.621.954 1.621 2.82 0 1.866-.51 2.823-1.62 2.823s-1.624-.957-1.624-2.823.512-2.82 1.623-2.82zm-22.304 10.037v10.863h1.222V25.035h-1.222zm28.037.445v1.446h1.332V25.48h-1.332zm-38.29.16a2.53 2.53 0 0 0-2.583 2.55c0 1.287.398 1.91 2.22 3.02 1.377.823 1.577 1.29 1.577 2.067a1.648 1.648 0 0 1-1.8 1.6 4.079 4.079 0 0 1-1.933-.645v1.313a4.87 4.87 0 0 0 2.11.443 2.711 2.711 0 0 0 2.931-2.867c0-1.155-.51-2.043-2.088-2.932-1.444-.822-1.71-1.242-1.71-1.886a1.476 1.476 0 0 1 1.578-1.512 3.481 3.481 0 0 1 1.732.467h.025V25.99a5.332 5.332 0 0 0-1.822-.334 2.53 2.53 0 0 0-.236-.015zm7.387 2.753c-2.066 0-3.31 1.465-3.31 3.865 0 2.088 1.066 3.73 3.266 3.73a4.49 4.49 0 0 0 1.554-.31l-.066-1.112a3.148 3.148 0 0 1-1.488.4c-1.178 0-2-.976-2-2.687 0-1.999.823-2.822 2.023-2.822a2.843 2.843 0 0 1 1.398.355l.088-1.13a3.833 3.833 0 0 0-1.465-.29zm16.19.007a2.016 2.016 0 0 0-1.885 1.28h-.021l-.043-1.157h-1.178c.023.534.066 1.067.066 1.6l-.002 5.777h1.223v-3.91c0-1.599.667-2.422 1.6-2.422a3.022 3.022 0 0 1 .466.045v-1.2a2.016 2.016 0 0 0-.226-.013zm4.205.012c-1.955 0-2.979 1.492-2.979 3.8 0 2.31 1.024 3.802 2.979 3.802s2.977-1.49 2.977-3.801c0-2.312-1.022-3.8-2.977-3.8zm6.605.016a2.177 2.177 0 0 0-2.252 2.164c0 .933.38 1.42 1.446 1.887l.82.355c.667.311.934.643.934 1.154 0 .555-.468 1.045-1.4 1.045a3.4 3.4 0 0 1-1.733-.554l-.09 1.132a4.221 4.221 0 0 0 2 .444 2.126 2.126 0 0 0 2.377-2.287 2.021 2.021 0 0 0-1.467-1.89l-.443-.177c-.8-.31-1.244-.644-1.244-1.244 0-.578.422-1.021 1.222-1.021a3.468 3.468 0 0 1 1.444.31l.066-1.045a4.443 4.443 0 0 0-1.555-.265 2.177 2.177 0 0 0-.125-.008zm9.332 0a2.177 2.177 0 0 0-2.251 2.164c0 .933.377 1.42 1.443 1.887l.8.355c.667.311.932.643.932 1.154 0 .555-.465 1.045-1.398 1.045a3.4 3.4 0 0 1-1.735-.554l-.068 1.132a4.221 4.221 0 0 0 2 .444 2.126 2.126 0 0 0 2.377-2.287 2.021 2.021 0 0 0-1.465-1.89l-.443-.177c-.8-.31-1.244-.644-1.244-1.244 0-.578.42-1.021 1.22-1.021a3.467 3.467 0 0 1 1.446.31l.066-1.045a4.442 4.442 0 0 0-1.555-.265 2.177 2.177 0 0 0-.125-.008zm-27.49.004c-1.844 0-2.865 1.488-2.865 3.8s1.022 3.8 2.977 3.8a5.125 5.125 0 0 0 2.066-.444l-.066-1.111a3.286 3.286 0 0 1-1.69.6c-1.35 0-2.014-.794-2.02-2.491h4.2v-.645c0-2.177-.936-3.51-2.602-3.51zm22.127.091v7.4h1.223v-7.4h-1.223zm-22.215.823c.978 0 1.444.777 1.444 2.31h-2.955c.023-1.732.734-2.31 1.511-2.31zm11.641.045c1.155 0 1.687.978 1.687 2.822 0 1.866-.532 2.82-1.687 2.82s-1.712-.954-1.69-2.82c0-1.866.535-2.822 1.69-2.822zm16.506 9.884c-1.29 0-1.846.8-1.846 2v1.645h-1.176v.976h1.176l.002 6.4h1.223v-6.4h1.33v-.976h-1.332v-1.557c0-.733.2-1.11.888-1.11a1.211 1.211 0 0 1 .69.179v-1.045a4.177 4.177 0 0 0-.955-.112zm-34.5.579v1.445h1.332v-1.445h-1.332zm-17.229.205a2.53 2.53 0 0 0-2.584 2.548c0 1.288.399 1.91 2.221 3.022 1.355.844 1.555 1.286 1.555 2.064a1.648 1.648 0 0 1-1.8 1.602 4.079 4.079 0 0 1-1.933-.645v1.31a4.87 4.87 0 0 0 2.11.444 2.711 2.711 0 0 0 2.931-2.865c0-1.155-.533-2.043-2.088-2.932-1.444-.844-1.71-1.266-1.71-1.91a1.476 1.476 0 0 1 1.578-1.511 3.481 3.481 0 0 1 1.732.466l.047-.002v-1.244a4.849 4.849 0 0 0-1.822-.332 2.53 2.53 0 0 0-.237-.015zm29.291.996l-1.222.355v1.512h-1.176v.976h1.176v4.754c0 1.311.6 1.754 1.71 1.754a3.1 3.1 0 0 0 1.022-.199h.024v-.977a1.987 1.987 0 0 1-.754.178c-.556 0-.78-.31-.78-1.154v-4.356h1.534v-.976h-1.534v-1.867zm-14.863 1.71c-2.066 0-3.31 1.466-3.31 3.866 0 2.088 1.065 3.73 3.265 3.73a4.49 4.49 0 0 0 1.557-.31l-.069-1.112a3.148 3.148 0 0 1-1.488.4c-1.178 0-2-.976-2-2.687 0-1.999.824-2.822 2.024-2.822a2.625 2.625 0 0 1 1.4.356l.088-1.131a3.833 3.833 0 0 0-1.467-.29zm-7.709.044c-1.955 0-2.977 1.488-2.977 3.8s1.022 3.8 2.977 3.8c1.955 0 2.979-1.466 2.979-3.8 0-2.334-1.024-3.8-2.979-3.8zm37.9 0c-1.955 0-2.976 1.488-2.976 3.8s1.021 3.8 2.976 3.8 2.979-1.466 2.979-3.8c0-2.334-1.024-3.8-2.979-3.8zm-21.347.02c-1.844 0-2.867 1.488-2.867 3.8s1.021 3.799 2.976 3.799a5.124 5.124 0 0 0 2.067-.444l-.067-1.111a3.286 3.286 0 0 1-1.687.6c-1.35 0-2.016-.794-2.022-2.49h4.2v-.645c0-2.177-.934-3.51-2.6-3.51zm-5.977.067v7.4h1.223v-7.4h-1.223zm14.395 0l2.332 7.51-.29 1.133c-.221.777-.467.934-.822.934a1.475 1.475 0 0 1-.666-.157l-.066 1.112a3.109 3.109 0 0 0 .822.088c.933 0 1.467-.445 1.823-1.711l2.554-8.909h-1.222l-1.534 6.043h-.021l-1.645-6.043h-1.265zm-8.508.825c.955 0 1.443.775 1.443 2.308h-2.955c.023-1.732.734-2.308 1.512-2.308zm-16.463.047c1.155 0 1.69.976 1.69 2.82 0 1.866-.535 2.82-1.69 2.82-1.155 0-1.687-.954-1.687-2.82 0-1.866.532-2.82 1.687-2.82zm37.9 0c1.155 0 1.69.976 1.69 2.82 0 1.866-.535 2.82-1.69 2.82-1.155 0-1.687-.954-1.687-2.82 0-1.866.532-2.82 1.687-2.82zm.09 10.058v4.486h-.021a2.039 2.039 0 0 0-1.889-1.11c-1.533 0-2.555 1.244-2.555 3.8s1.022 3.799 2.555 3.799a2.087 2.087 0 0 0 1.934-1.2h.021l.043 1.088h1.178c-.023-.444-.066-.91-.066-1.353h.023v-9.51h-1.223zm-29.19.647c-2.642 0-4.487 1.999-4.487 5.154 0 2.732 1.354 5.176 4.554 5.176a5.948 5.948 0 0 0 1.844-.313l-.002-1.287a3.892 3.892 0 0 1-1.82.467c-2.2 0-3.244-1.711-3.244-4.332 0-2.466 1.512-3.777 3.156-3.777a3.469 3.469 0 0 1 1.91.511v-1.246a4.729 4.729 0 0 0-1.91-.353zm13.882 2.728a1.9 1.9 0 0 0-1.778 1.201h-.021l-.043-1.109H137.2c.023.534.067 1.067.067 1.6h-.024v5.777h1.223v-4.443c0-1.334.6-2 1.554-2 .778 0 1.221.51 1.221 1.687v4.775h1.223v-5.13c0-1.622-.865-2.356-2.154-2.356a1.9 1.9 0 0 0-.09-.002zm-7.643.002a3.815 3.815 0 0 0-2.088.602l.201 1.154a2.552 2.552 0 0 1 1.89-.777 1.5 1.5 0 0 1 1.222.466 1.929 1.929 0 0 1 .265 1.2v.334h-.71c-2.556 0-3.489 1.044-3.489 2.488a1.971 1.971 0 0 0 2.135 2.133 2.2 2.2 0 0 0 2.064-1.112h.022l.066 1h1.112a7.75 7.75 0 0 1-.069-1.132v-3.866a2.285 2.285 0 0 0-.642-1.8 2.9 2.9 0 0 0-1.979-.69zm14.418 0a3.815 3.815 0 0 0-2.088.602l.18 1.154a2.642 2.642 0 0 1 1.91-.777 1.5 1.5 0 0 1 1.223.466 1.929 1.929 0 0 1 .265 1.2v.334h-.71c-2.556 0-3.489 1.044-3.489 2.488a1.971 1.971 0 0 0 2.135 2.133 2.2 2.2 0 0 0 2.064-1.112h.022l.066 1h1.112a7.742 7.742 0 0 1-.069-1.132v-3.866a2.284 2.284 0 0 0-.642-1.8 2.9 2.9 0 0 0-1.979-.69zm14.108 0a3.815 3.815 0 0 0-2.088.602l.2 1.154a2.552 2.552 0 0 1 1.888-.777 1.5 1.5 0 0 1 1.222.466 1.929 1.929 0 0 1 .268 1.2v.334h-.711c-2.555 0-3.488 1.044-3.488 2.488a1.971 1.971 0 0 0 2.132 2.133 2.2 2.2 0 0 0 2.067-1.112h.02l.068 1h1.111a7.742 7.742 0 0 1-.068-1.132v-3.866a2.285 2.285 0 0 0-.645-1.8 2.9 2.9 0 0 0-1.976-.69zm-7.22.979c1.112 0 1.622.954 1.622 2.82 0 1.866-.51 2.82-1.621 2.82s-1.623-.954-1.623-2.82c0-1.866.512-2.82 1.623-2.82zm-20.728 2.867c.333 0 .645 0 .867.021v.934a1.741 1.741 0 0 1-1.732 1.865 1.147 1.147 0 0 1-1.244-1.289c0-.844.665-1.531 2.11-1.531zm14.442 0c.31 0 .621 0 .843.021h.024v.934a1.741 1.741 0 0 1-1.735 1.865 1.147 1.147 0 0 1-1.244-1.289c0-.844.668-1.531 2.112-1.531zm14.105 0c.334 0 .645 0 .867.021v.934a1.741 1.741 0 0 1-1.732 1.865 1.147 1.147 0 0 1-1.244-1.289c0-.844.665-1.531 2.11-1.531zM0 71.844v3.443h51.54l1.976-3.443H0zm58.982 0l-2.021 3.443h106.72v-3.443H58.983z" />
+<path d="M.045 11.152v17.172l26.1 22.838L40.232 38.7l.133.178-.422 25.414h12.24V11.152L26.214 33.9h-.133L.045 11.152zm75.531 0c-8.73 0-18.193 5.53-18.193 15.305 0 9.64 8.819 13.309 12.55 14.842a8.74 8.74 0 0 0 .866.377l5.62-9.664c-4.953-2.377-5.82-3.265-5.82-5.71 0-2.42 2.243-4.064 4.553-4.064 4.067 0 4.512 3.286 4.801 5.086H93.08c-.133-2.977-.353-6.464-3.441-10.285-3.4-3.999-8.93-5.887-14.063-5.887zm5.158 22.881l-5.443 9.531c3.844 1.756 5.022 2.887 5.022 5.42a5.032 5.032 0 0 1-5.067 5.022c-1.71 0-5.441-1.043-5.441-7.086H56.604v1.666h.003c0 6.665 3.712 16.504 18.774 16.482 13.774 0 18.148-8.376 18.148-15.95 0-6.02-2.464-10.53-12.15-14.884 0 0-.4-.134-.645-.2zm-80.69.512V64.293h12.218l-.332-19.262L.045 34.545zm99.813 21.172a4.736 4.736 0 0 0-4.732 4.73 4.732 4.732 0 1 0 4.732-4.73zm.13.707a4.025 4.025 0 1 1-.13 8.045 3.837 3.837 0 0 1-3.843-4.022 4.025 4.025 0 0 1 3.972-4.023zm-1.952 1.246l-.002 5.531h.912v-2.443h.754l1.533 2.443h.956l-1.577-2.443a1.408 1.408 0 0 0 1.422-1.533c0-1.044-.622-1.555-1.888-1.555h-2.11zm.91.71h1.067c.578 0 1.133.178 1.133.8 0 .733-.444.867-1.133.867h-1.067V58.38z" />
+</svg></a></div>
+						<div class="col-auto d-xl-none">
+							<button class="btn btn-link nav-trigger"><span aria-hidden="true"></span></button>
+							<div class="header__close">
+								<button class="btn btn-link btn-close"><span class="fas fa-times fa-2x" aria-hidden="true"></span>
+									<div><small>close</small></div>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-xl-block">
+					<nav class="main-nav row justify-content-between align-items-center">
+						<div class="col-auto">
+							<ul class="list-inline">
+								<li class="list-inline-item has-dropdown" data-content="Information">
+									<button class="btn btn-link p-0" data-target="#SearchModal">Ms Information</button>
+								</li>
+								<li class="list-inline-item"><a href="#">Support & Services</a></li>
+								<li class="list-inline-item has-dropdown" data-content="Research">
+									<button class="btn btn-link p-0" data-target="#SearchModal">Research</button>
+								</li>
+								<li class="list-inline-item"><a href="#">Get Involved</a></li>
+							</ul>
+						</div>
+						<div class="col-auto">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<button class="btn btn-link header__search" data-target="#SearchModal"><span class="fas fa-search"></span></button>
+								</li>
+								<li class="list-inline-item has-dropdown bg-blue top-search" data-content="Location">
+									<button class="btn btn-link header__location p-0" data-target="#SearchModal"><span class="d-inline-block">
+											<svg class="svg-icon" viewBox="0 0 17.88 17.88">
+												<use xlink:href="#svg__location"></use>
+											</svg></span><span class="text-uppercase">On</span></button>
+								</li>
+								<li class="list-inline-item"><a href="#">Français</a></li>
+								<li class="list-inline-item"><a href="#">BrowseAloud</a></li>
+								<li class="list-inline-item">
+									<button class="btn btn-rectangle btn-red" data-target="#DonateModal">Donate</button>
+								</li>
+								<li class="list-inline-item header__close">
+									<button class="btn btn-link btn-close"><span class="fas fa-times fa-lg" aria-hidden="true"></span>
+										<div><small>close</small></div>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="morph-dropdown-wrapper">
+			<div class="dropdown-list">
+				<div class="dropdown-list__corner"></div>
+				<ul class="list-unstyled">
+					<li class="dropdown">
+						<div class="content">
+							<form class="mb-4">
+								<div class="input-group">
+									<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+									<button class="btn btn-link" type="submit" id="input_postal"><span class="fas fa-search"></span></button>
+								</div>
+							</form>
+						</div>
+					</li>
+					<li class="dropdown dropdown_information" id="Information">
+						<div class="label" data-toggle="collapse" href="#collapseInformation">MS Information <span class="fas fa-caret-down"></span></div>
+						<div class="row content collapse" id="collapseInformation">
+							<div class="col-12 col-xl-3">
+								<dl>
+									<dt><a href="#">About MS</a></dt>
+									<dd><a href="#">What is MS?</a></dd>
+									<dd><a href="#">Diagnosis</a></dd>
+									<dd><a href="#">Symptoms</a></dd>
+									<dd><a href="#">Types</a></dd>
+									<dd><a href="#">Latest Research</a></dd>
+								</dl>
+							</div>
+							<div class="col-12 col-xl-3">
+								<dl>
+									<dt><a href="#">Managing MS</a></dt>
+									<dd><a href="#">Newly Diagnosed</a></dd>
+									<dd><a href="#">Living with MS</a></dd>
+									<dd><a href="#">Treatments</a></dd>
+									<dd><a href="#">Support & Services</a></dd>
+								</dl>
+							</div>
+							<div class="col-12 col-xl-3">
+								<dl>
+									<dt><a href="#">Resources</a></dt>
+									<dd><a href="#">Information Library</a></dd>
+									<dd><a href="#">Blog</a></dd>
+									<dd><a href="#">Semi-annual Magazine</a></dd>
+									<dd><a href="#">Nationwide Webinars</a></dd>
+									<dd><a href="#">Latest News</a></dd>
+								</dl>
+							</div>
+							<div class="d-none d-xl-block col-xl-3" style="position:relative;">
+								<picture class="background" style="width:270px;">
+									<source srcset="img/menu_ms_information.webp" type="image/webp">
+									<source srcset="img/menu_ms_information.jpg"><img src="img/menu_ms_information.jpg" alt="MS Information" width="100%">
+								</picture>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown"><a class="label" href="#">Support & Services</a></li>
+					<li class="dropdown dropdown_information" id="Research">
+						<div class="label" data-toggle="collapse" href="#collapseResearch">Research <span class="fas fa-caret-down"></span></div>
+						<div class="row content collapse" id="collapseResearch">
+							<div class="col-12 col-xl-3">
+								<dl>
+									<dt><a href="#">About MS Research</a></dt>
+									<dd><a href="#">About the MS Society‘s Research Program</a></dd>
+									<dd><a href="#">Research Committees</a></dd>
+									<dd><a href="#">Community Representatives</a></dd>
+									<dd><a href="#">Introduction to Clinical Trials</a></dd>
+									<dd><a href="#">Get Involved in Research</a></dd>
+									<dd><a href="#">Glossary</a></dd>
+								</dl>
+							</div>
+							<div class="col-12 col-xl-3">
+								<dl>
+									<dt><a href="#">Information for Researchers</a></dt>
+									<dd><a href="#">Funding Opportunities</a></dd>
+									<dd><a href="#">Review Process and Criteria</a></dd>
+									<dd><a href="#">Applying Online</a></dd>
+									<dd><a href="#">Funding Announcements</a></dd>
+									<dd><a href="#">Reporting Templates</a></dd>
+									<dd><a href="#">What's New for 2018 / 2019?</a></dd>
+								</dl>
+							</div>
+							<div class="col-12 col-xl-3">
+								<dl>
+									<dt><a href="#">Research News</a></dt>
+									<dd><a href="#">Latest Research and Treatment News</a></dd>
+									<dd><a href="#">Research Events</a></dd>
+									<dd><a href="#">Research Library</a></dd>
+									<dd><a href="#">Blog - DrKarenLee.ca</a></dd>
+									<dd><a href="#">Treatments in Development</a></dd>
+								</dl>
+							</div>
+							<div class="col-12 col-xl-3">
+								<dl>
+									<dt><a href="#">Hot Topics</a></dt>
+									<dd><a href="#">CCSVI</a></dd>
+									<dd><a href="#">Diet</a></dd>
+									<dd><a href="#">Exercise and Physical Activity</a></dd>
+									<dd><a href="#">Progressive MS</a></dd>
+									<dd><a href="#">Risk and Prognostic Factors</a></dd>
+									<dd><a href="#">Stem Cells</a></dd>
+									<dd><a href="#">Vitamin D</a></dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown"><a class="label" href="#">Get Involved</a></li>
+					<li class="dropdown dropdown_location" id="Location">
+						<div class="label" data-toggle="collapse" href="#collapseLocation">Location <span class="fas fa-caret-down"></span></div>
+						<div class="row content collapse" id="collapseLocation">
+							<div class="col-12">
+								<p>Your current location is set to Ontario. If this is incorrect, please change your location:</p>
+							</div>
+							<div class="col-12 col-xl-auto">
+								<ul class="list-unstyled">
+									<li><a href="">Alberta</a></li>
+									<li><a href="">British Columbia</a></li>
+									<li><a href="">Manitoba</a></li>
+									<li><a href="">New Brunswick</a></li>
+									<li><a href="">Newfoundland and Labrador</a></li>
+									<li><a href="">Northwest Territories</a></li>
+									<li><a href="">Nova Scotia</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-xl-auto">
+								<ul class="list-unstyled">
+									<li><a href="">Nunavut</a></li>
+									<li><a href="">Ontario</a></li>
+									<li><a href="">Prince Edward Island</a></li>
+									<li><a href="">Quebec</a></li>
+									<li><a href="">Saskatchewan</a></li>
+									<li><a href="">Yukon</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown"><a class="label text-red" href="#">Français</a></li>
+					<li class="dropdown"><a class="label" href="#">BrowseAloud</a></li>
+					<li class="dropdown">
+						<button class="label btn btn-red btn-rectangle w-100" data-target="#DonateModal">Donate</button>
+					</li>
+					<div class="bg-layer" aria-hidden="true"></div>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="cd-section" id="slide">
+		<section class="slide">
+			<picture class="background">
+				<source media="(min-width:992px)" srcset="img/header_full.webp 1920w" type="image/webp">
+				<source media="(min-width:992px)" srcset="img/header_full.jpg 1920w">
+				<source srcset="img/header_small.webp 1200w" type="image/webp">
+				<source srcset="img/header_small.jpg 1200w"><img src="img/header_full.jpg" alt="Who fo you walk for?" width="100%">
+			</picture>
+			<div class="container">
+				<div class="lead">Living With Ms</div>
+				<h1>Reprioritizing my life <br class="d-none d-sm-block">to save it</h1>
+				<div class="button-block"><a class="btn btn-red btn-rectangle" href="#">Read Kate’s Story</a><a class="btn btn-underline" href="#">Learn More About Living With Ms</a></div><a class="cd-scroll-down cd-img-replace" href="#reserch">
+					<div class="chewron">
+						<svg class="svg-icon" viewBox="0 0 48.988 26.993" fill="#fff">
+							<use xlink:href="#svg__chewron_down"></use>
+						</svg>
+					</div></a>
+			</div>
+		</section>
+	</div>
+	<div class="cd-section" id="reserch">
+		<section class="reserch">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="lead">Reserch</div>
+						<h2>Diet and MS: What does research tell us about supplements?</h2>
+						<div class="button-block"><a class="btn btn-red btn-rectangle" href="#">Read more</a></div>
+					</div>
+					<div class="col-auto d-none d-xl-block">
+						<div class="reserch__container">
+							<ul class="list-unstyled">
+								<li><a href="#">Research and Treatment News</a></li>
+								<li><a href="#">About MS Research</a></li>
+								<li><a href="#">Get Involved in Research</a></li>
+								<li><a href="#">Funding Announcements</a></li>
+								<li><a href="#">Treatments in Development</a></li>
+								<li><a href="#">Progressive MS		</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="button-block d-xl-none"><a class="btn btn-underline btn-underline_black" href="#">Go to Research Section</a></div>
+			</div>
+		</section>
+	</div>
+	<div class="cd-section" id="event">
+		<section class="event">
+			<picture class="background">
+				<source media="(min-width:992px)" srcset="img/event_full.webp 1920w" type="image/webp">
+				<source media="(min-width:992px)" srcset="img/event_full.jpg 1920w">
+				<source srcset="img/event_small.webp 1200w" type="image/webp">
+				<source srcset="img/event_small.jpg 1200w"><img src="img/event_full.jpg" alt="Event" width="100%">
+			</picture>
+			<div class="container">
+				<div class="lead">Event</div>
+				<h2>My MS journey: <br>Taryn Lencoe</h2>
+				<div class="button-block"><a class="btn btn-red btn-rectangle" href="#">Read Taryn’s Story</a><a class="btn btn-underline" href="#">Learn More About Living With Ms</a></div>
+			</div>
+		</section>
+	</div>
+	<div class="cd-section" id="news">
+		<section class="update" id="news">
+			<div style="width: 100%; position: absolute; overflow: hidden; height:1020px; top: -32%; z-index: -1; transform: scale(-1, -1);">
+				<div class="background" style="width: 1920px; height: 1020px;">
+					<svg class="svg-icon" width="1920px" height="1020px" style="fill: rgba(0, 0, 0, .1);">
+						<use xlink:href="#svg__background"></use>
+					</svg>
+				</div>
+			</div>
+			<div class="container">
+				<h2 class="lead lead_title text-center">Latest Updates</h2>
+				<div class="row">
+					<div class="col-12 col-xl-4 update__news">
+						<div class="row">
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto">
+											<p>Funding Decisions – MS Society of Canada 2018 - 2019 Annual Research Grants and Awards Competitions</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Feb 28, 2018  -  4 min read</div>
+												<div class="col-auto update__type">News</div>
+											</div>
+										</div>
+									</div></a></div>
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto">
+											<p>Pamela Valentine – Leading Innovation & Change at the MS Society</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Oct 24, 2018  -  6 min read</div>
+												<div class="col-auto update__type">News</div>
+											</div>
+										</div>
+									</div></a></div>
+						</div><a class="btn btn-underline btn-underline_black pt-0 pb-5" href="#">More news</a>
+					</div>
+					<div class="col-12 col-xl-4 update__research">
+						<div class="row">
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto">
+											<p>Results published from a phase III study of siponimod in secondary progressive multiple sclerosis (SPMS)</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Mar 27, 2018  -  8 min read</div>
+												<div class="col-auto update__type">Research</div>
+											</div>
+										</div>
+									</div></a></div>
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto">
+											<p>International stem cell clinical trial shows stabilized disease and improved disability in MS</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Mar 22, 2018  -  5 min read</div>
+												<div class="col-auto update__type">Research</div>
+											</div>
+										</div>
+									</div></a></div>
+						</div><a class="btn btn-underline btn-underline_blue pt-0 pb-5" href="#">More research</a>
+					</div>
+					<div class="col-12 col-xl-4 update__events">
+						<div class="row">
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto">
+											<p>National Webinar - Coping with the uncertainty of MS</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Apr 12, 2018  -  2 min read</div>
+												<div class="col-auto update__type">Events</div>
+											</div>
+										</div>
+									</div></a></div>
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto">
+											<p>MS Summer Camp</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Aug 11, 2018  -  3 min read</div>
+												<div class="col-auto update__type">Events</div>
+											</div>
+										</div>
+									</div></a></div>
+						</div><a class="btn btn-underline btn-underline_red pt-0 pb-0" href="#">More events</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<section class="area">
+		<picture class="background">
+			<source media="(min-width:992px)" srcset="img/area_full.webp 1920w" type="image/webp">
+			<source media="(min-width:992px)" srcset="img/area_full.jpg 1920w">
+			<source srcset="img/area_small.webp 1200w" type="image/webp">
+			<source srcset="img/area_small.jpg 1200w"><img src="img/area_full.jpg" alt="In My Area" width="100%">
+		</picture>
+		<div class="container text-center">
+			<h2>In My Area</h2>
+			<p>Find offices, programs, services, and events in my community:</p>
+			<form>
+				<div class="input-group input-group-lg">
+					<input class="form-control" type="text" placeholder="Enter your postal code here" aria-label="Enter your postal code here">
+					<button class="btn btn-link btn-lg" type="submit" id="input_postal"><span class="fas fa-search"></span></button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section class="help">
+		<div class="container text-center">
+			<h2 class="lead lead_title">With Your Help</h2>
+			<div class="row">
+				<div class="col-12 col-lg-4">
+					<div class="help__number text-blue">14</div>
+					<p>Research projects were funded in 2017, and we’re plannig to double this number in 2018</p>
+				</div>
+				<div class="col-12 col-lg-4">
+					<div class="help__number text-red">5,000</div>
+					<p>Letters were sent to our MP’s to make access a reality for people affected by MS</p>
+				</div>
+				<div class="col-12 col-lg-4">
+					<div class="help__number">31</div>
+					<p>Volunteers living with MS were trained for the new MS 1:1 Peer Support Program which matches them with individuals looking for support.</p>
+				</div>
+			</div><a class="btn btn-red btn-rectangle" href="#">See More Of Our Impact</a>
+		</div>
+	</section>
+	<section class="find">
+		<picture class="background">
+			<source media="(min-width:992px)" srcset="img/take_full.webp 1920w" type="image/webp">
+			<source media="(min-width:992px)" srcset="img/take_full.jpg 1920w">
+			<source srcset="img/take_small.webp 1200w" type="image/webp">
+			<source srcset="img/take_small.jpg 1200w"><img src="img/take_full.jpg" alt="Take part" width="100%">
+		</picture>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 offset-md-6 col-lg-5 offset-lg-7">
+					<h2 class="lead lead_title">Take part in something that will make a difference, get involved in MS Society fundraising events.</h2>
+					<div class="text-center"><a class="btn btn-red btn-rectangle" href="#">Find An Event Near You</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="take">
+		<div class="container text-center">
+			<h2 class="lead lead_title">Take Action</h2>
+			<div class="row">
+				<div class="col-12 col-lg-6 col-xl-4 pb-4">
+					<div class="take__item">
+						<div class="row">
+							<div class="col-auto">
+								<h3 class="text-red">Advocate</h3>
+								<p>Canada leads the world with one of the highest rate of multiple sclerosis (MS). Canadian reserchers lead the world in MS research. Now, we weant Canada's government to lead the world in improving #LifewithMS.</p>
+							</div>
+							<div class="col-auto"><a class="btn btn-red btn-rectangle" href="#">Learn more</a></div>
+						</div>
+						<div>
+							<picture class="background">
+								<source srcset="img/advocate.webp" type="image/webp">
+								<source srcset="img/advocate.jpg"><img src="img/advocate.jpg" alt="advocate" width="100%">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 col-xl-4 pb-4">
+					<div class="take__item">
+						<div class="row">
+							<div class="col-auto">
+								<h3 class="text-blue">Volunteer</h3>
+								<p>Our desire is to be a community-connected organization with the goal of having our collective effors adding value to people affected by MS. Oir volunteers are an exciting, dynamic and diverse group of people who share a willingness to contribute their time and talents to #endMS. Join us today!</p>
+							</div>
+							<div class="col-auto"><a class="btn btn-blue btn-rectangle" href="#">Join today</a></div>
+						</div>
+						<div>
+							<picture class="background">
+								<source srcset="img/volunteer.webp" type="image/webp">
+								<source srcset="img/volunteer.jpg"><img src="img/volunteer.jpg" alt="advocate" width="100%">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 offset-lg-3 offset-xl-0 col-xl-4 pb-4">
+					<div class="take__item">
+						<div class="row">
+							<div class="col-auto">
+								<h3>Donate</h3>
+								<p>Canada leads the world with one of the highest rate of multiple sclerosis (MS). Canadian reserchers lead the world in MS research. Now, we weant Canada's government to lead the world in improving #LifewithMS.</p>
+							</div>
+							<div class="col-auto"><a class="btn btn-black btn-rectangle" href="#">Give now</a></div>
+						</div>
+						<div>
+							<picture class="background">
+								<source srcset="img/donate.webp" type="image/webp">
+								<source srcset="img/donate.jpg"><img src="img/donate.jpg" alt="donate" width="100%">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="connect">
+		<div class="container text-center">
+			<h2 class="lead lead_title">Stay connect</h2>
+		</div>
+	</section>
+	<section class="reserch-news">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-5 col-xl-5">
+					<div class="reserch-news_forms">
+						<h2 class="lead lead_title">Research News</h2>
+						<p>Subscribe to the latest MS research news by email by entering your info below:</p>
+						<form>
+							<div class="form-group">
+								<input class="form-control" type="text" placeholder="First Name">
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="text" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="email" placeholder="Email">
+							</div>
+							<button class="btn btn-rectangle btn-red w-100" type="submit" href="#">Submit</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-7 col-xl-6 offset-xl-1 align-self-end">
+					<div class="text-right"><a class="btn btn-underline pt-5" href="#">Go To Ms Blog</a></div><a class="reserch-news_cards" href="#">
+						<picture class="background">
+							<source srcset="https://secure3.convio.net/mssoc/images/content/pagebuilder/Homepage-Friends-and-Family-Team-Image-ENG-FRE.jpg"><img src="https://secure3.convio.net/mssoc/images/content/pagebuilder/Homepage-Friends-and-Family-Team-Image-ENG-FRE.jpg" alt="reserch-news" width="100%">
+						</picture>
+						<p>Sibling Support: How a brother and sister bonded through having MS
+							<svg class="svg-icon" viewBox="0 0 48.988 26.993" fill="#fff">
+								<use xlink:href="#svg__chewron_down"></use>
+							</svg>
+						</p></a><a class="reserch-news_cards" href="#">
+						<picture class="background">
+							<source srcset="https://secure3.convio.net/mssoc/images/content/pagebuilder/walk-homepage4.jpg"><img src="https://secure3.convio.net/mssoc/images/content/pagebuilder/walk-homepage4.jpg" alt="reserch-news" width="100%">
+						</picture>
+						<p>Diet and MS: What does researcg tell us about supplements?
+							<svg class="svg-icon" viewBox="0 0 48.988 26.993" fill="#fff">
+								<use xlink:href="#svg__chewron_down"></use>
+							</svg>
+						</p></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-auto">
+					<ul class="list-unstyled">
+						<li><a href="#">About the MS Society</a></li>
+						<li><a href="#">Employment Opportunities</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Financial Information</a></li>
+						<li><a href="#">Our Impact and Operations</a></li>
+						<li><a href="#">Accessibility</a></li>
+						<li><a href="#">Advocacy</a></li>
+						<li><a href="#">Media</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Multiple Sclerosis Scientific Research Foundation</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-auto">
+					<ul class="list-unstyled">
+						<li><a href="#">Donate</a></li>
+						<li><a href="#">Feedback</a></li>
+						<li><a href="#">MS Walk</a></li>
+						<li><a href="#">MS Bike</a></li>
+						<li><a href="#">Muck MS Canada</a></li>
+						<li><a href="#">MS Research Portal</a></li>
+						<li><a href="#">I Challenge MS</a></li>
+						<li><a href="#">Someone Like Me</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-auto">
+					<ul class="list-unstyled">
+						<li>
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><span class="fab fa-facebook fa-2x"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="fab fa-twitter fa-2x"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="fab fa-youtube fa-2x"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="fab fa-instagram fa-2x"></span></a></li>
+							</ul>
+						</li>
+						<li><br><a href="tel:18002687582">1-800-268-7582</a></li>
+						<li><a href="mailto:info@mssociety.ca">info@mssociety.ca</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-sm-auto"><a href="http://www.imaginecanada.ca/standards"><img src="https://mssociety.ca/images/imagine-canada-en_CA.png" alt="Imagine Canada Trustmark"></a></div>
+				<div class="col-6 col-sm-auto"><small>Proud member of:</small>
+					<div class="d-block"><a href="http://www.progressivemsalliance.org/" target="_blank"><img src="https://mssociety.ca/images/logo.progalliance.en_CA.png" alt="Progressive MS Alliance" style="width:90%; max-width:155px;"></a></div>
+				</div>
+				<div class="col-auto"><small>
+						<nobr>Official Airline of the MS Society of Canada:</nobr></small>
+					<div class="d-block"><a href="#" target="_blank"><img src="img/air-canada-logo.svg"></a></div>
+				</div>
+				<div class="col-12"><br><small>© 2017 MS Society of Canada.<br>Charitable registration - MS Society of Canada: 10774 6174 RR0001 / Quebec Division: 10 490 2523 RR0001<br>The Standards Program Trustmark is a mark of Imagine Canada used under licence by the MS Society of Canada and the Quebec Division.</small></div>
+			</div>
+		</div>
+	</footer><a class="cd-nav-trigger cd-img-replace">
+		<div class="fas fa-ellipsis-v fa-lg" data-fa-transform="down-8"></div><span class="sr-only">Open navigation</span></a>
+	<nav id="cd-vertical-nav">
+		<ul>
+			<li><a href="#slide" data-number="1"><span class="cd-dot"></span><span class="cd-label">Living with MS: Kate’s Story</span></a></li>
+			<li><a href="#reserch" data-number="2"><span class="cd-dot"></span><span class="cd-label">Research: Diet and MS</span></a></li>
+			<li><a href="#event" data-number="3"><span class="cd-dot"></span><span class="cd-label">Events: Taryn’s Story</span></a></li>
+			<li><a href="#news" data-number="4"><span class="cd-dot"></span><span class="cd-label">News</span></a></li>
+			<li><a href="#slide" data-number="5"><span class="cd-dot"></span><span class="cd-label">Impact</span></a></li>
+			<li><a href="#slide" data-number="6"><span class="cd-dot"></span><span class="cd-label">Volunteer</span></a></li>
+		</ul>
+	</nav>
+	<div class="modal" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="Search">
+		<div class="modal-dialog" role="document">
+			<div class="background" style="width: 1920px; height: 1020px;">
+				<svg class="svg-icon" width="1920px" height="1020px">
+					<use xlink:href="#svg__background"></use>
+				</svg>
+			</div>
+			<div class="modal-content">
+				<div class="modal-header"></div>
+				<div class="modal-body">
+					<div class="container modal__take">
+						<form class="mb-4">
+							<div class="input-group">
+								<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+								<button class="btn btn-link" type="submit" id="input_postal"><span class="fas fa-search"></span></button>
+							</div>
+						</form>
+						<div class="modal-take__content">
+							<div class="background" style="width: 100%;">
+								<source srcset="img/take_action.webp" type="image/webp">
+								<source srcset="img/take_action.jpg"><img src="img/take_action.jpg" alt="Take Action" width="100%">
+							</div>
+							<h2>Take Action</h2>
+							<p>Canada leads the world with one of the highest rate of multiple sclerosis (MS). Canadian researchers lead the world in MS research. Now, we want Canada’s government to lead the world in improving #LifewithMS.</p><a class="btn btn-opacity btn-oval mb-2" href="#">I Challenge MS</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="DonateModal" tabindex="-1" role="dialog" aria-labelledby="Donate">
+		<div class="modal-dialog" role="document">
+			<div class="background" style="width: 1920px; height: 1020px;">
+				<svg class="svg-icon" width="1920px" height="1020px">
+					<use xlink:href="#svg__background"></use>
+				</svg>
+			</div>
+			<div class="modal-content">
+				<div class="modal-header"></div>
+				<div class="modal-body">
+					<div class="container modal__donation">
+						<h2>Make a donation</h2>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg w-100 mb-2" href="#">One-time</a></div>
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg w-100 mb-2" href="#">Montly</a></div>
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg w-100 mb-2" href="#">In Honor</a></div>
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg w-100 mb-2" href="#">In Memory</a></div>
+						</div>
+						<h2>Donate to an event participant</h2>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg w-100 mb-2" href="#">MS Walk</a></div>
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg w-100 mb-2" href="#">MS Bike</a></div>
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg w-100 mb-2" href="#">I Challenge MS</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js?815"></script>
+</body>
