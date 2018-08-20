@@ -1855,11 +1855,21 @@ img.icms {
     max-width: 100px;
 }
 
+.text-qc-center {
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .text-qc-center {
+        text-align: left;
+        padding-top: 5%;
+    }
+}
 @media screen and (min-width: 1199px) {
     .border-right-desktop {
     border-right: 1px solid #eee;
     }
 }
+
 
 /*  Top Provincial Sponsor  */
 /*# sourceMappingURL=style.css.map */
