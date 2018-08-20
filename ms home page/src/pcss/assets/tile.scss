@@ -1,0 +1,178 @@
+.tile {
+    &__item {
+        line-height: 1;
+
+        position: relative;
+
+        display: block;
+
+        height: 0;
+        margin-bottom: 30px;
+        padding-bottom: 57%;
+
+        text-shadow: $text__shadow;
+        .container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            overflow: hidden;
+
+            width: 100%;
+            height: 100%;
+            padding: 0;
+
+            border-radius: $border__radius;
+            box-shadow: $box__shadow;
+        }
+        .background {
+            transition: all .25s linear;
+            rect {
+                transition: all .25s linear;
+
+                fill: rgba(0, 0, 0, .45);
+            }
+        }
+        &:hover,
+        &:focus {
+            .background {
+                transition: all .25s linear;
+                transform: scale(1.1, 1.1);
+                rect {
+                    transition: all .25s linear;
+
+                    fill: rgba(0, 0, 0, .75);
+                }
+            }
+            .tile__about {
+                transition: .25s linear;
+
+                background-color: $color__red;
+                &:before {
+                    border-bottom-color: $color__red;
+                }
+                &_blue {
+                    background-color: $color__blue;
+                    &:before {
+                        border-bottom-color: $color__blue;
+                    }
+                }
+                &_dk-blue {
+                    background-color: $color__dk-blue;
+                    &:before {
+                        border-bottom-color: $color__dk-blue;
+                    }
+                }
+            }
+        }
+        h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            width: 100%;
+
+            transform: translate(-50%, -50%);
+
+            color: $color__white;
+            &:hover,
+            &:focus {
+                color: $color__white;
+            }
+        }
+        &_opacity {
+            .background {
+                rect {
+                    fill: rgba(0, 0, 0, 0);
+                }
+            }
+            &:hover,
+            &:focus {
+                .background {
+                    rect {
+                        fill: rgba(0, 0, 0, .15);
+                    }
+                }
+            }
+        }
+    }
+    &__about {
+        font-size: 1.25em;
+        line-height: 1;
+
+        position: absolute;
+        right: -5px;
+        bottom: 12.5%;
+
+        display: block;
+
+        width: 65%;
+        height: 60px;
+        padding: 20px 0;
+
+        transition: .25s linear;
+        text-align: center;
+
+        color: $color__white;
+        background-color: color($color__red a(75%));
+        @media (max-width: 480px) {
+            font-size: 1em;
+
+            bottom: 5%;
+
+            min-width: 250px;
+            height: 36px;
+            padding: 10px 0;
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            min-width: 300px;
+            height: 40px;
+            padding: 10px 0;
+        }
+        &:before {
+            position: absolute;
+            top: 0;
+            left: -30px;
+
+            display: block;
+
+            width: 0;
+            height: 0;
+
+            content: '';
+            transition: .25s linear;
+
+            border-bottom: 60px solid color($color__red a(75%));
+            border-left: 30px solid transparent;
+
+            @media (max-width: 480px) {
+                left: -18px;
+
+                border-bottom: 36px solid color($color__red a(75%));
+                border-left: 18px solid transparent;
+            }
+            @media (min-width: 768px) and (max-width: 1199px) {
+                left: -20px;
+
+                border-bottom: 40px solid color($color__red a(75%));
+                border-left: 20px solid transparent;
+            }
+        }
+
+        &_blue {
+            background-color: color($color__blue a(75%));
+            &:before {
+                border-bottom-color: color($color__blue a(75%));
+            }
+        }
+
+        &_dk-blue {
+            background-color: color($color__dk-blue a(75%));
+            &:before {
+                border-bottom-color: color($color__dk-blue a(75%));
+            }
+        }
+    }
+}

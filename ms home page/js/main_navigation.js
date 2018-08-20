@@ -146,7 +146,7 @@ $(".header__search").click(function() {
 			$("#SearchModal .modal-header").css({"padding-top": ''});
 		}
 		else {
-			$("#SearchModal .modal-header").css({"padding-top": height+75+'px'});
+			$("#SearchModal .modal-header").css({"padding-top": height+115+'px'});
 		}
 
 		this.dropdownBg.css({

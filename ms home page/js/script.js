@@ -143,9 +143,9 @@ jQuery(document).ready(function($) {
 
     function smoothScroll(target) {
         if ($('html').width() < 1440) {
-            $('html,body').animate({ 'scrollTop': target.offset().top - 65 }, 600);
+            $('html,body').animate({ 'scrollTop': target.offset().top - 73 }, 600);
         } else {
-            $('html,body').animate({ 'scrollTop': target.offset().top - 100 }, 600);
+            $('html,body').animate({ 'scrollTop': target.offset().top - 85 }, 600);
         }
     }
 });
@@ -160,9 +160,9 @@ function new_scroll() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    $('.label').on('click', function() {
+    $("[data-toggle='collapse']").on('click', function() {
         $(this)
-            .find('[data-fa-i2svg]')
+            .find('[data-fa-i2svg]:last-child')
             .toggleClass('fa-caret-up')
             .toggleClass('fa-caret-down');
     });
@@ -176,4 +176,30 @@ jQuery(document).ready(function() {
     $(window).bind('scroll', function() {
         new_scroll();
     });
+});
+
+$(window).on('scroll',
+        {
+            previousTop: 0
+        }, 
+        function () {
+    var headerHeight = $('.header').height();
+    var currentTop = $(window).scrollTop();
+    //check if user is scrolling up
+    if (currentTop < this.previousTop ) {
+        //if scrolling up...
+        if (currentTop > 0 && $('.header').hasClass('fixed')) {
+            $('.header').addClass('vis_top');
+        } else {
+            $('.header').removeClass('vis_top fixed');
+        }
+    } else {
+        //if scrolling down...
+        $('.header').removeClass('vis_top');
+        if( currentTop > headerHeight && !$('.header').hasClass('fixed')) $('.header').addClass('fixed');
+    }
+    this.previousTop = currentTop;
+});
+$('#radius').change(function() {
+  $('.radius_value').html(this.value);
 });

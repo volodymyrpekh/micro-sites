@@ -1,0 +1,22 @@
+mixin item(title, img, about, color, hover)
+	.col-12.col-md-6
+		a.tile__item(class=hover ? 'tile__item_' + hover : '' href="#")
+			.container
+				svg.background(viewBox="0 0 100 60" width="100%" height="100%" preserveAspectRatio="xMidYMid slice")
+					image(xlink:href="img/" +img +".jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice")
+					rect(width="100%" height="100%")
+			if title
+				h3.text-center.text-uppercase= title
+			if about
+				div.tile__about(class=color)= about
+			
+
+section.tile
+	.container
+		.row
+			+item('MS Walk','ms-walk', 'Open for Registration Now')
+			+item('MS Bike','ms-bike', 'Open for Registration Now', 'tile__about_blue')
+			+item('I Challenge MS','i-challenge-ms', 'Open for Registration Now', 'tile__about_dk-blue')
+			+item('Women Against MS','women-against-ms')
+			+item('MS Golf','ms-golf')
+			+item('', 'ms-walk-logo', '', '', 'opacity')
