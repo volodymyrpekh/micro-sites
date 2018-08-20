@@ -1855,5 +1855,11 @@ img.icms {
     max-width: 100px;
 }
 
+@media screen and (min-width: 1199px) {
+    .border-right-desktop {
+    border-right: 1px solid #eee;
+    }
+}
+
 /*  Top Provincial Sponsor  */
 /*# sourceMappingURL=style.css.map */
