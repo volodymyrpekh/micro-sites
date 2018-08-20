@@ -1,0 +1,106 @@
+.raise {
+	padding-top: 0;
+	h2 {
+		color: #fff;
+		margin-bottom: 0.25em;
+	}
+	&__header {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: #212121;
+		p {
+			color: #fff;
+			margin-bottom: 0;
+			font-weight: 700;
+		}
+	}
+    &__card {
+    	vertical-align: top;
+    	display: inline-block;
+    	width: 245px;
+    	margin-left: -4px;
+    	padding: 35px;
+    	padding-bottom: 0;
+    }
+    &__icon {
+    	width: 175px;
+    	height: 175px;
+    	position: relative;
+    	fill: #4c557e;
+    }
+    &__img {
+    	position: absolute;
+    	width: 46%;
+    	height: 46%;
+    	top: 27%;
+    	left: 27%;
+    	fill: #fff;
+
+    }
+    &__text {
+    	padding-top: 10px;
+    	margin-right: -28px;
+    	margin-left: -28px;
+    	&_big {
+    		font-size: 36px;
+    		font-weight: 700;
+    		line-height: 2;
+    	} 
+    }
+    &__day {
+    	width: 90px;
+    	background-color: #ef3f35;
+    	line-height: 1.7;
+    	font-size: 1.25em;
+    	font-weight: 700;
+    	text-transform: uppercase;
+    	border-radius: 20px;
+    	color: #fff;
+    	border: 3px solid #fff;
+    	position: absolute;
+    	left: -20%;
+    	top: 30%;
+    }
+}
+
+.raise__card:nth-child(1) {
+    .raise__icon {
+    	fill: color(#4c557e tint(60%));
+    }
+}
+
+.raise__card:nth-child(2) {
+    .raise__icon {
+    	fill: color(#4c557e tint(50%));
+    }
+}
+
+.raise__card:nth-child(3) {
+    .raise__icon {
+    	fill: color(#4c557e tint(40%));
+    }
+}
+
+.raise__card:nth-child(4) {
+    .raise__icon {
+    	fill: color(#4c557e tint(30%));
+    }
+}
+
+.raise__card:nth-child(5) {
+    .raise__icon {
+    	fill: color(#4c557e tint(20%));
+    }
+}
+
+.raise__card:nth-child(6) {
+    .raise__icon {
+    	fill: color(#4c557e tint(10%));
+    }
+}
+
+.raise__card:nth-child(8) {
+    .raise__icon {
+    	fill: #ef3f35;
+    }
+}

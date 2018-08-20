@@ -1,0 +1,53 @@
+.n-resources {
+    padding-top: 120px;
+    @media (min-width: 768px) {
+        padding-top: 137px;
+    }
+    &__col {
+    	vertical-align: top;
+    	display: inline-block;
+    	width: 330px;
+    	margin-left: -4px;
+    	padding: 15px;
+    	@media (max-width: 330px) {
+    		width: 100%;
+    		padding-left: 0;
+    		padding-right: 0;
+    	}
+    }
+    &__card {
+    	border-radius: 5px;
+    	padding: 30px;
+    	background-color: #f3f3f3;
+    	@media (min-width: 687px) {
+    		height: 827px;
+    	}
+    }
+    &__icon {
+    	width: 135px;
+    	height: 135px;
+    	border-radius: 50%;
+    	background-color: #fff;
+    	margin: 30px auto;
+    	position: relative;
+    	.svg-icon {
+    		position: absolute;;
+    		width: 60%;
+    		height: 60%;
+    		top: 20%;
+    		left: 20%;
+    		&_red {
+    			fill: #ef3f35;
+    		}
+    		&_blue {
+    			fill: #00a5d3;
+    		}
+    		&_black {
+    			fill: #333;
+    		}
+    	}
+    }
+    p {
+    	margin-bottom: 1.5em;
+    }
+}

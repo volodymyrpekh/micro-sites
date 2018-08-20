@@ -1,0 +1,64 @@
+.background-svg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.btn-res {
+    transition: .25s linear;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #ef3f35;;
+    background-color: #ef3f35;
+    margin-bottom: 10px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    white-space: normal;
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        color:#ef3f35;
+    }
+    &_blue {
+        border: 2px solid #00a5d3;
+        background-color: #00a5d3;        
+        &:hover,
+        &:focus {
+            color:#00a5d3;
+        }
+    }
+    &_black {
+        border: 2px solid #333;
+        background-color: #333;        
+        &:hover,
+        &:focus {
+            color:#333;
+        }
+    }
+}
+.vetical-middle {
+    vertical-align: middle;
+}
+.header {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.text-red {
+    color: #ef3f35;
+}
+.text-blue {
+    color: #00a5d3;
+}
+.text-black {
+    color: #333;
+}
+@import 'assets/n-resources.scss';
+@import 'assets/infoblock.scss';
+@import 'assets/raise.scss';
