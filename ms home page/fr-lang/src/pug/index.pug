@@ -1,0 +1,26 @@
+include assets/meta.pug
+body.body
+	.sprite-svg
+		include ../img/sprite.svg
+
+	include assets/header.pug
+	#slide.cd-section
+		include assets/slide.pug
+	#community.cd-section
+		include assets/area.pug
+	#news.cd-section
+		include assets/update.pug
+	#research.cd-section
+		include assets/research.pug
+	#impact.cd-section
+		include assets/help.pug
+	include assets/find.pug
+	#take.cd-section
+		include assets/take.pug
+	include assets/connect.pug
+	include assets/research-news.pug
+	include assets/footer.pug
+	include assets/scroll.pug
+	include assets/reval.pug
+	
+	script(src="js/script.js?"+Math.floor(Math.random() * (15 - 1300) + 1300))

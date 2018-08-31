@@ -1,0 +1,64 @@
+#SearchModal.modal(tabindex="-1" role="dialog" aria-labelledby="Search")
+	.modal-dialog(role="document")
+		.background(style="width: 100%; height: 100%;")
+			svg.svg-icon(width="100%" height="100%")
+				use(xlink:href="#svg__background")
+		.modal-content
+			.modal-header
+			.modal-body
+				.container.modal__take
+					form.mb-4
+						.input-group.input-group-lg
+							input(type="text" class="form-control" placeholder="Search" aria-label="Search")
+							button(type="submit").btn.btn-link.btn-lg#input_postal
+								span.fas.fa-search
+					.modal-take__content
+						svg.background(viewBox="0 0 100 80" width="100%" height="100%" preserveAspectRatio="xMidYMid slice")
+							image(xlink:href="img/take_action.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice")
+						h2
+							|Take Action
+						p
+							|Canada leads the world with one of the highest rate of multiple sclerosis (MS). Canadian researchers lead the world in MS research. Now, we want Canada’s government to lead the world in improving #LifewithMS.
+
+						a.btn.btn-opacity.btn-oval.mb-2(href="#")
+							|I Challenge MS
+
+
+#DonateModal.modal(tabindex="-1" role="dialog" aria-labelledby="Donate")
+	.modal-dialog(role="document")
+		.background(style="width: 100%; height: 100%;")
+			svg.svg-icon(width="100%" height="100%")
+				use(xlink:href="#svg__background")
+		.modal-content
+			.modal-header
+			.modal-body
+				.container.modal__donation
+					h2
+						|Make a donation
+					.row
+						.col-12.col-sm-6.col-lg-3
+							a.btn.btn-rectangle.btn-red.btn-lg.w-100.mb-2(href="#")
+								|One-time
+						.col-12.col-sm-6.col-lg-3
+							a.btn.btn-rectangle.btn-red.btn-lg.w-100.mb-2(href="#")
+								|Montly
+						.col-12.col-sm-6.col-lg-3
+							a.btn.btn-rectangle.btn-red.btn-lg.w-100.mb-2(href="#")
+								|In Honor
+						.col-12.col-sm-6.col-lg-3
+							a.btn.btn-rectangle.btn-red.btn-lg.w-100.mb-2(href="#")
+								|In Memory
+					h2
+						|Donate to an event participant
+					.row
+						.col-12.col-sm-6.col-lg-3
+							a.btn.btn-rectangle.btn-red.btn-lg.w-100.mb-2(href="#")
+								|MS Walk
+						.col-12.col-sm-6.col-lg-3
+							a.btn.btn-rectangle.btn-red.btn-lg.w-100.mb-2(href="#")
+								|MS Bike
+						.col-12.col-sm-6.col-lg-3
+							a.btn.btn-rectangle.btn-red.btn-lg.w-100.mb-2(href="#")
+								|I Challenge MS
+
+				

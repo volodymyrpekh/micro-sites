@@ -1,0 +1,16 @@
+.connect {
+	background-color: $color__red;
+	color: $color__white;
+	position: relative;
+	padding-bottom: 0;
+	h2 {
+			margin-bottom: 1.25em;
+	}
+	@media (min-width: 992px) {		
+		margin-top: -400px;
+		margin-bottom: -260px;
+		padding-top: 375px;
+		padding-bottom: 260px;
+		z-index: -1;
+	}
+}
