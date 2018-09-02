@@ -2771,7 +2771,7 @@ section .lead_title {
         min-width: 260px
     }
     .modal__donation .btn.btn-lg {
-        font-size: 1.5em;
+        font-size: 1.2em;
         padding: 25px
     }
 }
