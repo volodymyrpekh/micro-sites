@@ -60,7 +60,7 @@ jQuery(document).ready(function($){
 //
 
 $(".header__search").click(function() {
-    $("#SearchModal .modal-content").css({"margin-top": ""});
+    $("#SearchModal .modal-dialog").css({"padding-top": ""});
 		//if not hovering over a dropdown or a nav item -> hide dropdown
 		self.hideDropdown();
 });		
@@ -143,10 +143,10 @@ $(".header__search").click(function() {
 			'height': height+'px'
 		});	
 		if ($(".dropdown-list").hasClass("top-search")) {
-			$("#SearchModal .modal-content").css({"margin-top": ''});
+			$("#SearchModal .modal-dialog").css({"padding-top": ''});
 		}
 		else {
-			$("#SearchModal .modal-content").css({"margin-top": height+115+'px'});
+			$("#SearchModal .modal-dialog").css({"padding-top": height+115+'px'});
 		}
 
 		this.dropdownBg.css({

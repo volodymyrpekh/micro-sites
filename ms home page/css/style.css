@@ -2714,9 +2714,13 @@ section .lead_title {
     border-bottom: none
 }
 
+.modal .modal-dialog {
+    padding-top: 140px;
+}
+
 @media (max-width:1199px) {
-    .modal .modal-content {
-        margin-top: 105px
+    .modal .modal-dialog {
+        padding-top: 105px
     }
 }
 
@@ -2726,12 +2730,11 @@ section .lead_title {
     width: 100%;
     max-width: 1920px;
     height: 100%;
-    margin-top: 140px;
     margin-right: auto;
     margin-left: auto;
     border: none;
     border-radius: inherit;
-    background-color: transparent;
+    background-color: transparent
 }
 
 .modal {
