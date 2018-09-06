@@ -57,7 +57,7 @@ $("[data-target='#DonateModal']").click(function() {
     }
 });
 $(".header__search").click(function() {
-    $("#SearchModal .modal-header").css({ "padding-top": "" });
+    $("#SearchModal .modal-content").css({ "margin-top": "" });
     $(".modal__take input").focus();
 });
 $(".btn-close, .nav-trigger").click(function() {
