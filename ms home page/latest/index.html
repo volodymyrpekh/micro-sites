@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="https://mssociety.ca/favicon.en_CA.ico">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css?947">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="js/main_navigation.js?355"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+	</head>
+</html>
+<body class="body">
+	<div class="sprite-svg"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="752" height="752" viewBox="0 0 752 752">
+    <svg  id="svg__logo" viewBox="0 0 27.517 14.287">
+        <path d="M0 0v4.541l6.87 6.04 3.708-3.296.035.047-.111 6.72h3.221V0L6.888 6.016h-.035zm19.88 0c-2.297 0-4.788 1.462-4.788 4.047 0 2.55 2.321 3.52 3.303 3.925a2.3 2.311 0 0 0 .228.1l1.48-2.556c-1.304-.628-1.533-.863-1.533-1.51 0-.64.59-1.074 1.199-1.074 1.07 0 1.187.869 1.263 1.345h3.455c-.035-.788-.092-1.71-.905-2.72C22.687.499 21.232 0 19.88 0zm1.358 6.05l-1.433 2.521c1.012.464 1.322.764 1.322 1.433a1.324 1.33 0 0 1-1.334 1.328c-.45 0-1.432-.275-1.432-1.873h-3.474v.44c0 1.763.978 4.364 4.942 4.359 3.625 0 4.777-2.215 4.777-4.218 0-1.592-.649-2.785-3.198-3.936 0 0-.106-.036-.17-.053zM0 6.187v7.867h3.216l-.088-5.094L0 6.186zm26.271 5.599a1.247 1.252 0 0 0-1.245 1.25 1.245 1.251 0 1 0 1.245-1.25zm.034.187a1.06 1.064 0 1 1-.034 2.127 1.01 1.015 0 0 1-1.011-1.063 1.06 1.064 0 0 1 1.045-1.064zm-.513.33v1.462h.24v-.646h.198l.403.646h.252l-.415-.646a.37.372 0 0 0 .374-.405c0-.277-.164-.412-.497-.412zm.24.187h.28c.152 0 .298.047.298.212 0 .193-.117.229-.298.229h-.28z" />
+    </svg>
+    <svg id="svg__background" height="100%" width="100%" viewBox="0 0 508 269.875" preserveAspectRatio="xMidYMid slice">
+        <path opacity=".5" d="M.003 6.962s74.368 4.412 151.09 26.27c72.25 20.585 118.04 40.823 203.05 39.763C453.893 71.748 508.003 0 508.003 0v269.88s-67.941-10.792-149.33-18.094c-64.72-5.81-117.42-15.35-200.56-42.4-91.517-29.77-158.11-20.93-158.11-20.93z" />
+        <path opacity=".5" d="M.003 66.964s77.474-24.104 156.52-4.787c111.05 27.138 113.81 36.298 192.49 45.498 104.17 12.17 158.99-16.61 158.99-16.61v105.23s-52.328 49.725-129.12 47.942c-59.03-1.37-136.68-14.92-220.17-42.38-100.22-32.96-158.71-41.14-158.71-41.14z" />
+    </svg>
+    <svg id="svg__location" viewBox="0 0 17.88 17.88">
+	    <path d="M8.94 0A8.939 8.939 0 0 0 0 8.94c0 4.937 4.002 8.94 8.94 8.94a8.942 8.942 0 0 0 8.94-8.94C17.88 4.001 13.878 0 8.94 0zm0 1c4.378 0 7.94 3.561 7.94 7.94 0 4.378-3.562 7.94-7.94 7.94C4.56 16.88 1 13.319 1 8.94 1 4.56 4.561 1 8.94 1zm5.216 2.973L2.196 9.289v.664h5.98v5.98h.664l5.316-11.96z" />
+	</svg>
+    <svg id="svg__chewron_down" viewBox="0 0 48.988 26.993">
+	    <path d="M2.547 0L0 1.775l24.494 16.961 24.494-16.96L46.441 0 24.494 15.2zm0 8.256L0 10.03l24.494 16.961 24.494-16.96-2.547-1.776-21.947 15.2z"  />
+	</svg>
+    
+</svg>
+	</div>
+	<header class="header cd-morph-dropdown">
+		<div class="container-fluid">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-12">
+					<div class="row header__top main-nav justify-content-end align-items-center">
+						<div class="col-auto">
+							<ul class="list-inline">
+								<li class="list-inline-item has-dropdown bg-blue top-search" data-content="Location">
+									<button class="btn btn-link header__location p-0" data-target="#SearchModal"><span class="d-inline-block">
+											<svg class="svg-icon" viewBox="0 0 17.88 17.88">
+												<use xlink:href="#svg__location"></use>
+											</svg></span><span class="text-uppercase">On</span></button>
+								</li>
+								<li class="list-inline-item"><a href="#">Français</a></li>
+								<li class="list-inline-item"><a href="#">BrowseAloud</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-xl-auto">
+					<div class="row header__mobile-nav justify-content-between align-items-center">
+						<div class="col-auto"><a class="logo d-inline-block align-middle" href="/">
+								<svg class="svg-icon" viewBox="0 0 27.517 14.287">
+									<use xlink:href="#svg__logo"></use>
+								</svg></a>
+							<div class="header__close">
+								<button class="btn btn-link btn-close"><span class="fas fa-times fa-2x" aria-hidden="true"></span>
+									<div><small>close</small></div>
+								</button>
+							</div>
+						</div>
+						<div class="col-auto d-xl-none">
+							<button class="btn btn-link nav-trigger"><span aria-hidden="true"></span></button>
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-xl-block">
+					<nav class="main-nav row justify-content-between align-items-center">
+						<div class="col-auto">
+							<ul class="list-inline">
+								<li class="list-inline-item has-dropdown" data-content="Information">
+									<button class="btn btn-link" data-target="#SearchModal">Ms Information</button>
+								</li>
+								<li class="list-inline-item"><a href="#">Support & Services</a></li>
+								<li class="list-inline-item has-dropdown" data-content="Research">
+									<button class="btn btn-link" data-target="#SearchModal">Research</button>
+								</li>
+								<li class="list-inline-item"><a href="#">Get Involved</a></li>
+							</ul>
+						</div>
+						<div class="col-auto">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<button class="btn btn-link header__search" data-target="#SearchModal"><span class="fas fa-search"></span></button>
+								</li>
+								<li class="list-inline-item">
+									<button class="btn btn-rectangle btn-red" data-target="#DonateModal">Donate</button>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="morph-dropdown-wrapper">
+			<div class="dropdown-list">
+				<div class="dropdown-list__corner"></div>
+				<ul class="list-unstyled">
+					<li class="dropdown">
+						<div class="content">
+							<form class="mb-4">
+								<div class="input-group">
+									<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+									<button class="btn btn-link" type="submit"><span class="fas fa-search"></span></button>
+								</div>
+							</form>
+						</div>
+					</li>
+					<li class="dropdown dropdown_information" id="Information">
+						<div class="label" data-toggle="collapse" href="#collapseInformation">MS Information <span class="fas fa-caret-down"></span></div>
+						<div class="row content collapse" id="collapseInformation">
+							<div class="col-12 col-xl-4">
+								<dl>
+									<dt><a href="#">About MS</a></dt>
+									<dd><a href="#">What is MS?</a></dd>
+									<dd><a href="#">Diagnosis</a></dd>
+									<dd><a href="#">Symptoms</a></dd>
+									<dd><a href="#">Types</a></dd>
+									<dd><a href="#">Latest Research</a></dd>
+								</dl>
+							</div>
+							<div class="col-12 col-xl-4">
+								<dl>
+									<dt><a href="#">Managing MS</a></dt>
+									<dd><a href="#">Newly Diagnosed</a></dd>
+									<dd><a href="#">Living with MS</a></dd>
+									<dd><a href="#">Treatments</a></dd>
+									<dd><a href="#">Support & Services</a></dd>
+								</dl>
+							</div>
+							<div class="col-12 col-xl-4">
+								<dl>
+									<dt><a href="#">Resources</a></dt>
+									<dd><a href="#">Information Library</a></dd>
+									<dd><a href="#">Blog</a></dd>
+									<dd><a href="#">Semi-annual Magazine</a></dd>
+									<dd><a href="#">Nationwide Webinars</a></dd>
+									<dd><a href="#">Latest News</a></dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown"><a class="label" href="#">Support & Services</a></li>
+					<li class="dropdown dropdown_research" id="Research">
+						<div class="label" data-toggle="collapse" href="#collapseResearch">Research <span class="fas fa-caret-down"></span></div>
+						<div class="row content collapse" id="collapseResearch">
+							<div class="col-12 col-xl-3">
+								<dl>
+									<dt><a href="#">About MS Research</a></dt>
+									<dd><a href="#">About the MS Society‘s Research Program</a></dd>
+									<dd><a href="#">Research Committees</a></dd>
+									<dd><a href="#">Community Representatives</a></dd>
+									<dd><a href="#">Introduction to Clinical Trials</a></dd>
+									<dd><a href="#">Get Involved in Research</a></dd>
+									<dd><a href="#">Glossary</a></dd>
+								</dl>
+							</div>
+							<div class="col-12 col-xl-3">
+								<dl>
+									<dt><a href="#">Information for Researchers</a></dt>
+									<dd><a href="#">Funding Opportunities</a></dd>
+									<dd><a href="#">Review Process and Criteria</a></dd>
+									<dd><a href="#">Applying Online</a></dd>
+									<dd><a href="#">Funding Announcements</a></dd>
+									<dd><a href="#">Reporting Templates</a></dd>
+									<dd><a href="#">What's New for 2018 / 2019?</a></dd>
+								</dl>
+							</div>
+							<div class="col-12 col-xl-3">
+								<dl>
+									<dt><a href="#">Research News</a></dt>
+									<dd><a href="#">Latest Research and Treatment News</a></dd>
+									<dd><a href="#">Research Events</a></dd>
+									<dd><a href="#">Research Library</a></dd>
+									<dd><a href="#">Blog - DrKarenLee.ca</a></dd>
+									<dd><a href="#">Treatments in Development</a></dd>
+								</dl>
+							</div>
+							<div class="col-12 col-xl-3">
+								<dl>
+									<dt><a href="#">Hot Topics</a></dt>
+									<dd><a href="#">CCSVI</a></dd>
+									<dd><a href="#">Diet</a></dd>
+									<dd><a href="#">Exercise and Physical Activity</a></dd>
+									<dd><a href="#">Progressive MS</a></dd>
+									<dd><a href="#">Risk and Prognostic Factors</a></dd>
+									<dd><a href="#">Stem Cells</a></dd>
+									<dd><a href="#">Vitamin D</a></dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown"><a class="label" href="#">Get Involved</a></li>
+					<li class="dropdown dropdown_location" id="Location">
+						<div class="label" data-toggle="collapse" href="#collapseLocation">Location <span class="fas fa-caret-down"></span></div>
+						<div class="row content collapse" id="collapseLocation">
+							<div class="col-12">
+								<p>Your current location is set to Ontario. If this is incorrect, please change your location:</p>
+							</div>
+							<div class="col-12 col-xl-auto">
+								<ul class="list-unstyled">
+									<li><a href="">Alberta</a></li>
+									<li><a href="">British Columbia</a></li>
+									<li><a href="">Manitoba</a></li>
+									<li><a href="">New Brunswick</a></li>
+									<li><a href="">Newfoundland and Labrador</a></li>
+									<li><a href="">Northwest Territories</a></li>
+									<li><a href="">Nova Scotia</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-xl-auto">
+								<ul class="list-unstyled">
+									<li><a href="">Nunavut</a></li>
+									<li><a href="">Ontario</a></li>
+									<li><a href="">Prince Edward Island</a></li>
+									<li><a href="">Quebec</a></li>
+									<li><a href="">Saskatchewan</a></li>
+									<li><a href="">Yukon</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown"><a class="label text-red" href="#">Français</a></li>
+					<li class="dropdown"><a class="label" href="#">BrowseAloud</a></li>
+					<li class="dropdown">
+						<button class="label btn btn-red btn-rectangle w-100" data-target="#DonateModal">Donate</button>
+					</li>
+					<div class="bg-layer" aria-hidden="true"></div>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="cd-section" id="slide">
+		<section class="slide">
+			<svg class="background" viewBox="0 0 100 45" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+				<image class="d-none d-xl-block" xlink:href="img/header_full.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+				<image class="d-block d-xl-none" xlink:href="img/header_small.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+			</svg>
+			<div class="container">
+				<div class="lead text-shadow">Living With Ms</div>
+				<h1 class="text-shadow">Reprioritizing my life to save it</h1>
+				<div class="button-block"><a class="btn btn-red btn-rectangle" href="#">Read Kate’s Story</a><a class="btn btn-underline" href="#">Learn More About Living With Ms</a></div><a class="cd-scroll-down cd-img-replace" href="#community">
+					<div class="chewron">
+						<svg class="svg-icon" viewBox="0 0 48.988 26.993" fill="#fff">
+							<use xlink:href="#svg__chewron_down"></use>
+						</svg>
+					</div></a>
+			</div>
+		</section>
+	</div>
+	<div class="cd-section" id="community">
+		<section class="area">
+			<svg class="background" viewBox="0 0 100 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+				<image class="d-none d-xl-block" xlink:href="img/area_full.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+				<image class="d-block d-xl-none" xlink:href="img/area_small.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+			</svg>
+			<div class="container text-center">
+				<h2>In My Area</h2>
+				<p>Find offices, programs, services, and events in my community:</p>
+				<form>
+					<div class="input-group input-group-lg">
+						<input class="form-control" type="text" placeholder="Enter your postal code here" aria-label="Enter your postal code here">
+						<button class="btn btn-link btn-lg" type="submit" id="input_postal"><span class="fas fa-search"></span></button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+	<div class="cd-section" id="news">
+		<section class="update" id="news">
+			<div style="width: 100%; position: absolute; overflow: hidden; height:100%; top: 0; bottom: 0; left:0; right: 0;">
+				<div class="background" style="width: 100%; height: 100%;">
+					<svg class="svg-icon" width="100%" height="100%" style="fill: rgba(0, 0, 0, .1);">
+						<use xlink:href="#svg__background"></use>
+					</svg>
+				</div>
+			</div>
+			<div class="container">
+				<h2 class="lead lead_title text-center">Latest Updates</h2>
+				<div class="row">
+					<div class="col-12 col-xl-4 update__news">
+						<div class="row">
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto update__text">
+											<p>Funding Decisions – MS Society of Canada 2018 - 2019 Annual Research Grants and Awards Competitions</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Feb 28, 2018  -  4 min read</div>
+												<div class="col-auto update__type">News</div>
+											</div>
+										</div>
+									</div></a></div>
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto update__text">
+											<p>Pamela Valentine – Leading Innovation & Change at the MS Society</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Oct 24, 2018  -  6 min read</div>
+												<div class="col-auto update__type">News</div>
+											</div>
+										</div>
+									</div></a></div>
+						</div><a class="btn btn-underline btn-underline_black pt-0 pb-5" href="#">More news</a>
+					</div>
+					<div class="col-12 col-xl-4 update__research">
+						<div class="row">
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto update__text">
+											<p>Results published from a phase III study of siponimod in secondary progressive multiple sclerosis (SPMS)</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Mar 27, 2018  -  8 min read</div>
+												<div class="col-auto update__type">Research</div>
+											</div>
+										</div>
+									</div></a></div>
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto update__text">
+											<p>International stem cell clinical trial shows stabilized disease and improved disability in MS</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Mar 22, 2018  -  5 min read</div>
+												<div class="col-auto update__type">Research</div>
+											</div>
+										</div>
+									</div></a></div>
+						</div><a class="btn btn-underline btn-underline_blue pt-0 pb-5" href="#">More research</a>
+					</div>
+					<div class="col-12 col-xl-4 update__events">
+						<div class="row">
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto update__text">
+											<p>National Webinar - Coping with the uncertainty of MS</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Apr 12, 2018  -  2 min read</div>
+												<div class="col-auto update__type">Events</div>
+											</div>
+										</div>
+									</div></a></div>
+							<div class="col-12 col-md-6 col-xl-12"><a class="update__item" href="#">
+									<div class="row justify-content-between">
+										<div class="col-auto update__text">
+											<p>A&W Canada et la Société Canadienne de la Sclérose en Plaques Annoncent le Lancement de la 10e Campagne Annuellle du Rendez-Vous A&W Pour Stopper la SP</p>
+										</div>
+										<div class="col-auto">
+											<div class="row justify-content-between align-items-center">
+												<div class="col-auto update__time">Aug 11, 2018  -  3 min read</div>
+												<div class="col-auto update__type">Events</div>
+											</div>
+										</div>
+									</div></a></div>
+						</div><a class="btn btn-underline btn-underline_red pt-0 pb-0" href="#">More events</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<section class="slide slide_noheader">
+		<svg class="background" viewBox="0 0 100 45" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+			<image class="d-none d-xl-block" xlink:href="https://beta.mssociety.ca/images/front/header-lifewithms-full.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+			<image class="d-block d-xl-none" xlink:href="https://beta.mssociety.ca/images/front/header-unapologetic-brooke-robinson-small.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+		</svg>
+		<div class="container">
+			<div class="lead text-shadow">Advocacy</div>
+			<h2 class="text-shadow">Join the Campaign to Improve #LifeWithMS</h2>
+			<div class="button-block"><a class="btn btn-red btn-rectangle" href="#">Send a message now</a><a class="btn btn-underline btn-underline_black" href="#">Learn More About Advocacy</a></div>
+		</div>
+	</section>
+	<div class="cd-section" id="research">
+		<section class="research">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="lead">Reserch</div>
+						<h2>Diet and MS: What does research tell us about supplements?</h2>
+						<div class="button-block"><a class="btn btn-red btn-rectangle" href="#">Read more</a></div>
+					</div>
+					<div class="col-auto d-none d-xl-block">
+						<div class="research__container">
+							<ul class="list-unstyled">
+								<li><a href="#">Research and Treatment News</a></li>
+								<li><a href="#">About MS Research</a></li>
+								<li><a href="#">Get Involved in Research</a></li>
+								<li><a href="#">Funding Announcements</a></li>
+								<li><a href="#">Treatments in Development</a></li>
+								<li><a href="#">Progressive MS		</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="button-block d-xl-none"><a class="btn btn-underline btn-underline_black" href="#">Go to Research Section</a></div>
+			</div>
+		</section>
+	</div>
+	<div class="cd-section" id="impact">
+		<section class="help">
+			<div class="container text-center">
+				<h2 class="lead lead_title">With Your Help</h2>
+				<div class="row">
+					<div class="col-12 col-lg-4">
+						<div class="help__number text-blue">14</div>
+						<p>Research projects were funded in 2017, and we’re plannig to double this number in 2018</p>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="help__number text-red">5,000</div>
+						<p>Letters were sent to our MP’s to make access a reality for people affected by MS</p>
+					</div>
+					<div class="col-12 col-lg-4">
+						<div class="help__number">31</div>
+						<p>Volunteers living with MS were trained for the new MS 1:1 Peer Support Program which matches them with individuals looking for support.</p>
+					</div>
+				</div><a class="btn btn-red btn-rectangle" href="#">See More Of Our Impact</a>
+			</div>
+		</section>
+	</div>
+	<section class="find">
+		<svg class="background" viewBox="0 0 100 33" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+			<image class="d-none d-xl-block" xlink:href="img/take_full.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+			<image class="d-block d-xl-none" xlink:href="img/take_small.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+		</svg>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 offset-md-6 col-lg-5 offset-lg-7">
+					<h2 class="lead lead_title">Take part in something that will make a difference, get involved in MS Society fundraising events.</h2>
+					<div class="text-center"><a class="btn btn-red btn-rectangle" href="#">Find An Event Near You</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="accord">
+		<div class="container">
+			<div class="accordion closed">
+				<h3 class="accordion_header">Lyme disease</h3>
+				<div class="accordion_content">
+					<p>Lyme disease is an illness caused by the bacterium Borrelia burgdorferi, which can be spread through the bite of certain types of ticks. Lyme disease in humans can have serious symptoms, including neurological symptoms similar to those seen in MS, but can generally be treated with antibiotics. Lyme disease can cause rashes and joint symptoms unlike MS.</p>
+					<p>Neurological symptoms may include meningitis, encephalitis, Bell’s palsy, weakness, impaired language, fatigue and impaired memory. Brain MRI may or may not show lesions in the white matter. These lesions are usually non-specific, but sometimes may mimic MS lesions.</p>For more information about Lyme disease please visit the <a href="http://www.phac-aspc.gc.ca/index-eng.php" target="_blank">Public Health Agency of Canada</a>
+				</div>
+			</div>
+			<div class="accordion closed">
+				<h3 class="accordion_header">Lupus (systemic lupus erythematosus)</h3>
+				<div class="accordion_content">
+					<p>Lupus is a chronic inflammatory disease where an individual’s immune system attacks its own tissues and organs. Inflammation caused by lupus can affect different body systems, including the joints, skin, kidneys, blood cells, brain, heart and lungs. Lupus can be difficult to diagnose because signs and symptoms are similar to those seen in other conditions however there are distinct symptoms that are not seen in MS such as skin rash, shortness of breath and fever.</p>
+					<p>This is not an extensive list; your doctor may need to rule out other conditions. It is possible to have MS and another condition but this does not mean that they are related or that  one has caused the other.</p>
+					<p>*With information from </p><a href="http://www.ninds.nih.gov/" target="_blank">NINDS</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="cd-section" id="take">
+		<section class="take">
+			<div class="container text-center">
+				<h2 class="lead lead_title">Take Action</h2>
+				<div class="row">
+					<div class="col-12 col-lg-6 col-xl-4 pb-4">
+						<div class="take__item">
+							<div class="row">
+								<div class="col-auto">
+									<h3 class="text-red">Advocate</h3>
+									<p>Canada leads the world with one of the highest rate of multiple sclerosis (MS). Canadian reserchers lead the world in MS research. Now, we weant Canada's government to lead the world in improving #LifewithMS.</p>
+								</div>
+								<div class="col-auto"><a class="btn btn-red btn-rectangle" href="#">Learn more</a></div>
+							</div>
+							<div>
+								<svg class="background" viewBox="0 0 60 100" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+									<image xlink:href="img/advocate.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 col-xl-4 pb-4">
+						<div class="take__item">
+							<div class="row">
+								<div class="col-auto">
+									<h3 class="text-blue">Volunteer</h3>
+									<p>Our desire is to be a community-connected organization with the goal of having our collective effors adding value to people affected by MS. Oir volunteers are an exciting, dynamic and diverse group of people who share a willingness to contribute their time and talents to #endMS. Join us today!</p>
+								</div>
+								<div class="col-auto"><a class="btn btn-blue btn-rectangle" href="#">Join today</a></div>
+							</div>
+							<div>
+								<svg class="background" viewBox="0 0 60 100" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+									<image xlink:href="img/volunteer.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 offset-lg-3 offset-xl-0 col-xl-4 pb-4">
+						<div class="take__item">
+							<div class="row">
+								<div class="col-auto">
+									<h3>Donate</h3>
+									<p>Canada leads the world with one of the highest rate of multiple sclerosis (MS). Canadian reserchers lead the world in MS research. Now, we weant Canada's government to lead the world in improving #LifewithMS.</p>
+								</div>
+								<div class="col-auto"><a class="btn btn-black btn-rectangle" href="#">Faites un don maintenant</a></div>
+							</div>
+							<div>
+								<svg class="background" viewBox="0 0 60 100" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+									<image xlink:href="img/donate.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<section class="connect">
+		<div class="container text-center">
+			<h2 class="lead lead_title">Stay connect</h2>
+		</div>
+	</section>
+	<section class="research-news">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-5 col-xl-5">
+					<div class="research-news_forms">
+						<h2 class="lead lead_title">Research News</h2>
+						<p>Subscribe to the latest MS research news by email by entering your info below:</p>
+						<form>
+							<div class="form-group">
+								<input class="form-control" type="text" placeholder="First Name">
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="text" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="email" placeholder="Email">
+							</div>
+							<button class="btn btn-rectangle btn-red w-100" type="submit" href="#">Submit</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-7 col-xl-6 offset-xl-1">
+					<div class="row justify-content-between">
+						<div class="col-auto">
+							<ul class="list-inline pt-5">
+								<li class="list-inline-item"><a href="#"><span class="fab fa-facebook fa-2x"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="fab fa-twitter fa-2x"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="fab fa-youtube fa-2x"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="fab fa-instagram fa-2x"></span></a></li>
+							</ul>
+						</div>
+						<div class="col-auto"><a class="btn btn-underline pt-5" href="#">Go To Ms Blog</a></div>
+					</div><a class="research-news_cards" href="#">
+						<svg class="background" viewBox="0 0 100 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+							<image xlink:href="https://secure3.convio.net/mssoc/images/content/pagebuilder/Homepage-Friends-and-Family-Team-Image-ENG-FRE.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+							<rect width="100%" height="100%"></rect>
+						</svg>
+						<p>Sibling Support: How a brother and sister bonded through having MS
+							<svg class="svg-icon" viewBox="0 0 48.988 26.993" fill="#fff">
+								<use xlink:href="#svg__chewron_down"></use>
+							</svg>
+						</p></a><a class="research-news_cards" href="#">
+						<svg class="background" viewBox="0 0 100 30" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+							<image xlink:href="https://secure3.convio.net/mssoc/images/content/pagebuilder/walk-homepage4.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+							<rect width="100%" height="100%"></rect>
+						</svg>
+						<p>Diet and MS: What does researcg tell us about supplements?
+							<svg class="svg-icon" viewBox="0 0 48.988 26.993" fill="#fff">
+								<use xlink:href="#svg__chewron_down"></use>
+							</svg>
+						</p></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-auto">
+					<ul class="list-unstyled">
+						<li><a href="#">About the MS Society</a></li>
+						<li><a href="#">Employment Opportunities</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Financial Information</a></li>
+						<li><a href="#">Our Impact and Operations</a></li>
+						<li><a href="#">Accessibility</a></li>
+						<li><a href="#">Advocacy</a></li>
+						<li><a href="#">Media</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Multiple Sclerosis Scientific Research Foundation</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-auto">
+					<ul class="list-unstyled">
+						<li><a href="#">Donate</a></li>
+						<li><a href="#">Feedback</a></li>
+						<li><a href="#">MS Walk</a></li>
+						<li><a href="#">MS Bike</a></li>
+						<li><a href="#">Muck MS Canada</a></li>
+						<li><a href="#">MS Research Portal</a></li>
+						<li><a href="#">I Challenge MS</a></li>
+						<li><a href="#">Someone Like Me</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-auto">
+					<ul class="list-unstyled">
+						<li>
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#"><span class="fab fa-facebook fa-2x"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="fab fa-twitter fa-2x"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="fab fa-youtube fa-2x"></span></a></li>
+								<li class="list-inline-item"><a href="#"><span class="fab fa-instagram fa-2x"></span></a></li>
+							</ul>
+						</li>
+						<li><br><a href="tel:18002687582">1-800-268-7582</a></li>
+						<li><a href="mailto:info@mssociety.ca">info@mssociety.ca</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-sm-auto"><a href="http://www.imaginecanada.ca/standards"><img src="https://mssociety.ca/images/imagine-canada-en_CA.png" alt="Imagine Canada Trustmark"></a></div>
+				<div class="col-6 col-sm-auto"><small>Proud member of:</small>
+					<div class="d-block"><a href="http://www.progressivemsalliance.org/" target="_blank"><img src="https://mssociety.ca/images/logo.progalliance.en_CA.png" alt="Progressive MS Alliance" style="width:90%; max-width:155px;"></a></div>
+				</div>
+				<div class="col-auto"><small>
+						<nobr>Official Airline of the MS Society of Canada:</nobr></small>
+					<div class="d-block"><a href="#" target="_blank"><img src="img/air-canada-logo.svg"></a></div>
+				</div>
+				<div class="col-12"><br><small>© 2017 MS Society of Canada.<br>Charitable registration - MS Society of Canada: 10774 6174 RR0001 / Quebec Division: 10 490 2523 RR0001<br>The Standards Program Trustmark is a mark of Imagine Canada used under licence by the MS Society of Canada and the Quebec Division.</small></div>
+			</div>
+		</div>
+	</footer><a class="cd-nav-trigger cd-img-replace">
+		<div class="fas fa-ellipsis-v fa-lg" data-fa-transform="down-8"></div><span class="sr-only">Open navigation</span></a>
+	<nav id="cd-vertical-nav">
+		<ul>
+			<li><a href="#slide" data-number="1"><span class="cd-dot"></span><span class="cd-label">Living with MS: Kate’s Story</span></a></li>
+			<li><a href="#community" data-number="2"><span class="cd-dot"></span><span class="cd-label">In my community</span></a></li>
+			<li><a href="#news" data-number="3"><span class="cd-dot"></span><span class="cd-label">Latest News</span></a></li>
+			<li><a href="#research" data-number="4"><span class="cd-dot"></span><span class="cd-label">Research</span></a></li>
+			<li><a href="#impact" data-number="5"><span class="cd-dot"></span><span class="cd-label">Impact</span></a></li>
+			<li><a href="#take" data-number="6"><span class="cd-dot"></span><span class="cd-label">Take Action</span></a></li>
+		</ul>
+	</nav>
+	<div class="modal" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="Search">
+		<div class="modal-dialog" role="document">
+			<div class="background" style="width: 100%; height: 100%;">
+				<svg class="svg-icon" width="100%" height="100%">
+					<use xlink:href="#svg__background"></use>
+				</svg>
+			</div>
+			<div class="modal-content">
+				<div class="modal-header"></div>
+				<div class="modal-body">
+					<div class="container modal__take">
+						<form class="mb-4">
+							<div class="input-group input-group-lg">
+								<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+								<button class="btn btn-link btn-lg" type="submit" id="input_postal"><span class="fas fa-search"></span></button>
+							</div>
+						</form>
+						<div class="modal-take__content">
+							<svg class="background" viewBox="0 0 100 80" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+								<image xlink:href="img/take_action.jpg" x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+							</svg>
+							<h2>Take Action</h2>
+							<p>Canada leads the world with one of the highest rate of multiple sclerosis (MS). Canadian researchers lead the world in MS research. Now, we want Canada’s government to lead the world in improving #LifewithMS.</p><a class="btn btn-opacity btn-oval mb-2" href="#">I Challenge MS</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="DonateModal" tabindex="-1" role="dialog" aria-labelledby="Donate">
+		<div class="modal-dialog" role="document">
+			<div class="background" style="width: 100%; height: 100%;">
+				<svg class="svg-icon" width="100%" height="100%">
+					<use xlink:href="#svg__background"></use>
+				</svg>
+			</div>
+			<div class="modal-content">
+				<div class="modal-header"></div>
+				<div class="modal-body">
+					<div class="container modal__donation mdonation">
+						<h2>Make a donation</h2>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg mdonation__button" href="#">General</a></div>
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg mdonation__button" href="#">Mensuel</a></div>
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg mdonation__button" href="#">Honorifique</a></div>
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg mdonation__button" href="#">Commemoratif</a></div>
+						</div>
+						<h2>Donate to an event participant</h2>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg mdonation__button" href="#">Marche de L'espoir</a></div>
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg mdonation__button" href="#">Velotour SP</a></div>
+							<div class="col-12 col-sm-6 col-lg-3"><a class="btn btn-rectangle btn-red btn-lg mdonation__button" href="#">Mon defi pour stopper la SP</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js?110"></script>
+</body>

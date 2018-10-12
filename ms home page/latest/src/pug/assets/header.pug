@@ -1,0 +1,297 @@
+header.header.cd-morph-dropdown
+	.container-fluid
+		.row.justify-content-between.align-items-center
+			.col-12
+				.row.header__top.main-nav.justify-content-end.align-items-center
+					.col-auto
+						ul.list-inline
+							li.list-inline-item.has-dropdown.bg-blue.top-search(data-content="Location")
+								button.btn.btn-link.header__location.p-0(data-target="#SearchModal")
+									span.d-inline-block
+										svg.svg-icon(viewBox="0 0 17.88 17.88")
+											use(xlink:href="#svg__location")
+									span.text-uppercase
+										|On
+							li.list-inline-item
+								a(href="#")
+									|Français
+							li.list-inline-item
+								a(href="#")
+									|BrowseAloud
+			.col-12.col-xl-auto
+				.row.header__mobile-nav.justify-content-between.align-items-center
+					.col-auto
+						a.logo(href="/").d-inline-block.align-middle
+							svg.svg-icon(viewBox="0 0 27.517 14.287")
+								use(xlink:href="#svg__logo")
+						.header__close
+							button.btn.btn-link.btn-close
+								span.fas.fa-times.fa-2x(aria-hidden="true")
+								div
+									small
+										|close
+					.col-auto.d-xl-none
+						button.btn.btn-link.nav-trigger
+							span(aria-hidden="true")
+			.col.d-none.d-xl-block
+				nav.main-nav.row.justify-content-between.align-items-center
+					.col-auto
+						ul.list-inline
+							li.list-inline-item.has-dropdown(data-content="Information")
+								button.btn.btn-link(data-target="#SearchModal")
+									|Ms Information
+							li.list-inline-item
+								a(href="#")
+									|Support & Services
+							li.list-inline-item.has-dropdown(data-content="Research")
+								button.btn.btn-link(data-target="#SearchModal")
+									|Research
+							li.list-inline-item
+								a(href="#")
+									|Get Involved
+					.col-auto
+						ul.list-inline
+							li.list-inline-item
+								button.btn.btn-link.header__search(data-target="#SearchModal")
+									span.fas.fa-search
+							li.list-inline-item
+								button.btn.btn-rectangle.btn-red(data-target="#DonateModal")
+									|Donate
+
+	.morph-dropdown-wrapper
+		.dropdown-list
+			.dropdown-list__corner
+			ul.list-unstyled
+				li.dropdown
+					.content
+						form.mb-4
+							.input-group
+								input(type="text" class="form-control" placeholder="Search" aria-label="Search")
+								button(type="submit").btn.btn-link
+									span.fas.fa-search
+				li#Information.dropdown.dropdown_information
+					.label(data-toggle="collapse" href="#collapseInformation")
+						|MS Information 
+						span.fas.fa-caret-down
+					.row.content.collapse#collapseInformation
+						.col-12.col-xl-4
+							dl
+								dt
+									a(href="#")
+										|About MS
+								dd
+									a(href="#")
+										|What is MS?
+								dd
+									a(href="#")
+										|Diagnosis
+								dd
+									a(href="#")
+										|Symptoms
+								dd
+									a(href="#")
+										|Types
+								dd
+									a(href="#")
+										|Latest Research
+						.col-12.col-xl-4
+							dl
+								dt
+									a(href="#")
+										|Managing MS
+								dd
+									a(href="#")
+										|Newly Diagnosed
+								dd
+									a(href="#")
+										|Living with MS
+								dd
+									a(href="#")
+										|Treatments
+								dd
+									a(href="#")
+										|Support & Services
+						.col-12.col-xl-4
+							dl
+								dt
+									a(href="#")
+										|Resources
+								dd
+									a(href="#")
+										|Information Library
+								dd
+									a(href="#")
+										|Blog
+								dd
+									a(href="#")
+										|Semi-annual Magazine
+								dd
+									a(href="#")
+										|Nationwide Webinars
+								dd
+									a(href="#")
+										|Latest News
+				li.dropdown
+					a.label(href="#")
+						|Support & Services
+				li#Research.dropdown.dropdown_research
+					.label(data-toggle="collapse" href="#collapseResearch")
+						|Research 
+						span.fas.fa-caret-down
+					.row.content.collapse#collapseResearch
+						.col-12.col-xl-3
+							dl
+								dt
+									a(href="#")
+										|About MS Research
+								dd
+									a(href="#")
+										|About the MS Society‘s Research Program
+								dd
+									a(href="#")
+										|Research Committees
+								dd
+									a(href="#")
+										|Community Representatives
+								dd
+									a(href="#")
+										|Introduction to Clinical Trials
+								dd
+									a(href="#")
+										|Get Involved in Research
+								dd
+									a(href="#")
+										|Glossary
+						.col-12.col-xl-3
+							dl
+								dt
+									a(href="#")
+										|Information for Researchers
+								dd
+									a(href="#")
+										|Funding Opportunities
+								dd
+									a(href="#")
+										|Review Process and Criteria
+								dd
+									a(href="#")
+										|Applying Online
+								dd
+									a(href="#")
+										|Funding Announcements
+								dd
+									a(href="#")
+										|Reporting Templates
+								dd
+									a(href="#")
+										|What's New for 2018 / 2019?
+						.col-12.col-xl-3
+							dl
+								dt
+									a(href="#")
+										|Research News
+								dd
+									a(href="#")
+										|Latest Research and Treatment News
+								dd
+									a(href="#")
+										|Research Events
+								dd
+									a(href="#")
+										|Research Library
+								dd
+									a(href="#")
+										|Blog - DrKarenLee.ca
+								dd
+									a(href="#")
+										|Treatments in Development
+						.col-12.col-xl-3
+							dl
+								dt
+									a(href="#")
+										|Hot Topics
+								dd
+									a(href="#")
+										|CCSVI
+								dd
+									a(href="#")
+										|Diet
+								dd
+									a(href="#")
+										|Exercise and Physical Activity
+								dd
+									a(href="#")
+										|Progressive MS
+								dd
+									a(href="#")
+										|Risk and Prognostic Factors
+								dd
+									a(href="#")
+										|Stem Cells
+								dd
+									a(href="#")
+										|Vitamin D
+				li.dropdown
+					a.label(href="#")
+						|Get Involved
+				li#Location.dropdown.dropdown_location
+					.label(data-toggle="collapse" href="#collapseLocation")
+						|Location 
+						span.fas.fa-caret-down
+					.row.content.collapse#collapseLocation
+						.col-12
+							p
+								|Your current location is set to Ontario. If this is incorrect, please change your location:
+						.col-12.col-xl-auto
+							ul.list-unstyled
+								li
+									a(href="")
+										|Alberta
+								li
+									a(href="")
+										|British Columbia
+								li
+									a(href="")
+										|Manitoba
+								li
+									a(href="")
+										|New Brunswick
+								li
+									a(href="")
+										|Newfoundland and Labrador
+								li
+									a(href="")
+										|Northwest Territories
+								li
+									a(href="")
+										|Nova Scotia
+						.col-12.col-xl-auto
+							ul.list-unstyled
+								li
+									a(href="")
+										|Nunavut
+								li
+									a(href="")
+										|Ontario
+								li
+									a(href="")
+										|Prince Edward Island
+								li
+									a(href="")
+										|Quebec
+								li
+									a(href="")
+										|Saskatchewan
+								li
+									a(href="")
+										|Yukon
+				li.dropdown
+					a.label.text-red(href="#")
+						|Français
+				li.dropdown
+					a.label(href="#")
+						|BrowseAloud
+				li.dropdown
+					button.label.btn.btn-red.btn-rectangle.w-100(data-target="#DonateModal")
+						|Donate
+				.bg-layer(aria-hidden="true")
